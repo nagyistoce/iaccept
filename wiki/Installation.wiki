@@ -1,0 +1,17 @@
+1.	Create a new target dedicated for your user acceptance testing by clicking the Add Target button
+
+ 
+
+2.	The Empty Application template is a good starting point
+
+ 
+
+3. Select your new target, go in the Summary tab and scroll to the Linked Frameworks and Libraries section.
+
+
+ 
+
+3.	Then click the + sign, click Add Other… and browse to the downloaded Framework-iAccept.framework parent directory and select Framework-iAccept.framework.
+
+ 
+4. That’s it, iAccept is installed in xcode !
