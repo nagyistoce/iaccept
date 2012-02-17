@@ -121,9 +121,9 @@ By default, iAccept will search for those steps details in our default fixture. 
 
 }}}
 
-Look at the method -(void)iStartWithAnEmptyShoppingCart. The first thig it does is getting a reference to the application under test (AUT) and then call a method that will clear the shopping cart.  You see that you get a lot of flexibility to play with the state of your application the way you want.
+Look at the method {{{-(void)iStartWithAnEmptyShoppingCart}}}. The first thig it does is getting a reference to the application under test (AUT) and then call a method that will clear the shopping cart.  You see that you get a lot of flexibility to play with the state of your application the way you want.
 
-The method -(void)iLaunchedThePetshopInLandscape is using an operator that can interact with the device’s properties.  In this case, it’s forcing the display in landscape.
+The method {{{-(void)iLaunchedThePetshopInLandscape}}} is using an operator that can interact with the device’s properties.  In this case, it’s forcing the display in landscape.
 
 
 The IAWhen type, is used to do an action.  In our example, the action is to touch the  button.
@@ -148,16 +148,6 @@ So, we need to create a fixture named « MenuViewFixture « to handle our « iTo
 
 @end
 }}}
-
-
-
-
-
-
-
-
-
-
 
 {{{
 #import "MenuViewFixture.h"
@@ -267,7 +257,7 @@ We can now implement our MainViewFixture
 @end
 }}}
 
-In the method  -(IAThenResult*)displaysThePromotions we have  the known split view operator that will give us the detail view operator.
+In the method  {{{-(IAThenResult*)displaysThePromotions}}} we have  the known split view operator that will give us the detail view operator.
 
 {{{
     IASplitViewOperator* splitOperator = 
