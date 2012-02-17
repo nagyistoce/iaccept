@@ -125,14 +125,11 @@ Look at the method {{{-(void)iStartWithAnEmptyShoppingCart}}}. The first thig it
 
 The method {{{-(void)iLaunchedThePetshopInLandscape}}} is using an operator that can interact with the device’s properties.  In this case, it’s forcing the display in landscape.
 
-
 The IAWhen type, is used to do an action.  In our example, the action is to touch the  button.
-
 
 If you look closely  at the test sentence, you can see two sections.  The first one at the left of « on » and another one at it’s right.
 
 i touch the promo button on menu view
-
 
 The right part is the fixture’s method that will do the job of touching the button. 
 The left part is the way to tell iAccept to use another fixture than the default one.
@@ -176,8 +173,7 @@ So, we need to create a fixture named « MenuViewFixture « to handle our « iTo
 }}}
 
 {{{
-IASplitViewOperator* splitOperator = [
-      IASplitViewOperator splitViewOperatorForAppDelegate:[self appDelegate]];
+IASplitViewOperator* splitOperator = [IASplitViewOperator splitViewOperatorForAppDelegate:[self appDelegate]];
 }}}
 This line is creating a split view operator.  We need it to get the master and the detail views.
 {{{
@@ -185,9 +181,7 @@ IAViewOperator* masterViewOperator = [splitOperator masterViewOperator];
 }}}
 We retrieve the  split view’s master view.  A generic view operator is returned because we do not have a specific operator for this kind of view.
 {{{
-IAButtonOperator* promoButton = 
-      [masterViewOperator searchForButtonWithImage:[UIImage imageNamed:@"star.png"]  
-      forState:UIControlStateNormal];
+IAButtonOperator* promoButton = [masterViewOperator searchForButtonWithImage:[UIImage imageNamed:@"star.png"]  forState:UIControlStateNormal];
 }}}
 Here, we use the master view operator as our base search view.  Every view operators has search methods to find a specific subview. In this scenario, we search for a button that has the image star.png has it’s image when in normal state.
 
@@ -254,9 +248,9 @@ We can now implement our MainViewFixture
 In the method  {{{-(IAThenResult*)displaysThePromotions}}} we have  the known split view operator that will give us the detail view operator.
 
 {{{
-    IASplitViewOperator* splitOperator = [IASplitViewOperator splitViewOperatorForAppDelegate:[self appDelegate]]; 
+IASplitViewOperator* splitOperator = [IASplitViewOperator splitViewOperatorForAppDelegate:[self appDelegate]]; 
 
-    IAViewOperator* detailViewOperator = [splitOperator rootViewOfDetailViewOperator];
+IAViewOperator* detailViewOperator = [splitOperator rootViewOfDetailViewOperator];
 }}}
 
 We can now check for a navigation bar that has our screen title in the hiearchy.  If we find it, it means that our promotion screen is showing.
