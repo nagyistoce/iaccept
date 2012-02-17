@@ -129,7 +129,7 @@ The IAWhen type, is used to do an action.  In our example, the action is to touc
 
 If you look closely  at the test sentence, you can see two sections.  The first one at the left of « on » and another one at it’s right.
 
-i touch the promo button on menu view
+<div bgcolor="yellow">i touch the promo button</div> on <div>menu view</div>
 
 The right part is the fixture’s method that will do the job of touching the button. 
 The left part is the way to tell iAccept to use another fixture than the default one.
