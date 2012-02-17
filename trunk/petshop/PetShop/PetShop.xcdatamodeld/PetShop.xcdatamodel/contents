@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="872" systemVersion="11C74" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Pet" representedClassName="Pet" syncable="YES">
+        <attribute name="birth" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="kind" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photo" optional="YES" attributeType="Transformable" valueTransformerName="UIImageToDataTransformer" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="race" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="specialPrice" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="cart" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="ShoppingCart" inverseName="pets" inverseEntity="ShoppingCart" syncable="YES"/>
+    </entity>
+    <entity name="ShoppingCart" representedClassName="ShoppingCart" syncable="YES">
+        <relationship name="pets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Pet" inverseName="cart" inverseEntity="Pet" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Pet" positionX="160" positionY="192" width="128" height="180"/>
+        <element name="ShoppingCart" positionX="160" positionY="192" width="128" height="60"/>
+    </elements>
+</model>
