@@ -226,7 +226,8 @@ In Yellow, it is the method name that will handle the verification.  Int the sam
 
 In green you have the « the »  keyword that will be stripped, it useful only for readability.
 
-We can now implement ou MainViewFixture.
+We can now implement our MainViewFixture
+
 {{{
 #import <Framework-iAccept/IABaseFixture.h>
 
