@@ -162,14 +162,11 @@ So, we need to create a fixture named « MenuViewFixture « to handle our « iTo
 
 
 -(void) iTouchThePromoButton {
-    IASplitViewOperator* splitOperator = [
-      IASplitViewOperator splitViewOperatorForAppDelegate:[self appDelegate]];
+    IASplitViewOperator* splitOperator = [IASplitViewOperator splitViewOperatorForAppDelegate:[self appDelegate]];
 
     IAViewOperator* masterViewOperator = [splitOperator masterViewOperator];
     
-    IAButtonOperator* promoButton = 
-      [masterViewOperator searchForButtonWithImage:[UIImage imageNamed:@"star.png"]  
-      forState:UIControlStateNormal];
+    IAButtonOperator* promoButton = [masterViewOperator searchForButtonWithImage:[UIImage imageNamed:@"star.png"] forState:UIControlStateNormal];
 
     [promoButton touch]; 
 }
@@ -238,14 +235,11 @@ We can now implement our MainViewFixture
 -(IAThenResult*) displaysThePromotions {
     NSString* title = @"Manager's Deals Of The Week!";
     
-    IASplitViewOperator* splitOperator = 
-     [IASplitViewOperator splitViewOperatorForAppDelegate:[self appDelegate]]; 
+    IASplitViewOperator* splitOperator = [IASplitViewOperator splitViewOperatorForAppDelegate:[self appDelegate]]; 
 
-    IAViewOperator* detailViewOperator = 
-     [splitOperator rootViewOfDetailViewOperator];
+    IAViewOperator* detailViewOperator = [splitOperator rootViewOfDetailViewOperator];
 
-    IANavigationBarOperator* navBar = 
-     [detailViewOperator searchForNavigationBarWithTitle:title];
+    IANavigationBarOperator* navBar = [detailViewOperator searchForNavigationBarWithTitle:title];
     
     if (!navBar || ![[navBar title] isEqualToString:title]) {
         return [IAThenResult makeThenStatementConditionNotMetValue:[NSString stringWithFormat:@"Expected @% displayed, but was @%.", title, [navBar title]] ];
@@ -260,18 +254,15 @@ We can now implement our MainViewFixture
 In the method  {{{-(IAThenResult*)displaysThePromotions}}} we have  the known split view operator that will give us the detail view operator.
 
 {{{
-    IASplitViewOperator* splitOperator = 
-     [IASplitViewOperator splitViewOperatorForAppDelegate:[self appDelegate]]; 
+    IASplitViewOperator* splitOperator = [IASplitViewOperator splitViewOperatorForAppDelegate:[self appDelegate]]; 
 
-    IAViewOperator* detailViewOperator = 
-     [splitOperator rootViewOfDetailViewOperator];
+    IAViewOperator* detailViewOperator = [splitOperator rootViewOfDetailViewOperator];
 }}}
 
 We can now check for a navigation bar that has our screen title in the hiearchy.  If we find it, it means that our promotion screen is showing.
 
 {{{
-IANavigationBarOperator* navBar = 
-     [detailViewOperator searchForNavigationBarWithTitle:title];
+IANavigationBarOperator* navBar = [detailViewOperator searchForNavigationBarWithTitle:title];
 }}}
 
 To tell iAccept that our verification was positive or negative, we use the IAThenResult class.
