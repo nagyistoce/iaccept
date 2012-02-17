@@ -1,4 +1,4 @@
-The first thing you need to do is launch your application under test.  To do so, you need to add some code to the main.m source file under your testing target.
+The first thing you need to do is to launch your application under test.  To do so, you need to add some code to the main.m source file under your testing target.
 
  http://iaccept.googlecode.com/svn/wiki/images/firsttest_1.png
 
@@ -28,15 +28,15 @@ int main(int argc, char *argv[])
 
 
 The IARunner is the the engine of iAccept.  It is responsible to run all the defined tests.
-Observer !?
-You have then the possibility to modify the behaviour of iAccept with IAConfig.  
-In this example we set the delay between the execution tests suites and the delay between each step un the test suite.
+The observer (IADefaultRunnerExitHandler) is responsible to do a clean exit at the end of the test run.
+You have then the possibility to modify the behavior of iAccept with IAConfig.  
+In this example we set the delay between test suite execution and the delay between each step in the test suite.
 
 The header ETAppDelegate.h is the application delegate of the application under test.
 
  http://iaccept.googlecode.com/svn/wiki/images/firsttest_2.png
 
-Then we need to tell iAccept how do get a handle on the application.  We do this by creating a default fixture class.
+Then, we need to tell iAccept how do get a handle on the application.  We do this by creating a default fixture class.
 
  http://iaccept.googlecode.com/svn/wiki/images/firsttest_3.png
 
@@ -54,7 +54,7 @@ What is special about this fixture is that it conform to the IADefaultAppFixture
 
 The IABaseFixture class is the base class of all fixtures.
 
-The implementation is empty for now.
+We leave the implementation empty for now.
 
 Now that we have a base fixture for our application we can write our first test definition.
 
@@ -67,13 +67,13 @@ Now that we have a base fixture for our application we can write our first test 
 @end
 }}}
 
-All test definitions are subclass of IABaseTestSuite.   
+All test definitions are subclasses of IABaseTestSuite.   
 
-In our first test, we want to test that if we touch the promotion star button in the menu part of the split vew, the promotion screen is shown on the main part of the split view.
+In our first test, we want to test that if we touch the promotion star button in the menu part of the split view, the promotion screen is shown on the main part of the split view.
  
  http://iaccept.googlecode.com/svn/wiki/images/firsttest_4.png
 
-So we write our first behaviour definition with a method that begins with the word test (not unlike xUnit tests).
+So we write our first behavior definition with a method that begins with the word test (not unlike xUnit tests).
 
 {{{
 #import "MainNavigationViewBehaviors.h"
@@ -97,7 +97,7 @@ With the first two lines, we define the prerequisites for our test.  The type IA
 
 IAccept will remove the spaces and camel-case the words of the sentence and then search for a method with that name.  So, our first Given must be implemented has a method named « iStartWithAnEmptyShoppingCart ».
 
-By default, iAccept will search for those steps details in our default fixture.  So let’s go code them.
+By default, iAccept will search for those methods our default fixture.  So let’s go code them.
 
 
 {{{
