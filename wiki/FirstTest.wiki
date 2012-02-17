@@ -129,7 +129,8 @@ The IAWhen type, is used to do an action.  In our example, the action is to touc
 
 If you look closely  at the test sentence, you can see two sections.  The first one at the left of « on » and another one at it’s right.
 
-<div bgcolor="yellow">i touch the promo button</div> on <div>menu view</div>
+
+<font color="red">i touch the promo button</font> on <font color="red">menu view</font>
 
 The right part is the fixture’s method that will do the job of touching the button. 
 The left part is the way to tell iAccept to use another fixture than the default one.
@@ -197,13 +198,13 @@ The last step of our test is to validate that button’s touch really triggered 
 
 We can achieve that with the IAThen type.
 
-the main view displays the promotions
+<font color="green">the</font> <font color="red">main view</font> <font color="blue">displays the promotions</font>
 
 Has you can see, the IAThen type has a structure too.
 
 In red, you have the name of the fixture that will handle the verification.
 
-In Yellow, it is the method name that will handle the verification.  Int the same way has in IAWhen,  the method name is a camel-case concatenation of the words.
+In blue, it is the method name that will handle the verification.  Int the same way has in IAWhen,  the method name is a camel-case concatenation of the words.
 
 In green you have the « the »  keyword that will be stripped, it useful only for readability.
 
