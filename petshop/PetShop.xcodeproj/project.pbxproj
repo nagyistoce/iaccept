@@ -1,0 +1,1208 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD05B5D014D6D36900F6E3B1 /* ETPaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05B5CE14D6D36900F6E3B1 /* ETPaymentViewController.m */; };
+		CD05B5D114D6D36900F6E3B1 /* ETPaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD05B5CE14D6D36900F6E3B1 /* ETPaymentViewController.m */; };
+		CD05B5E814D7121000F6E3B1 /* cc.png in Resources */ = {isa = PBXBuildFile; fileRef = CD05B5E614D7121000F6E3B1 /* cc.png */; };
+		CD05B5E914D7121000F6E3B1 /* cc.png in Resources */ = {isa = PBXBuildFile; fileRef = CD05B5E614D7121000F6E3B1 /* cc.png */; };
+		CD05B5EB14D7121000F6E3B1 /* pig.png in Resources */ = {isa = PBXBuildFile; fileRef = CD05B5E714D7121000F6E3B1 /* pig.png */; };
+		CD05B5EC14D7121000F6E3B1 /* pig.png in Resources */ = {isa = PBXBuildFile; fileRef = CD05B5E714D7121000F6E3B1 /* pig.png */; };
+		CD0F4A1614BB23E40094F5E5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF1CD921476B072004D4A3B /* CoreGraphics.framework */; };
+		CD0F4A1714BB23E40094F5E5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF1CD941476B072004D4A3B /* CoreData.framework */; };
+		CD0F4A1D14BB23E40094F5E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD0F4A1B14BB23E40094F5E5 /* InfoPlist.strings */; };
+		CD0F4A1F14BB23E40094F5E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0F4A1E14BB23E40094F5E5 /* main.m */; };
+		CD0F4A4814BB248D0094F5E5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD47A06414A4D070003F7711 /* QuartzCore.framework */; };
+		CD0F4A4A14BB25240094F5E5 /* PetShop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD9050F21476ECAF005C2567 /* PetShop.xcdatamodeld */; };
+		CD0F4AA114BB25840094F5E5 /* ETMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDF1CDAB1476B072004D4A3B /* ETMasterViewController.xib */; };
+		CD0F4AA214BB25A30094F5E5 /* ETDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDF1CDAE1476B072004D4A3B /* ETDetailViewController.xib */; };
+		CD0F4AA814BB264C0094F5E5 /* ETAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF1CDA01476B072004D4A3B /* ETAppDelegate.m */; };
+		CD0F4AA914BB26560094F5E5 /* DataAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9050E91476D71D005C2567 /* DataAccess.m */; };
+		CD0F4AAA14BB26580094F5E5 /* PetDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9050F01476D7C5005C2567 /* PetDAO.m */; };
+		CD0F4AAB14BB265A0094F5E5 /* UIImageToDataTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9050F61476F022005C2567 /* UIImageToDataTransformer.m */; };
+		CD0F4AAC14BB26630094F5E5 /* ETDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF1CDA91476B072004D4A3B /* ETDetailViewController.m */; };
+		CD0F4AAD14BB26650094F5E5 /* ETMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF1CDA61476B072004D4A3B /* ETMasterViewController.m */; };
+		CD0F4AAE14BB26690094F5E5 /* ETPromoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9BCFFE147A99A3006D1A6A /* ETPromoDetailViewController.m */; };
+		CD0F4AAF14BB266B0094F5E5 /* ETShoppingCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFC02C014A1072500D1368A /* ETShoppingCartViewController.m */; };
+		CD0F4AB014BB26830094F5E5 /* ETPromoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD9BCFFF147A99A3006D1A6A /* ETPromoDetailViewController.xib */; };
+		CD0F4AB114BB26840094F5E5 /* ETShoppingCartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDFC02C114A1072500D1368A /* ETShoppingCartViewController.xib */; };
+		CD0F4AB214BB26970094F5E5 /* Pet.m in Sources */ = {isa = PBXBuildFile; fileRef = CD975F3A14B38C06004EEB26 /* Pet.m */; };
+		CD0F4AB314BB26980094F5E5 /* ShoppingCart.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFC02C514A10FE400D1368A /* ShoppingCart.m */; };
+		CD0F4ABE14BB27050094F5E5 /* appLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFC04F714A22BBD00A840A1 /* appLogo.png */; };
+		CD0F4AD414BB27570094F5E5 /* PetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD40B9D8147D718F00480296 /* PetCell.xib */; };
+		CD0F4AD514BB27590094F5E5 /* PromoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDAD1A3A1498DB2600554D3E /* PromoCell.xib */; };
+		CD0F4AD614BB275C0094F5E5 /* CartHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDFC04F114A20A1100A840A1 /* CartHeaderCell.xib */; };
+		CD0F4AD714BB276D0094F5E5 /* Dogo_small.png in Resources */ = {isa = PBXBuildFile; fileRef = CD883E6014B4A07D00B34ED5 /* Dogo_small.png */; };
+		CD0F4AD814BB276D0094F5E5 /* American_Bobtail_small.png in Resources */ = {isa = PBXBuildFile; fileRef = CD883E4914B4A00200B34ED5 /* American_Bobtail_small.png */; };
+		CD0F4AD914BB276D0094F5E5 /* balinese-cat_small.png in Resources */ = {isa = PBXBuildFile; fileRef = CD883E4A14B4A00200B34ED5 /* balinese-cat_small.png */; };
+		CD0F4ADA14BB276D0094F5E5 /* betafish_small.png in Resources */ = {isa = PBXBuildFile; fileRef = CD883E4B14B4A00200B34ED5 /* betafish_small.png */; };
+		CD0F4ADB14BB276D0094F5E5 /* Chartreux_small.png in Resources */ = {isa = PBXBuildFile; fileRef = CD883E4C14B4A00200B34ED5 /* Chartreux_small.png */; };
+		CD0F4ADC14BB276D0094F5E5 /* clownfish_small.png in Resources */ = {isa = PBXBuildFile; fileRef = CD883E4D14B4A00200B34ED5 /* clownfish_small.png */; };
+		CD0F4ADD14BB276D0094F5E5 /* cockatoo_small.png in Resources */ = {isa = PBXBuildFile; fileRef = CD883E4E14B4A00200B34ED5 /* cockatoo_small.png */; };
+		CD0F4ADE14BB276D0094F5E5 /* crowned-pigeon_small.png in Resources */ = {isa = PBXBuildFile; fileRef = CD883E4F14B4A00200B34ED5 /* crowned-pigeon_small.png */; };
+		CD0F4ADF14BB276D0094F5E5 /* European_Dobermann_small.png in Resources */ = {isa = PBXBuildFile; fileRef = CD883E5014B4A00200B34ED5 /* European_Dobermann_small.png */; };
+		CD0F4AE014BB276D0094F5E5 /* GoldenRetriever_small.png in Resources */ = {isa = PBXBuildFile; fileRef = CD883E5114B4A00200B34ED5 /* GoldenRetriever_small.png */; };
+		CD0F4AE114BB276D0094F5E5 /* snake_small.png in Resources */ = {isa = PBXBuildFile; fileRef = CD883E5214B4A00200B34ED5 /* snake_small.png */; };
+		CD0F4AE214BB276D0094F5E5 /* TokayGecko_small.png in Resources */ = {isa = PBXBuildFile; fileRef = CD883E5314B4A00200B34ED5 /* TokayGecko_small.png */; };
+		CD0F4AE314BB276D0094F5E5 /* Dogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD567E5514A4E2F100C44CF0 /* Dogo.jpg */; };
+		CD0F4AE414BB276D0094F5E5 /* currency_dollar.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFC04FF14A2495600A840A1 /* currency_dollar.png */; };
+		CD0F4AE514BB276D0094F5E5 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFC04FD14A2492E00A840A1 /* delete.png */; };
+		CD0F4AE614BB276D0094F5E5 /* elapse.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFC04F514A20F8A00A840A1 /* elapse.png */; };
+		CD0F4AE714BB276D0094F5E5 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = CD40B9DA147D7CBD00480296 /* star.png */; };
+		CD0F4AE814BB276D0094F5E5 /* cockatoo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD40B9D6147D6E7900480296 /* cockatoo.jpg */; };
+		CD0F4AE914BB276D0094F5E5 /* crowned-pigeon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD40B9D4147D6DEC00480296 /* crowned-pigeon.jpg */; };
+		CD0F4AEA14BB276D0094F5E5 /* snake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD40B9CE147D6CED00480296 /* snake.jpg */; };
+		CD0F4AEB14BB276D0094F5E5 /* TokayGecko.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD40B9CC147D6C9B00480296 /* TokayGecko.jpg */; };
+		CD0F4AEC14BB276D0094F5E5 /* clownfish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD40B9CA147D67C700480296 /* clownfish.jpg */; };
+		CD0F4AED14BB276D0094F5E5 /* betafish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD40B9C8147D66A900480296 /* betafish.jpg */; };
+		CD0F4AEE14BB276D0094F5E5 /* watermark-dog-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9BCFFB147A9454006D1A6A /* watermark-dog-icon.png */; };
+		CD0F4AEF14BB276D0094F5E5 /* Chartreux.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD9BCFF9147A91E3006D1A6A /* Chartreux.jpg */; };
+		CD0F4AF014BB276D0094F5E5 /* balinese-cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD9BCFF7147A91C2006D1A6A /* balinese-cat.jpg */; };
+		CD0F4AF114BB276D0094F5E5 /* American_Bobtail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD9BCFF5147A919F006D1A6A /* American_Bobtail.jpg */; };
+		CD0F4AF214BB276D0094F5E5 /* European_Dobermann.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD9BCFF3147A915F006D1A6A /* European_Dobermann.jpg */; };
+		CD0F4AF314BB276D0094F5E5 /* 9703544-cartoon-illustration-of-running-dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD38F65114798C1D00E1CA8B /* 9703544-cartoon-illustration-of-running-dog.jpg */; };
+		CD0F4AF414BB276D0094F5E5 /* shopping_trolley.png in Resources */ = {isa = PBXBuildFile; fileRef = CD38F64F14798AE700E1CA8B /* shopping_trolley.png */; };
+		CD0F4AF514BB276D0094F5E5 /* palm tree.png in Resources */ = {isa = PBXBuildFile; fileRef = CD38F6491479828E00E1CA8B /* palm tree.png */; };
+		CD0F4AF614BB276D0094F5E5 /* GoldenRetriever.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5B2FB314783AE00021DDA8 /* GoldenRetriever.png */; };
+		CD0F4AF714BB276D0094F5E5 /* bird-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5B0C7A147896D10032656C /* bird-icon.png */; };
+		CD0F4AF814BB276D0094F5E5 /* cat-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5B0C7B147896D10032656C /* cat-icon.png */; };
+		CD0F4AF914BB276D0094F5E5 /* dog-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5B0C7C147896D10032656C /* dog-icon.png */; };
+		CD0F4AFA14BB276D0094F5E5 /* fish-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5B0C7D147896D10032656C /* fish-icon.png */; };
+		CD0F4AFB14BB276D0094F5E5 /* snake-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5B0C7E147896D10032656C /* snake-icon.png */; };
+		CD3024C114DDC43A00519AC1 /* PolicyBehaviors.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3024C014DDC43A00519AC1 /* PolicyBehaviors.m */; };
+		CD3024C614DDC51F00519AC1 /* PolicyFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3024C514DDC51F00519AC1 /* PolicyFixture.m */; };
+		CD3647DC14BB64C2005911E4 /* PetShopFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3647DB14BB64C2005911E4 /* PetShopFixture.m */; };
+		CD3647E314BB66F4005911E4 /* MainNavigationViewBehaviors.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3647E214BB66F4005911E4 /* MainNavigationViewBehaviors.m */; };
+		CD38F64A1479828E00E1CA8B /* palm tree.png in Resources */ = {isa = PBXBuildFile; fileRef = CD38F6491479828E00E1CA8B /* palm tree.png */; };
+		CD38F65014798AE700E1CA8B /* shopping_trolley.png in Resources */ = {isa = PBXBuildFile; fileRef = CD38F64F14798AE700E1CA8B /* shopping_trolley.png */; };
+		CD38F65214798C1D00E1CA8B /* 9703544-cartoon-illustration-of-running-dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD38F65114798C1D00E1CA8B /* 9703544-cartoon-illustration-of-running-dog.jpg */; };
+		CD40B9C9147D66A900480296 /* betafish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD40B9C8147D66A900480296 /* betafish.jpg */; };
+		CD40B9CB147D67C700480296 /* clownfish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD40B9CA147D67C700480296 /* clownfish.jpg */; };
+		CD40B9CD147D6C9B00480296 /* TokayGecko.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD40B9CC147D6C9B00480296 /* TokayGecko.jpg */; };
+		CD40B9CF147D6CED00480296 /* snake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD40B9CE147D6CED00480296 /* snake.jpg */; };
+		CD40B9D5147D6DEC00480296 /* crowned-pigeon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD40B9D4147D6DEC00480296 /* crowned-pigeon.jpg */; };
+		CD40B9D7147D6E7900480296 /* cockatoo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD40B9D6147D6E7900480296 /* cockatoo.jpg */; };
+		CD40B9D9147D718F00480296 /* PetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD40B9D8147D718F00480296 /* PetCell.xib */; };
+		CD40B9DB147D7CBD00480296 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = CD40B9DA147D7CBD00480296 /* star.png */; };
+		CD41915114E2FF4800F54488 /* ETAnimalWellfareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD41914F14E2FF4800F54488 /* ETAnimalWellfareViewController.m */; };
+		CD41915214E2FF4800F54488 /* ETAnimalWellfareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD41914F14E2FF4800F54488 /* ETAnimalWellfareViewController.m */; };
+		CD41915414E2FF4800F54488 /* ETAnimalWellfareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD41915014E2FF4800F54488 /* ETAnimalWellfareViewController.xib */; };
+		CD41915514E2FF4800F54488 /* ETAnimalWellfareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD41915014E2FF4800F54488 /* ETAnimalWellfareViewController.xib */; };
+		CD41FBDE14C0CB5400A63D3A /* CartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDB69A9614A12445007FE5EC /* CartCell.xib */; };
+		CD47A06514A4D070003F7711 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD47A06414A4D070003F7711 /* QuartzCore.framework */; };
+		CD53094D14CF3F0500BD2639 /* PetListFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = CD53094C14CF3F0500BD2639 /* PetListFixture.m */; };
+		CD567E5614A4E2F100C44CF0 /* Dogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD567E5514A4E2F100C44CF0 /* Dogo.jpg */; };
+		CD5886E314D999C500A6D8B4 /* cat-tab-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5886E114D999C500A6D8B4 /* cat-tab-icon.png */; };
+		CD5886E414D999C500A6D8B4 /* cat-tab-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5886E114D999C500A6D8B4 /* cat-tab-icon.png */; };
+		CD5886E614D999C500A6D8B4 /* dog-tab-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5886E214D999C500A6D8B4 /* dog-tab-icon.png */; };
+		CD5886E714D999C500A6D8B4 /* dog-tab-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5886E214D999C500A6D8B4 /* dog-tab-icon.png */; };
+		CD5886EB14D9B5D100A6D8B4 /* ThanksScreenFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5886EA14D9B5D100A6D8B4 /* ThanksScreenFixture.m */; };
+		CD5886FB14D9C49F00A6D8B4 /* ETLegalDisclaimerPage1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5886F914D9C49F00A6D8B4 /* ETLegalDisclaimerPage1ViewController.m */; };
+		CD5886FC14D9C49F00A6D8B4 /* ETLegalDisclaimerPage1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5886F914D9C49F00A6D8B4 /* ETLegalDisclaimerPage1ViewController.m */; };
+		CD5886FE14D9C49F00A6D8B4 /* ETLegalDisclaimerPage1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD5886FA14D9C49F00A6D8B4 /* ETLegalDisclaimerPage1ViewController.xib */; };
+		CD5886FF14D9C49F00A6D8B4 /* ETLegalDisclaimerPage1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD5886FA14D9C49F00A6D8B4 /* ETLegalDisclaimerPage1ViewController.xib */; };
+		CD58870414D9C4AB00A6D8B4 /* ETLegalDisclaimerPage2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD58870214D9C4AB00A6D8B4 /* ETLegalDisclaimerPage2ViewController.m */; };
+		CD58870514D9C4AB00A6D8B4 /* ETLegalDisclaimerPage2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD58870214D9C4AB00A6D8B4 /* ETLegalDisclaimerPage2ViewController.m */; };
+		CD58870714D9C4AB00A6D8B4 /* ETLegalDisclaimerPage2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD58870314D9C4AB00A6D8B4 /* ETLegalDisclaimerPage2ViewController.xib */; };
+		CD58870814D9C4AB00A6D8B4 /* ETLegalDisclaimerPage2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD58870314D9C4AB00A6D8B4 /* ETLegalDisclaimerPage2ViewController.xib */; };
+		CD58870D14D9C4B600A6D8B4 /* ETLegalDisclaimerPage3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD58870B14D9C4B600A6D8B4 /* ETLegalDisclaimerPage3ViewController.m */; };
+		CD58870E14D9C4B600A6D8B4 /* ETLegalDisclaimerPage3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD58870B14D9C4B600A6D8B4 /* ETLegalDisclaimerPage3ViewController.m */; };
+		CD58871014D9C4B600A6D8B4 /* ETLegalDisclaimerPage3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD58870C14D9C4B600A6D8B4 /* ETLegalDisclaimerPage3ViewController.xib */; };
+		CD58871114D9C4B600A6D8B4 /* ETLegalDisclaimerPage3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD58870C14D9C4B600A6D8B4 /* ETLegalDisclaimerPage3ViewController.xib */; };
+		CD5B0C7F147896D10032656C /* bird-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5B0C7A147896D10032656C /* bird-icon.png */; };
+		CD5B0C80147896D10032656C /* cat-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5B0C7B147896D10032656C /* cat-icon.png */; };
+		CD5B0C81147896D10032656C /* dog-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5B0C7C147896D10032656C /* dog-icon.png */; };
+		CD5B0C82147896D10032656C /* fish-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5B0C7D147896D10032656C /* fish-icon.png */; };
+		CD5B0C83147896D10032656C /* snake-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5B0C7E147896D10032656C /* snake-icon.png */; };
+		CD5B2FB414783AE00021DDA8 /* GoldenRetriever.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5B2FB314783AE00021DDA8 /* GoldenRetriever.png */; };
+		CD625C4414D7232100AAA0F9 /* ETPaymentDoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD625C4214D7232100AAA0F9 /* ETPaymentDoneViewController.m */; };
+		CD625C4514D7232100AAA0F9 /* ETPaymentDoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD625C4214D7232100AAA0F9 /* ETPaymentDoneViewController.m */; };
+		CD625C4714D7232100AAA0F9 /* ETPaymentDoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD625C4314D7232100AAA0F9 /* ETPaymentDoneViewController.xib */; };
+		CD625C4814D7232100AAA0F9 /* ETPaymentDoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD625C4314D7232100AAA0F9 /* ETPaymentDoneViewController.xib */; };
+		CD625C4C14D725E200AAA0F9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD625C4B14D725E200AAA0F9 /* MapKit.framework */; };
+		CD625C5014D7292900AAA0F9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD625C4F14D7292800AAA0F9 /* CoreLocation.framework */; };
+		CD625C5114D7293000AAA0F9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD625C4F14D7292800AAA0F9 /* CoreLocation.framework */; };
+		CD78023814C72AC3008B91AF /* CreditCardPaymentFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = CD78023714C72AC3008B91AF /* CreditCardPaymentFixture.m */; };
+		CD78025614C747DC008B91AF /* CreditCardPaymentBehaviors.m in Sources */ = {isa = PBXBuildFile; fileRef = CD78025514C747DC008B91AF /* CreditCardPaymentBehaviors.m */; };
+		CD7BB43514D8245200AF074B /* StoreMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7BB43414D8245200AF074B /* StoreMapAnnotation.m */; };
+		CD7BB43614D8245200AF074B /* StoreMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7BB43414D8245200AF074B /* StoreMapAnnotation.m */; };
+		CD883E5414B4A00200B34ED5 /* American_Bobtail_small.png in Resources */ = {isa = PBXBuildFile; fileRef = CD883E4914B4A00200B34ED5 /* American_Bobtail_small.png */; };
+		CD883E5514B4A00200B34ED5 /* balinese-cat_small.png in Resources */ = {isa = PBXBuildFile; fileRef = CD883E4A14B4A00200B34ED5 /* balinese-cat_small.png */; };
+		CD883E5614B4A00200B34ED5 /* betafish_small.png in Resources */ = {isa = PBXBuildFile; fileRef = CD883E4B14B4A00200B34ED5 /* betafish_small.png */; };
+		CD883E5714B4A00200B34ED5 /* Chartreux_small.png in Resources */ = {isa = PBXBuildFile; fileRef = CD883E4C14B4A00200B34ED5 /* Chartreux_small.png */; };
+		CD883E5814B4A00200B34ED5 /* clownfish_small.png in Resources */ = {isa = PBXBuildFile; fileRef = CD883E4D14B4A00200B34ED5 /* clownfish_small.png */; };
+		CD883E5914B4A00200B34ED5 /* cockatoo_small.png in Resources */ = {isa = PBXBuildFile; fileRef = CD883E4E14B4A00200B34ED5 /* cockatoo_small.png */; };
+		CD883E5A14B4A00200B34ED5 /* crowned-pigeon_small.png in Resources */ = {isa = PBXBuildFile; fileRef = CD883E4F14B4A00200B34ED5 /* crowned-pigeon_small.png */; };
+		CD883E5B14B4A00200B34ED5 /* European_Dobermann_small.png in Resources */ = {isa = PBXBuildFile; fileRef = CD883E5014B4A00200B34ED5 /* European_Dobermann_small.png */; };
+		CD883E5C14B4A00200B34ED5 /* GoldenRetriever_small.png in Resources */ = {isa = PBXBuildFile; fileRef = CD883E5114B4A00200B34ED5 /* GoldenRetriever_small.png */; };
+		CD883E5D14B4A00200B34ED5 /* snake_small.png in Resources */ = {isa = PBXBuildFile; fileRef = CD883E5214B4A00200B34ED5 /* snake_small.png */; };
+		CD883E5E14B4A00200B34ED5 /* TokayGecko_small.png in Resources */ = {isa = PBXBuildFile; fileRef = CD883E5314B4A00200B34ED5 /* TokayGecko_small.png */; };
+		CD883E6114B4A07D00B34ED5 /* Dogo_small.png in Resources */ = {isa = PBXBuildFile; fileRef = CD883E6014B4A07D00B34ED5 /* Dogo_small.png */; };
+		CD9050EC1476D71D005C2567 /* DataAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9050E91476D71D005C2567 /* DataAccess.m */; };
+		CD9050F11476D7C5005C2567 /* PetDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9050F01476D7C5005C2567 /* PetDAO.m */; };
+		CD9050F41476ECAF005C2567 /* PetShop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD9050F21476ECAF005C2567 /* PetShop.xcdatamodeld */; };
+		CD9050F71476F022005C2567 /* UIImageToDataTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9050F61476F022005C2567 /* UIImageToDataTransformer.m */; };
+		CD954F5614E01D9500CF8A6D /* ETAlternativePaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD954F5414E01D9500CF8A6D /* ETAlternativePaymentViewController.m */; };
+		CD954F5714E01D9500CF8A6D /* ETAlternativePaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD954F5414E01D9500CF8A6D /* ETAlternativePaymentViewController.m */; };
+		CD954F5914E01D9500CF8A6D /* ETAlternativePaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD954F5514E01D9500CF8A6D /* ETAlternativePaymentViewController.xib */; };
+		CD954F5A14E01D9500CF8A6D /* ETAlternativePaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD954F5514E01D9500CF8A6D /* ETAlternativePaymentViewController.xib */; };
+		CD954F6014E0364300CF8A6D /* AlternativePaymentBehaviors.m in Sources */ = {isa = PBXBuildFile; fileRef = CD954F5E14E0364300CF8A6D /* AlternativePaymentBehaviors.m */; };
+		CD975F3B14B38C06004EEB26 /* Pet.m in Sources */ = {isa = PBXBuildFile; fileRef = CD975F3A14B38C06004EEB26 /* Pet.m */; };
+		CD9BCFF4147A915F006D1A6A /* European_Dobermann.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD9BCFF3147A915F006D1A6A /* European_Dobermann.jpg */; };
+		CD9BCFF6147A919F006D1A6A /* American_Bobtail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD9BCFF5147A919F006D1A6A /* American_Bobtail.jpg */; };
+		CD9BCFF8147A91C2006D1A6A /* balinese-cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD9BCFF7147A91C2006D1A6A /* balinese-cat.jpg */; };
+		CD9BCFFA147A91E3006D1A6A /* Chartreux.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD9BCFF9147A91E3006D1A6A /* Chartreux.jpg */; };
+		CD9BCFFC147A9454006D1A6A /* watermark-dog-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9BCFFB147A9454006D1A6A /* watermark-dog-icon.png */; };
+		CD9BD000147A99A3006D1A6A /* ETPromoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9BCFFE147A99A3006D1A6A /* ETPromoDetailViewController.m */; };
+		CD9BD001147A99A3006D1A6A /* ETPromoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD9BCFFF147A99A3006D1A6A /* ETPromoDetailViewController.xib */; };
+		CD9D693C14DB1070006EF457 /* ETLegalDisclaimerPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9D693B14DB1070006EF457 /* ETLegalDisclaimerPageController.m */; };
+		CD9D693D14DB1070006EF457 /* ETLegalDisclaimerPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9D693B14DB1070006EF457 /* ETLegalDisclaimerPageController.m */; };
+		CDAD1A3B1498DB2600554D3E /* PromoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDAD1A3A1498DB2600554D3E /* PromoCell.xib */; };
+		CDADF1D414D7178400F27531 /* ETDebitCardPaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDADF1D214D7178400F27531 /* ETDebitCardPaymentViewController.m */; };
+		CDADF1D514D7178400F27531 /* ETDebitCardPaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDADF1D214D7178400F27531 /* ETDebitCardPaymentViewController.m */; };
+		CDADF1D714D7178400F27531 /* ETDebitCardPaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDADF1D314D7178400F27531 /* ETDebitCardPaymentViewController.xib */; };
+		CDADF1D814D7178400F27531 /* ETDebitCardPaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDADF1D314D7178400F27531 /* ETDebitCardPaymentViewController.xib */; };
+		CDB69A9714A12445007FE5EC /* CartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDB69A9614A12445007FE5EC /* CartCell.xib */; };
+		CDBEBBBF14BC8E1B0064DB90 /* MenuViewFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBEBBBE14BC8E1B0064DB90 /* MenuViewFixture.m */; };
+		CDBEBBC314BC8E6F0064DB90 /* MainViewFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBEBBC214BC8E6F0064DB90 /* MainViewFixture.m */; };
+		CDC9810714E43CA500E369B0 /* AnimalWelfareFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC9810614E43CA500E369B0 /* AnimalWelfareFixture.m */; };
+		CDC9810B14E43E7A00E369B0 /* AnimalWelfareBehaviors.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC9810A14E43E7A00E369B0 /* AnimalWelfareBehaviors.m */; };
+		CDCAA3C514BDBB5B00FD179A /* ShoppingCartFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCAA3C414BDBB5B00FD179A /* ShoppingCartFixture.m */; };
+		CDD2779514D87CDA0030D31E /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD2779414D87CDA0030D31E /* Util.m */; };
+		CDD2779614D87CDA0030D31E /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD2779414D87CDA0030D31E /* Util.m */; };
+		CDD2779B14D886170030D31E /* PaymentFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD2779914D886170030D31E /* PaymentFixture.m */; };
+		CDE1069E14C4607E00A3F5DD /* ETCreditCardPaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE1069C14C4607E00A3F5DD /* ETCreditCardPaymentViewController.m */; };
+		CDE1069F14C4607E00A3F5DD /* ETCreditCardPaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE1069C14C4607E00A3F5DD /* ETCreditCardPaymentViewController.m */; };
+		CDE106A014C4607E00A3F5DD /* ETCreditCardPaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE1069D14C4607E00A3F5DD /* ETCreditCardPaymentViewController.xib */; };
+		CDE106A114C4607E00A3F5DD /* ETCreditCardPaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE1069D14C4607E00A3F5DD /* ETCreditCardPaymentViewController.xib */; };
+		CDE106A514C46F1E00A3F5DD /* ShoppingCartViewBehaviors.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE106A414C46F1E00A3F5DD /* ShoppingCartViewBehaviors.m */; };
+		CDE12D1114DC4F8A005FF035 /* DisclaimerFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE12D1014DC4F8A005FF035 /* DisclaimerFixture.m */; };
+		CDED06B814EC4E2F000C6A2C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD625C4B14D725E200AAA0F9 /* MapKit.framework */; };
+		CDED06B914EC4E35000C6A2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF1CD8E1476B072004D4A3B /* UIKit.framework */; };
+		CDED06BA14EC4E4B000C6A2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF1CD901476B072004D4A3B /* Foundation.framework */; };
+		CDED06D714ED40E1000C6A2C /* Framework-iAccept.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDED06B614EC4CDA000C6A2C /* Framework-iAccept.framework */; };
+		CDF1CD8F1476B072004D4A3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF1CD8E1476B072004D4A3B /* UIKit.framework */; };
+		CDF1CD911476B072004D4A3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF1CD901476B072004D4A3B /* Foundation.framework */; };
+		CDF1CD931476B072004D4A3B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF1CD921476B072004D4A3B /* CoreGraphics.framework */; };
+		CDF1CD951476B072004D4A3B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF1CD941476B072004D4A3B /* CoreData.framework */; };
+		CDF1CD9B1476B072004D4A3B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDF1CD991476B072004D4A3B /* InfoPlist.strings */; };
+		CDF1CD9D1476B072004D4A3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF1CD9C1476B072004D4A3B /* main.m */; };
+		CDF1CDA11476B072004D4A3B /* ETAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF1CDA01476B072004D4A3B /* ETAppDelegate.m */; };
+		CDF1CDA71476B072004D4A3B /* ETMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF1CDA61476B072004D4A3B /* ETMasterViewController.m */; };
+		CDF1CDAA1476B072004D4A3B /* ETDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF1CDA91476B072004D4A3B /* ETDetailViewController.m */; };
+		CDF1CDAD1476B072004D4A3B /* ETMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDF1CDAB1476B072004D4A3B /* ETMasterViewController.xib */; };
+		CDF1CDB01476B072004D4A3B /* ETDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDF1CDAE1476B072004D4A3B /* ETDetailViewController.xib */; };
+		CDF2D2E514DC274600655CCE /* DisclaimerBehaviors.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF2D2E414DC274600655CCE /* DisclaimerBehaviors.m */; };
+		CDFA72A914CF34AA00119D48 /* PetListViewBehaviors.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFA72A814CF34AA00119D48 /* PetListViewBehaviors.m */; };
+		CDFA72AE14CF34E700119D48 /* PromotionsFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFA72AD14CF34E700119D48 /* PromotionsFixture.m */; };
+		CDFC02C214A1072500D1368A /* ETShoppingCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFC02C014A1072500D1368A /* ETShoppingCartViewController.m */; };
+		CDFC02C314A1072500D1368A /* ETShoppingCartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDFC02C114A1072500D1368A /* ETShoppingCartViewController.xib */; };
+		CDFC02C614A10FE400D1368A /* ShoppingCart.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFC02C514A10FE400D1368A /* ShoppingCart.m */; };
+		CDFC04F214A20A1100A840A1 /* CartHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDFC04F114A20A1100A840A1 /* CartHeaderCell.xib */; };
+		CDFC04F614A20F8A00A840A1 /* elapse.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFC04F514A20F8A00A840A1 /* elapse.png */; };
+		CDFC04F814A22BBD00A840A1 /* appLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFC04F714A22BBD00A840A1 /* appLogo.png */; };
+		CDFC04FE14A2492E00A840A1 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFC04FD14A2492E00A840A1 /* delete.png */; };
+		CDFC050014A2495600A840A1 /* currency_dollar.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFC04FF14A2495600A840A1 /* currency_dollar.png */; };
+		CDFD560914DCAAF00099D6A1 /* ETStorePolicyController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFD560814DCAAF00099D6A1 /* ETStorePolicyController.m */; };
+		CDFD560A14DCAAF00099D6A1 /* ETStorePolicyController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFD560814DCAAF00099D6A1 /* ETStorePolicyController.m */; };
+		CDFD560F14DCAC5A0099D6A1 /* ETStorePolicyPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFD560D14DCAC5A0099D6A1 /* ETStorePolicyPageController.m */; };
+		CDFD561014DCAC5A0099D6A1 /* ETStorePolicyPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFD560D14DCAC5A0099D6A1 /* ETStorePolicyPageController.m */; };
+		CDFD561214DCAC5A0099D6A1 /* ETStorePolicyPageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDFD560E14DCAC5A0099D6A1 /* ETStorePolicyPageController.xib */; };
+		CDFD561314DCAC5A0099D6A1 /* ETStorePolicyPageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDFD560E14DCAC5A0099D6A1 /* ETStorePolicyPageController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CD03699C14CDA7650027CB30 /* RefreshableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshableViewController.h; sourceTree = "<group>"; };
+		CD05B5CD14D6D36900F6E3B1 /* ETPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETPaymentViewController.h; sourceTree = "<group>"; };
+		CD05B5CE14D6D36900F6E3B1 /* ETPaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETPaymentViewController.m; sourceTree = "<group>"; };
+		CD05B5E614D7121000F6E3B1 /* cc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cc.png; sourceTree = "<group>"; };
+		CD05B5E714D7121000F6E3B1 /* pig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pig.png; sourceTree = "<group>"; };
+		CD0F4A1214BB23E40094F5E5 /* atPetShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = atPetShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD0F4A1A14BB23E40094F5E5 /* atPetShop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "atPetShop-Info.plist"; sourceTree = "<group>"; };
+		CD0F4A1C14BB23E40094F5E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CD0F4A1E14BB23E40094F5E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD0F4A2014BB23E40094F5E5 /* atPetShop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "atPetShop-Prefix.pch"; sourceTree = "<group>"; };
+		CD3024BF14DDC43A00519AC1 /* PolicyBehaviors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolicyBehaviors.h; sourceTree = "<group>"; };
+		CD3024C014DDC43A00519AC1 /* PolicyBehaviors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolicyBehaviors.m; sourceTree = "<group>"; };
+		CD3024C414DDC51F00519AC1 /* PolicyFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolicyFixture.h; sourceTree = "<group>"; };
+		CD3024C514DDC51F00519AC1 /* PolicyFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PolicyFixture.m; sourceTree = "<group>"; };
+		CD3647DA14BB64C2005911E4 /* PetShopFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PetShopFixture.h; sourceTree = "<group>"; };
+		CD3647DB14BB64C2005911E4 /* PetShopFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetShopFixture.m; sourceTree = "<group>"; };
+		CD3647E114BB66F4005911E4 /* MainNavigationViewBehaviors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavigationViewBehaviors.h; sourceTree = "<group>"; };
+		CD3647E214BB66F4005911E4 /* MainNavigationViewBehaviors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavigationViewBehaviors.m; sourceTree = "<group>"; };
+		CD38F6491479828E00E1CA8B /* palm tree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palm tree.png"; sourceTree = "<group>"; };
+		CD38F64F14798AE700E1CA8B /* shopping_trolley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shopping_trolley.png; sourceTree = "<group>"; };
+		CD38F65114798C1D00E1CA8B /* 9703544-cartoon-illustration-of-running-dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "9703544-cartoon-illustration-of-running-dog.jpg"; sourceTree = "<group>"; };
+		CD40B9C8147D66A900480296 /* betafish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = betafish.jpg; sourceTree = "<group>"; };
+		CD40B9CA147D67C700480296 /* clownfish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = clownfish.jpg; sourceTree = "<group>"; };
+		CD40B9CC147D6C9B00480296 /* TokayGecko.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TokayGecko.jpg; sourceTree = "<group>"; };
+		CD40B9CE147D6CED00480296 /* snake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = snake.jpg; sourceTree = "<group>"; };
+		CD40B9D4147D6DEC00480296 /* crowned-pigeon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "crowned-pigeon.jpg"; sourceTree = "<group>"; };
+		CD40B9D6147D6E7900480296 /* cockatoo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cockatoo.jpg; sourceTree = "<group>"; };
+		CD40B9D8147D718F00480296 /* PetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PetCell.xib; sourceTree = "<group>"; };
+		CD40B9DA147D7CBD00480296 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		CD41914E14E2FF4700F54488 /* ETAnimalWellfareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETAnimalWellfareViewController.h; sourceTree = "<group>"; };
+		CD41914F14E2FF4800F54488 /* ETAnimalWellfareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETAnimalWellfareViewController.m; sourceTree = "<group>"; };
+		CD41915014E2FF4800F54488 /* ETAnimalWellfareViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETAnimalWellfareViewController.xib; sourceTree = "<group>"; };
+		CD47A06414A4D070003F7711 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CD53094B14CF3F0500BD2639 /* PetListFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PetListFixture.h; sourceTree = "<group>"; };
+		CD53094C14CF3F0500BD2639 /* PetListFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetListFixture.m; sourceTree = "<group>"; };
+		CD567E5514A4E2F100C44CF0 /* Dogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Dogo.jpg; sourceTree = "<group>"; };
+		CD5886E114D999C500A6D8B4 /* cat-tab-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cat-tab-icon.png"; sourceTree = "<group>"; };
+		CD5886E214D999C500A6D8B4 /* dog-tab-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dog-tab-icon.png"; sourceTree = "<group>"; };
+		CD5886E914D9B5D100A6D8B4 /* ThanksScreenFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThanksScreenFixture.h; sourceTree = "<group>"; };
+		CD5886EA14D9B5D100A6D8B4 /* ThanksScreenFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThanksScreenFixture.m; sourceTree = "<group>"; };
+		CD5886F814D9C49F00A6D8B4 /* ETLegalDisclaimerPage1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETLegalDisclaimerPage1ViewController.h; sourceTree = "<group>"; };
+		CD5886F914D9C49F00A6D8B4 /* ETLegalDisclaimerPage1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETLegalDisclaimerPage1ViewController.m; sourceTree = "<group>"; };
+		CD5886FA14D9C49F00A6D8B4 /* ETLegalDisclaimerPage1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETLegalDisclaimerPage1ViewController.xib; sourceTree = "<group>"; };
+		CD58870114D9C4AB00A6D8B4 /* ETLegalDisclaimerPage2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETLegalDisclaimerPage2ViewController.h; sourceTree = "<group>"; };
+		CD58870214D9C4AB00A6D8B4 /* ETLegalDisclaimerPage2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETLegalDisclaimerPage2ViewController.m; sourceTree = "<group>"; };
+		CD58870314D9C4AB00A6D8B4 /* ETLegalDisclaimerPage2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETLegalDisclaimerPage2ViewController.xib; sourceTree = "<group>"; };
+		CD58870A14D9C4B600A6D8B4 /* ETLegalDisclaimerPage3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETLegalDisclaimerPage3ViewController.h; sourceTree = "<group>"; };
+		CD58870B14D9C4B600A6D8B4 /* ETLegalDisclaimerPage3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETLegalDisclaimerPage3ViewController.m; sourceTree = "<group>"; };
+		CD58870C14D9C4B600A6D8B4 /* ETLegalDisclaimerPage3ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETLegalDisclaimerPage3ViewController.xib; sourceTree = "<group>"; };
+		CD5B0C7A147896D10032656C /* bird-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bird-icon.png"; sourceTree = "<group>"; };
+		CD5B0C7B147896D10032656C /* cat-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cat-icon.png"; sourceTree = "<group>"; };
+		CD5B0C7C147896D10032656C /* dog-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dog-icon.png"; sourceTree = "<group>"; };
+		CD5B0C7D147896D10032656C /* fish-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fish-icon.png"; sourceTree = "<group>"; };
+		CD5B0C7E147896D10032656C /* snake-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snake-icon.png"; sourceTree = "<group>"; };
+		CD5B2FB314783AE00021DDA8 /* GoldenRetriever.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GoldenRetriever.png; sourceTree = "<group>"; };
+		CD625C4114D7232100AAA0F9 /* ETPaymentDoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETPaymentDoneViewController.h; sourceTree = "<group>"; };
+		CD625C4214D7232100AAA0F9 /* ETPaymentDoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETPaymentDoneViewController.m; sourceTree = "<group>"; };
+		CD625C4314D7232100AAA0F9 /* ETPaymentDoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETPaymentDoneViewController.xib; sourceTree = "<group>"; };
+		CD625C4B14D725E200AAA0F9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CD625C4F14D7292800AAA0F9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CD78023614C72AC3008B91AF /* CreditCardPaymentFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditCardPaymentFixture.h; sourceTree = "<group>"; };
+		CD78023714C72AC3008B91AF /* CreditCardPaymentFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditCardPaymentFixture.m; sourceTree = "<group>"; };
+		CD78025414C747DC008B91AF /* CreditCardPaymentBehaviors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditCardPaymentBehaviors.h; sourceTree = "<group>"; };
+		CD78025514C747DC008B91AF /* CreditCardPaymentBehaviors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditCardPaymentBehaviors.m; sourceTree = "<group>"; };
+		CD7BB43314D8245200AF074B /* StoreMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreMapAnnotation.h; sourceTree = "<group>"; };
+		CD7BB43414D8245200AF074B /* StoreMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreMapAnnotation.m; sourceTree = "<group>"; };
+		CD883E4914B4A00200B34ED5 /* American_Bobtail_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = American_Bobtail_small.png; sourceTree = "<group>"; };
+		CD883E4A14B4A00200B34ED5 /* balinese-cat_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "balinese-cat_small.png"; sourceTree = "<group>"; };
+		CD883E4B14B4A00200B34ED5 /* betafish_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = betafish_small.png; sourceTree = "<group>"; };
+		CD883E4C14B4A00200B34ED5 /* Chartreux_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chartreux_small.png; sourceTree = "<group>"; };
+		CD883E4D14B4A00200B34ED5 /* clownfish_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clownfish_small.png; sourceTree = "<group>"; };
+		CD883E4E14B4A00200B34ED5 /* cockatoo_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cockatoo_small.png; sourceTree = "<group>"; };
+		CD883E4F14B4A00200B34ED5 /* crowned-pigeon_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crowned-pigeon_small.png"; sourceTree = "<group>"; };
+		CD883E5014B4A00200B34ED5 /* European_Dobermann_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = European_Dobermann_small.png; sourceTree = "<group>"; };
+		CD883E5114B4A00200B34ED5 /* GoldenRetriever_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GoldenRetriever_small.png; sourceTree = "<group>"; };
+		CD883E5214B4A00200B34ED5 /* snake_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snake_small.png; sourceTree = "<group>"; };
+		CD883E5314B4A00200B34ED5 /* TokayGecko_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TokayGecko_small.png; sourceTree = "<group>"; };
+		CD883E6014B4A07D00B34ED5 /* Dogo_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dogo_small.png; sourceTree = "<group>"; };
+		CD9050E81476D71D005C2567 /* DataAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataAccess.h; sourceTree = "<group>"; };
+		CD9050E91476D71D005C2567 /* DataAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataAccess.m; sourceTree = "<group>"; };
+		CD9050EF1476D7C5005C2567 /* PetDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PetDAO.h; sourceTree = "<group>"; };
+		CD9050F01476D7C5005C2567 /* PetDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetDAO.m; sourceTree = "<group>"; };
+		CD9050F31476ECAF005C2567 /* PetShop.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PetShop.xcdatamodel; sourceTree = "<group>"; };
+		CD9050F51476F022005C2567 /* UIImageToDataTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageToDataTransformer.h; sourceTree = "<group>"; };
+		CD9050F61476F022005C2567 /* UIImageToDataTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageToDataTransformer.m; sourceTree = "<group>"; };
+		CD954F5314E01D9500CF8A6D /* ETAlternativePaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETAlternativePaymentViewController.h; sourceTree = "<group>"; };
+		CD954F5414E01D9500CF8A6D /* ETAlternativePaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETAlternativePaymentViewController.m; sourceTree = "<group>"; };
+		CD954F5514E01D9500CF8A6D /* ETAlternativePaymentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETAlternativePaymentViewController.xib; sourceTree = "<group>"; };
+		CD954F5D14E0364300CF8A6D /* AlternativePaymentBehaviors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlternativePaymentBehaviors.h; sourceTree = "<group>"; };
+		CD954F5E14E0364300CF8A6D /* AlternativePaymentBehaviors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlternativePaymentBehaviors.m; sourceTree = "<group>"; };
+		CD975F3914B38C06004EEB26 /* Pet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pet.h; sourceTree = "<group>"; };
+		CD975F3A14B38C06004EEB26 /* Pet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pet.m; sourceTree = "<group>"; };
+		CD9BCFF3147A915F006D1A6A /* European_Dobermann.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = European_Dobermann.jpg; sourceTree = "<group>"; };
+		CD9BCFF5147A919F006D1A6A /* American_Bobtail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = American_Bobtail.jpg; sourceTree = "<group>"; };
+		CD9BCFF7147A91C2006D1A6A /* balinese-cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "balinese-cat.jpg"; sourceTree = "<group>"; };
+		CD9BCFF9147A91E3006D1A6A /* Chartreux.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Chartreux.jpg; sourceTree = "<group>"; };
+		CD9BCFFB147A9454006D1A6A /* watermark-dog-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "watermark-dog-icon.png"; sourceTree = "<group>"; };
+		CD9BCFFD147A99A3006D1A6A /* ETPromoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETPromoDetailViewController.h; sourceTree = "<group>"; };
+		CD9BCFFE147A99A3006D1A6A /* ETPromoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETPromoDetailViewController.m; sourceTree = "<group>"; };
+		CD9BCFFF147A99A3006D1A6A /* ETPromoDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETPromoDetailViewController.xib; sourceTree = "<group>"; };
+		CD9D693A14DB1070006EF457 /* ETLegalDisclaimerPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETLegalDisclaimerPageController.h; sourceTree = "<group>"; };
+		CD9D693B14DB1070006EF457 /* ETLegalDisclaimerPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETLegalDisclaimerPageController.m; sourceTree = "<group>"; };
+		CDAD1A3A1498DB2600554D3E /* PromoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PromoCell.xib; sourceTree = "<group>"; };
+		CDADF1D114D7178400F27531 /* ETDebitCardPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETDebitCardPaymentViewController.h; sourceTree = "<group>"; };
+		CDADF1D214D7178400F27531 /* ETDebitCardPaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETDebitCardPaymentViewController.m; sourceTree = "<group>"; };
+		CDADF1D314D7178400F27531 /* ETDebitCardPaymentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETDebitCardPaymentViewController.xib; sourceTree = "<group>"; };
+		CDB69A9614A12445007FE5EC /* CartCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CartCell.xib; sourceTree = "<group>"; };
+		CDBEBBBD14BC8E1B0064DB90 /* MenuViewFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewFixture.h; sourceTree = "<group>"; };
+		CDBEBBBE14BC8E1B0064DB90 /* MenuViewFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewFixture.m; sourceTree = "<group>"; };
+		CDBEBBC114BC8E6F0064DB90 /* MainViewFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewFixture.h; sourceTree = "<group>"; };
+		CDBEBBC214BC8E6F0064DB90 /* MainViewFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewFixture.m; sourceTree = "<group>"; };
+		CDC9810514E43CA500E369B0 /* AnimalWelfareFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimalWelfareFixture.h; sourceTree = "<group>"; };
+		CDC9810614E43CA500E369B0 /* AnimalWelfareFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimalWelfareFixture.m; sourceTree = "<group>"; };
+		CDC9810914E43E7A00E369B0 /* AnimalWelfareBehaviors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimalWelfareBehaviors.h; sourceTree = "<group>"; };
+		CDC9810A14E43E7A00E369B0 /* AnimalWelfareBehaviors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimalWelfareBehaviors.m; sourceTree = "<group>"; };
+		CDCAA3C314BDBB5B00FD179A /* ShoppingCartFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCartFixture.h; sourceTree = "<group>"; };
+		CDCAA3C414BDBB5B00FD179A /* ShoppingCartFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartFixture.m; sourceTree = "<group>"; };
+		CDD1D18414C5CEEA002EA19E /* atPetShop copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "atPetShop copy-Info.plist"; path = "/Users/desni/Documents/svn/trunk/IOS Pet Shop/atPetShop copy-Info.plist"; sourceTree = "<absolute>"; };
+		CDD2779314D87CDA0030D31E /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		CDD2779414D87CDA0030D31E /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		CDD2779814D886170030D31E /* PaymentFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentFixture.h; sourceTree = "<group>"; };
+		CDD2779914D886170030D31E /* PaymentFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentFixture.m; sourceTree = "<group>"; };
+		CDE1069B14C4607E00A3F5DD /* ETCreditCardPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETCreditCardPaymentViewController.h; sourceTree = "<group>"; };
+		CDE1069C14C4607E00A3F5DD /* ETCreditCardPaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETCreditCardPaymentViewController.m; sourceTree = "<group>"; };
+		CDE1069D14C4607E00A3F5DD /* ETCreditCardPaymentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETCreditCardPaymentViewController.xib; sourceTree = "<group>"; };
+		CDE106A314C46F1E00A3F5DD /* ShoppingCartViewBehaviors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCartViewBehaviors.h; sourceTree = "<group>"; };
+		CDE106A414C46F1E00A3F5DD /* ShoppingCartViewBehaviors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartViewBehaviors.m; sourceTree = "<group>"; };
+		CDE12D0F14DC4F8A005FF035 /* DisclaimerFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisclaimerFixture.h; sourceTree = "<group>"; };
+		CDE12D1014DC4F8A005FF035 /* DisclaimerFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisclaimerFixture.m; sourceTree = "<group>"; };
+		CDED06B614EC4CDA000C6A2C /* Framework-iAccept.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Framework-iAccept.framework"; path = "../iAccept/Products/Framework-iAccept.framework"; sourceTree = "<group>"; };
+		CDF1CD8A1476B072004D4A3B /* PetShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDF1CD8E1476B072004D4A3B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CDF1CD901476B072004D4A3B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CDF1CD921476B072004D4A3B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CDF1CD941476B072004D4A3B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CDF1CD981476B072004D4A3B /* PetShop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PetShop-Info.plist"; sourceTree = "<group>"; };
+		CDF1CD9A1476B072004D4A3B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CDF1CD9C1476B072004D4A3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CDF1CD9E1476B072004D4A3B /* PetShop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PetShop-Prefix.pch"; sourceTree = "<group>"; };
+		CDF1CD9F1476B072004D4A3B /* ETAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETAppDelegate.h; sourceTree = "<group>"; };
+		CDF1CDA01476B072004D4A3B /* ETAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETAppDelegate.m; sourceTree = "<group>"; };
+		CDF1CDA51476B072004D4A3B /* ETMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETMasterViewController.h; sourceTree = "<group>"; };
+		CDF1CDA61476B072004D4A3B /* ETMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETMasterViewController.m; sourceTree = "<group>"; };
+		CDF1CDA81476B072004D4A3B /* ETDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETDetailViewController.h; sourceTree = "<group>"; };
+		CDF1CDA91476B072004D4A3B /* ETDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETDetailViewController.m; sourceTree = "<group>"; };
+		CDF1CDAC1476B072004D4A3B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ETMasterViewController.xib; sourceTree = "<group>"; };
+		CDF1CDAF1476B072004D4A3B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ETDetailViewController.xib; sourceTree = "<group>"; };
+		CDF1CDB71476B072004D4A3B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CDF2D2E314DC274600655CCE /* DisclaimerBehaviors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisclaimerBehaviors.h; sourceTree = "<group>"; };
+		CDF2D2E414DC274600655CCE /* DisclaimerBehaviors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisclaimerBehaviors.m; sourceTree = "<group>"; };
+		CDFA72A714CF34AA00119D48 /* PetListViewBehaviors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PetListViewBehaviors.h; sourceTree = "<group>"; };
+		CDFA72A814CF34AA00119D48 /* PetListViewBehaviors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PetListViewBehaviors.m; sourceTree = "<group>"; };
+		CDFA72AC14CF34E700119D48 /* PromotionsFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PromotionsFixture.h; sourceTree = "<group>"; };
+		CDFA72AD14CF34E700119D48 /* PromotionsFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PromotionsFixture.m; sourceTree = "<group>"; };
+		CDFC02BF14A1072500D1368A /* ETShoppingCartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETShoppingCartViewController.h; sourceTree = "<group>"; };
+		CDFC02C014A1072500D1368A /* ETShoppingCartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETShoppingCartViewController.m; sourceTree = "<group>"; };
+		CDFC02C114A1072500D1368A /* ETShoppingCartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETShoppingCartViewController.xib; sourceTree = "<group>"; };
+		CDFC02C414A10FE400D1368A /* ShoppingCart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCart.h; sourceTree = "<group>"; };
+		CDFC02C514A10FE400D1368A /* ShoppingCart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCart.m; sourceTree = "<group>"; };
+		CDFC04F114A20A1100A840A1 /* CartHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CartHeaderCell.xib; sourceTree = "<group>"; };
+		CDFC04F514A20F8A00A840A1 /* elapse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elapse.png; sourceTree = "<group>"; };
+		CDFC04F714A22BBD00A840A1 /* appLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appLogo.png; sourceTree = "<group>"; };
+		CDFC04FD14A2492E00A840A1 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
+		CDFC04FF14A2495600A840A1 /* currency_dollar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = currency_dollar.png; sourceTree = "<group>"; };
+		CDFD560714DCAAF00099D6A1 /* ETStorePolicyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETStorePolicyController.h; sourceTree = "<group>"; };
+		CDFD560814DCAAF00099D6A1 /* ETStorePolicyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETStorePolicyController.m; sourceTree = "<group>"; };
+		CDFD560C14DCAC5A0099D6A1 /* ETStorePolicyPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETStorePolicyPageController.h; sourceTree = "<group>"; };
+		CDFD560D14DCAC5A0099D6A1 /* ETStorePolicyPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETStorePolicyPageController.m; sourceTree = "<group>"; };
+		CDFD560E14DCAC5A0099D6A1 /* ETStorePolicyPageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ETStorePolicyPageController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD0F4A0F14BB23E40094F5E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDED06D714ED40E1000C6A2C /* Framework-iAccept.framework in Frameworks */,
+				CDED06BA14EC4E4B000C6A2C /* Foundation.framework in Frameworks */,
+				CDED06B914EC4E35000C6A2C /* UIKit.framework in Frameworks */,
+				CDED06B814EC4E2F000C6A2C /* MapKit.framework in Frameworks */,
+				CD625C5114D7293000AAA0F9 /* CoreLocation.framework in Frameworks */,
+				CD0F4A4814BB248D0094F5E5 /* QuartzCore.framework in Frameworks */,
+				CD0F4A1614BB23E40094F5E5 /* CoreGraphics.framework in Frameworks */,
+				CD0F4A1714BB23E40094F5E5 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDF1CD871476B072004D4A3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD625C5014D7292900AAA0F9 /* CoreLocation.framework in Frameworks */,
+				CD625C4C14D725E200AAA0F9 /* MapKit.framework in Frameworks */,
+				CD47A06514A4D070003F7711 /* QuartzCore.framework in Frameworks */,
+				CDF1CD8F1476B072004D4A3B /* UIKit.framework in Frameworks */,
+				CDF1CD911476B072004D4A3B /* Foundation.framework in Frameworks */,
+				CDF1CD931476B072004D4A3B /* CoreGraphics.framework in Frameworks */,
+				CDF1CD951476B072004D4A3B /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD0F4A1814BB23E40094F5E5 /* atPetShop */ = {
+			isa = PBXGroup;
+			children = (
+				CD3647D914BB5E9D005911E4 /* Tests */,
+				CD3647D714BB5E92005911E4 /* Fixtures */,
+				CD0F4A1914BB23E40094F5E5 /* Supporting Files */,
+			);
+			path = atPetShop;
+			sourceTree = "<group>";
+		};
+		CD0F4A1914BB23E40094F5E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD0F4A1A14BB23E40094F5E5 /* atPetShop-Info.plist */,
+				CD0F4A1B14BB23E40094F5E5 /* InfoPlist.strings */,
+				CD0F4A1E14BB23E40094F5E5 /* main.m */,
+				CD0F4A2014BB23E40094F5E5 /* atPetShop-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD3647D714BB5E92005911E4 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				CD3647DA14BB64C2005911E4 /* PetShopFixture.h */,
+				CD3647DB14BB64C2005911E4 /* PetShopFixture.m */,
+				CDBEBBBD14BC8E1B0064DB90 /* MenuViewFixture.h */,
+				CDBEBBBE14BC8E1B0064DB90 /* MenuViewFixture.m */,
+				CDBEBBC114BC8E6F0064DB90 /* MainViewFixture.h */,
+				CDBEBBC214BC8E6F0064DB90 /* MainViewFixture.m */,
+				CDCAA3C314BDBB5B00FD179A /* ShoppingCartFixture.h */,
+				CDCAA3C414BDBB5B00FD179A /* ShoppingCartFixture.m */,
+				CD78023614C72AC3008B91AF /* CreditCardPaymentFixture.h */,
+				CD78023714C72AC3008B91AF /* CreditCardPaymentFixture.m */,
+				CDFA72AC14CF34E700119D48 /* PromotionsFixture.h */,
+				CDFA72AD14CF34E700119D48 /* PromotionsFixture.m */,
+				CD53094B14CF3F0500BD2639 /* PetListFixture.h */,
+				CD53094C14CF3F0500BD2639 /* PetListFixture.m */,
+				CDD2779814D886170030D31E /* PaymentFixture.h */,
+				CDD2779914D886170030D31E /* PaymentFixture.m */,
+				CD5886E914D9B5D100A6D8B4 /* ThanksScreenFixture.h */,
+				CD5886EA14D9B5D100A6D8B4 /* ThanksScreenFixture.m */,
+				CDE12D0F14DC4F8A005FF035 /* DisclaimerFixture.h */,
+				CDE12D1014DC4F8A005FF035 /* DisclaimerFixture.m */,
+				CD3024C414DDC51F00519AC1 /* PolicyFixture.h */,
+				CD3024C514DDC51F00519AC1 /* PolicyFixture.m */,
+				CDC9810514E43CA500E369B0 /* AnimalWelfareFixture.h */,
+				CDC9810614E43CA500E369B0 /* AnimalWelfareFixture.m */,
+			);
+			name = Fixtures;
+			sourceTree = "<group>";
+		};
+		CD3647D914BB5E9D005911E4 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CD3647E114BB66F4005911E4 /* MainNavigationViewBehaviors.h */,
+				CD3647E214BB66F4005911E4 /* MainNavigationViewBehaviors.m */,
+				CDE106A314C46F1E00A3F5DD /* ShoppingCartViewBehaviors.h */,
+				CDE106A414C46F1E00A3F5DD /* ShoppingCartViewBehaviors.m */,
+				CD78025414C747DC008B91AF /* CreditCardPaymentBehaviors.h */,
+				CD78025514C747DC008B91AF /* CreditCardPaymentBehaviors.m */,
+				CDFA72A714CF34AA00119D48 /* PetListViewBehaviors.h */,
+				CDFA72A814CF34AA00119D48 /* PetListViewBehaviors.m */,
+				CDF2D2E314DC274600655CCE /* DisclaimerBehaviors.h */,
+				CDF2D2E414DC274600655CCE /* DisclaimerBehaviors.m */,
+				CD3024BF14DDC43A00519AC1 /* PolicyBehaviors.h */,
+				CD3024C014DDC43A00519AC1 /* PolicyBehaviors.m */,
+				CD954F5D14E0364300CF8A6D /* AlternativePaymentBehaviors.h */,
+				CD954F5E14E0364300CF8A6D /* AlternativePaymentBehaviors.m */,
+				CDC9810914E43E7A00E369B0 /* AnimalWelfareBehaviors.h */,
+				CDC9810A14E43E7A00E369B0 /* AnimalWelfareBehaviors.m */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		CD40B9C0147D632700480296 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				CD5886E114D999C500A6D8B4 /* cat-tab-icon.png */,
+				CD5886E214D999C500A6D8B4 /* dog-tab-icon.png */,
+				CD05B5E614D7121000F6E3B1 /* cc.png */,
+				CD05B5E714D7121000F6E3B1 /* pig.png */,
+				CD38F65114798C1D00E1CA8B /* 9703544-cartoon-illustration-of-running-dog.jpg */,
+				CD9BCFF5147A919F006D1A6A /* American_Bobtail.jpg */,
+				CD883E4914B4A00200B34ED5 /* American_Bobtail_small.png */,
+				CD9BCFF7147A91C2006D1A6A /* balinese-cat.jpg */,
+				CD883E4A14B4A00200B34ED5 /* balinese-cat_small.png */,
+				CD40B9C8147D66A900480296 /* betafish.jpg */,
+				CD883E4B14B4A00200B34ED5 /* betafish_small.png */,
+				CD5B0C7A147896D10032656C /* bird-icon.png */,
+				CD5B0C7B147896D10032656C /* cat-icon.png */,
+				CD9BCFF9147A91E3006D1A6A /* Chartreux.jpg */,
+				CD883E4C14B4A00200B34ED5 /* Chartreux_small.png */,
+				CD40B9CA147D67C700480296 /* clownfish.jpg */,
+				CD883E4D14B4A00200B34ED5 /* clownfish_small.png */,
+				CD40B9D6147D6E7900480296 /* cockatoo.jpg */,
+				CD883E4E14B4A00200B34ED5 /* cockatoo_small.png */,
+				CD40B9D4147D6DEC00480296 /* crowned-pigeon.jpg */,
+				CD883E4F14B4A00200B34ED5 /* crowned-pigeon_small.png */,
+				CDFC04FF14A2495600A840A1 /* currency_dollar.png */,
+				CDFC04FD14A2492E00A840A1 /* delete.png */,
+				CD5B0C7C147896D10032656C /* dog-icon.png */,
+				CD567E5514A4E2F100C44CF0 /* Dogo.jpg */,
+				CD883E6014B4A07D00B34ED5 /* Dogo_small.png */,
+				CDFC04F514A20F8A00A840A1 /* elapse.png */,
+				CD9BCFF3147A915F006D1A6A /* European_Dobermann.jpg */,
+				CD883E5014B4A00200B34ED5 /* European_Dobermann_small.png */,
+				CD5B0C7D147896D10032656C /* fish-icon.png */,
+				CD5B2FB314783AE00021DDA8 /* GoldenRetriever.png */,
+				CD883E5114B4A00200B34ED5 /* GoldenRetriever_small.png */,
+				CD38F64F14798AE700E1CA8B /* shopping_trolley.png */,
+				CD38F6491479828E00E1CA8B /* palm tree.png */,
+				CD5B0C7E147896D10032656C /* snake-icon.png */,
+				CD40B9CE147D6CED00480296 /* snake.jpg */,
+				CD883E5214B4A00200B34ED5 /* snake_small.png */,
+				CD40B9DA147D7CBD00480296 /* star.png */,
+				CD40B9CC147D6C9B00480296 /* TokayGecko.jpg */,
+				CD883E5314B4A00200B34ED5 /* TokayGecko_small.png */,
+				CD9BCFFB147A9454006D1A6A /* watermark-dog-icon.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		CD5886F714D9C45700A6D8B4 /* ETLegalDisclaimerPages */ = {
+			isa = PBXGroup;
+			children = (
+				CD5886F814D9C49F00A6D8B4 /* ETLegalDisclaimerPage1ViewController.h */,
+				CD5886F914D9C49F00A6D8B4 /* ETLegalDisclaimerPage1ViewController.m */,
+				CD5886FA14D9C49F00A6D8B4 /* ETLegalDisclaimerPage1ViewController.xib */,
+				CD58870114D9C4AB00A6D8B4 /* ETLegalDisclaimerPage2ViewController.h */,
+				CD58870214D9C4AB00A6D8B4 /* ETLegalDisclaimerPage2ViewController.m */,
+				CD58870314D9C4AB00A6D8B4 /* ETLegalDisclaimerPage2ViewController.xib */,
+				CD58870A14D9C4B600A6D8B4 /* ETLegalDisclaimerPage3ViewController.h */,
+				CD58870B14D9C4B600A6D8B4 /* ETLegalDisclaimerPage3ViewController.m */,
+				CD58870C14D9C4B600A6D8B4 /* ETLegalDisclaimerPage3ViewController.xib */,
+				CD9D693A14DB1070006EF457 /* ETLegalDisclaimerPageController.h */,
+				CD9D693B14DB1070006EF457 /* ETLegalDisclaimerPageController.m */,
+			);
+			name = ETLegalDisclaimerPages;
+			sourceTree = "<group>";
+		};
+		CDF1CD7F1476B072004D4A3B = {
+			isa = PBXGroup;
+			children = (
+				CDFC04F714A22BBD00A840A1 /* appLogo.png */,
+				CDF1CD961476B072004D4A3B /* PetShop */,
+				CD0F4A1814BB23E40094F5E5 /* atPetShop */,
+				CDF1CD8D1476B072004D4A3B /* Frameworks */,
+				CDF1CD8B1476B072004D4A3B /* Products */,
+				CDD1D18414C5CEEA002EA19E /* atPetShop copy-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		CDF1CD8B1476B072004D4A3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDF1CD8A1476B072004D4A3B /* PetShop.app */,
+				CD0F4A1214BB23E40094F5E5 /* atPetShop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDF1CD8D1476B072004D4A3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDED06B614EC4CDA000C6A2C /* Framework-iAccept.framework */,
+				CD625C4B14D725E200AAA0F9 /* MapKit.framework */,
+				CD625C4F14D7292800AAA0F9 /* CoreLocation.framework */,
+				CD47A06414A4D070003F7711 /* QuartzCore.framework */,
+				CDF1CD8E1476B072004D4A3B /* UIKit.framework */,
+				CDF1CD901476B072004D4A3B /* Foundation.framework */,
+				CDF1CD921476B072004D4A3B /* CoreGraphics.framework */,
+				CDF1CD941476B072004D4A3B /* CoreData.framework */,
+				CDF1CDB71476B072004D4A3B /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDF1CD961476B072004D4A3B /* PetShop */ = {
+			isa = PBXGroup;
+			children = (
+				CDF1CD9F1476B072004D4A3B /* ETAppDelegate.h */,
+				CDF1CDA01476B072004D4A3B /* ETAppDelegate.m */,
+				CDF1CDD01476B28B004D4A3B /* Data */,
+				CDF1CD971476B072004D4A3B /* Supporting Files */,
+				CDF1CDCF1476B280004D4A3B /* UI */,
+			);
+			path = PetShop;
+			sourceTree = "<group>";
+		};
+		CDF1CD971476B072004D4A3B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD40B9C0147D632700480296 /* images */,
+				CDF1CD981476B072004D4A3B /* PetShop-Info.plist */,
+				CDF1CD991476B072004D4A3B /* InfoPlist.strings */,
+				CDF1CD9C1476B072004D4A3B /* main.m */,
+				CDF1CD9E1476B072004D4A3B /* PetShop-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDF1CDCF1476B280004D4A3B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CDFD560514DCAA0F0099D6A1 /* ETStorePolicy */,
+				CD5886F714D9C45700A6D8B4 /* ETLegalDisclaimerPages */,
+				CDB69A9614A12445007FE5EC /* CartCell.xib */,
+				CDF1CDA81476B072004D4A3B /* ETDetailViewController.h */,
+				CDF1CDA91476B072004D4A3B /* ETDetailViewController.m */,
+				CDF1CDA51476B072004D4A3B /* ETMasterViewController.h */,
+				CDF1CDA61476B072004D4A3B /* ETMasterViewController.m */,
+				CDF1CDAB1476B072004D4A3B /* ETMasterViewController.xib */,
+				CD9BCFFD147A99A3006D1A6A /* ETPromoDetailViewController.h */,
+				CD9BCFFE147A99A3006D1A6A /* ETPromoDetailViewController.m */,
+				CD9BCFFF147A99A3006D1A6A /* ETPromoDetailViewController.xib */,
+				CDFC02BF14A1072500D1368A /* ETShoppingCartViewController.h */,
+				CDFC02C014A1072500D1368A /* ETShoppingCartViewController.m */,
+				CDFC02C114A1072500D1368A /* ETShoppingCartViewController.xib */,
+				CDE1069B14C4607E00A3F5DD /* ETCreditCardPaymentViewController.h */,
+				CDE1069C14C4607E00A3F5DD /* ETCreditCardPaymentViewController.m */,
+				CDE1069D14C4607E00A3F5DD /* ETCreditCardPaymentViewController.xib */,
+				CDF1CDAE1476B072004D4A3B /* ETDetailViewController.xib */,
+				CD40B9D8147D718F00480296 /* PetCell.xib */,
+				CDAD1A3A1498DB2600554D3E /* PromoCell.xib */,
+				CDFC04F114A20A1100A840A1 /* CartHeaderCell.xib */,
+				CD03699C14CDA7650027CB30 /* RefreshableViewController.h */,
+				CD05B5CD14D6D36900F6E3B1 /* ETPaymentViewController.h */,
+				CD05B5CE14D6D36900F6E3B1 /* ETPaymentViewController.m */,
+				CDADF1D114D7178400F27531 /* ETDebitCardPaymentViewController.h */,
+				CDADF1D214D7178400F27531 /* ETDebitCardPaymentViewController.m */,
+				CDADF1D314D7178400F27531 /* ETDebitCardPaymentViewController.xib */,
+				CD625C4114D7232100AAA0F9 /* ETPaymentDoneViewController.h */,
+				CD625C4214D7232100AAA0F9 /* ETPaymentDoneViewController.m */,
+				CD625C4314D7232100AAA0F9 /* ETPaymentDoneViewController.xib */,
+				CDD2779314D87CDA0030D31E /* Util.h */,
+				CDD2779414D87CDA0030D31E /* Util.m */,
+				CD954F5314E01D9500CF8A6D /* ETAlternativePaymentViewController.h */,
+				CD954F5414E01D9500CF8A6D /* ETAlternativePaymentViewController.m */,
+				CD954F5514E01D9500CF8A6D /* ETAlternativePaymentViewController.xib */,
+				CD41914E14E2FF4700F54488 /* ETAnimalWellfareViewController.h */,
+				CD41914F14E2FF4800F54488 /* ETAnimalWellfareViewController.m */,
+				CD41915014E2FF4800F54488 /* ETAnimalWellfareViewController.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		CDF1CDD01476B28B004D4A3B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CDFD82ED14772DD10010B0F6 /* Managed Objects */,
+				CD9050F21476ECAF005C2567 /* PetShop.xcdatamodeld */,
+				CD9050E81476D71D005C2567 /* DataAccess.h */,
+				CD9050E91476D71D005C2567 /* DataAccess.m */,
+				CD9050EF1476D7C5005C2567 /* PetDAO.h */,
+				CD9050F01476D7C5005C2567 /* PetDAO.m */,
+				CD9050F51476F022005C2567 /* UIImageToDataTransformer.h */,
+				CD9050F61476F022005C2567 /* UIImageToDataTransformer.m */,
+				CD7BB43314D8245200AF074B /* StoreMapAnnotation.h */,
+				CD7BB43414D8245200AF074B /* StoreMapAnnotation.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		CDFD560514DCAA0F0099D6A1 /* ETStorePolicy */ = {
+			isa = PBXGroup;
+			children = (
+				CDFD560714DCAAF00099D6A1 /* ETStorePolicyController.h */,
+				CDFD560814DCAAF00099D6A1 /* ETStorePolicyController.m */,
+				CDFD560C14DCAC5A0099D6A1 /* ETStorePolicyPageController.h */,
+				CDFD560D14DCAC5A0099D6A1 /* ETStorePolicyPageController.m */,
+				CDFD560E14DCAC5A0099D6A1 /* ETStorePolicyPageController.xib */,
+			);
+			name = ETStorePolicy;
+			sourceTree = "<group>";
+		};
+		CDFD82ED14772DD10010B0F6 /* Managed Objects */ = {
+			isa = PBXGroup;
+			children = (
+				CD975F3914B38C06004EEB26 /* Pet.h */,
+				CD975F3A14B38C06004EEB26 /* Pet.m */,
+				CDFC02C414A10FE400D1368A /* ShoppingCart.h */,
+				CDFC02C514A10FE400D1368A /* ShoppingCart.m */,
+			);
+			name = "Managed Objects";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD0F4A1114BB23E40094F5E5 /* atPetShop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD0F4A2714BB23E40094F5E5 /* Build configuration list for PBXNativeTarget "atPetShop" */;
+			buildPhases = (
+				CD0F4A0E14BB23E40094F5E5 /* Sources */,
+				CD0F4A0F14BB23E40094F5E5 /* Frameworks */,
+				CD0F4A1014BB23E40094F5E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = atPetShop;
+			productName = atPetShop;
+			productReference = CD0F4A1214BB23E40094F5E5 /* atPetShop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDF1CD891476B072004D4A3B /* PetShop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDF1CDC91476B072004D4A3B /* Build configuration list for PBXNativeTarget "PetShop" */;
+			buildPhases = (
+				CDF1CD861476B072004D4A3B /* Sources */,
+				CDF1CD871476B072004D4A3B /* Frameworks */,
+				CDF1CD881476B072004D4A3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PetShop;
+			productName = PetShop;
+			productReference = CDF1CD8A1476B072004D4A3B /* PetShop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDF1CD811476B072004D4A3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Elapse Technologies";
+			};
+			buildConfigurationList = CDF1CD841476B072004D4A3B /* Build configuration list for PBXProject "PetShop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CDF1CD7F1476B072004D4A3B;
+			productRefGroup = CDF1CD8B1476B072004D4A3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDF1CD891476B072004D4A3B /* PetShop */,
+				CD0F4A1114BB23E40094F5E5 /* atPetShop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD0F4A1014BB23E40094F5E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD41FBDE14C0CB5400A63D3A /* CartCell.xib in Resources */,
+				CD0F4A1D14BB23E40094F5E5 /* InfoPlist.strings in Resources */,
+				CD0F4AA114BB25840094F5E5 /* ETMasterViewController.xib in Resources */,
+				CD0F4AB114BB26840094F5E5 /* ETShoppingCartViewController.xib in Resources */,
+				CD0F4AB014BB26830094F5E5 /* ETPromoDetailViewController.xib in Resources */,
+				CD0F4AA214BB25A30094F5E5 /* ETDetailViewController.xib in Resources */,
+				CD0F4ABE14BB27050094F5E5 /* appLogo.png in Resources */,
+				CD0F4AD414BB27570094F5E5 /* PetCell.xib in Resources */,
+				CD0F4AD514BB27590094F5E5 /* PromoCell.xib in Resources */,
+				CD0F4AD614BB275C0094F5E5 /* CartHeaderCell.xib in Resources */,
+				CD0F4AD714BB276D0094F5E5 /* Dogo_small.png in Resources */,
+				CD0F4AD814BB276D0094F5E5 /* American_Bobtail_small.png in Resources */,
+				CD0F4AD914BB276D0094F5E5 /* balinese-cat_small.png in Resources */,
+				CD0F4ADA14BB276D0094F5E5 /* betafish_small.png in Resources */,
+				CD0F4ADB14BB276D0094F5E5 /* Chartreux_small.png in Resources */,
+				CD0F4ADC14BB276D0094F5E5 /* clownfish_small.png in Resources */,
+				CD0F4ADD14BB276D0094F5E5 /* cockatoo_small.png in Resources */,
+				CD0F4ADE14BB276D0094F5E5 /* crowned-pigeon_small.png in Resources */,
+				CD0F4ADF14BB276D0094F5E5 /* European_Dobermann_small.png in Resources */,
+				CD0F4AE014BB276D0094F5E5 /* GoldenRetriever_small.png in Resources */,
+				CD0F4AE114BB276D0094F5E5 /* snake_small.png in Resources */,
+				CD0F4AE214BB276D0094F5E5 /* TokayGecko_small.png in Resources */,
+				CD0F4AE314BB276D0094F5E5 /* Dogo.jpg in Resources */,
+				CD0F4AE414BB276D0094F5E5 /* currency_dollar.png in Resources */,
+				CD0F4AE514BB276D0094F5E5 /* delete.png in Resources */,
+				CD0F4AE614BB276D0094F5E5 /* elapse.png in Resources */,
+				CD0F4AE714BB276D0094F5E5 /* star.png in Resources */,
+				CD0F4AE814BB276D0094F5E5 /* cockatoo.jpg in Resources */,
+				CD0F4AE914BB276D0094F5E5 /* crowned-pigeon.jpg in Resources */,
+				CD0F4AEA14BB276D0094F5E5 /* snake.jpg in Resources */,
+				CD0F4AEB14BB276D0094F5E5 /* TokayGecko.jpg in Resources */,
+				CD0F4AEC14BB276D0094F5E5 /* clownfish.jpg in Resources */,
+				CD0F4AED14BB276D0094F5E5 /* betafish.jpg in Resources */,
+				CD0F4AEE14BB276D0094F5E5 /* watermark-dog-icon.png in Resources */,
+				CD0F4AEF14BB276D0094F5E5 /* Chartreux.jpg in Resources */,
+				CD0F4AF014BB276D0094F5E5 /* balinese-cat.jpg in Resources */,
+				CD0F4AF114BB276D0094F5E5 /* American_Bobtail.jpg in Resources */,
+				CD0F4AF214BB276D0094F5E5 /* European_Dobermann.jpg in Resources */,
+				CD0F4AF314BB276D0094F5E5 /* 9703544-cartoon-illustration-of-running-dog.jpg in Resources */,
+				CD0F4AF414BB276D0094F5E5 /* shopping_trolley.png in Resources */,
+				CD0F4AF514BB276D0094F5E5 /* palm tree.png in Resources */,
+				CD0F4AF614BB276D0094F5E5 /* GoldenRetriever.png in Resources */,
+				CD0F4AF714BB276D0094F5E5 /* bird-icon.png in Resources */,
+				CD0F4AF814BB276D0094F5E5 /* cat-icon.png in Resources */,
+				CD0F4AF914BB276D0094F5E5 /* dog-icon.png in Resources */,
+				CD0F4AFA14BB276D0094F5E5 /* fish-icon.png in Resources */,
+				CD0F4AFB14BB276D0094F5E5 /* snake-icon.png in Resources */,
+				CDE106A114C4607E00A3F5DD /* ETCreditCardPaymentViewController.xib in Resources */,
+				CD05B5E914D7121000F6E3B1 /* cc.png in Resources */,
+				CD05B5EC14D7121000F6E3B1 /* pig.png in Resources */,
+				CDADF1D814D7178400F27531 /* ETDebitCardPaymentViewController.xib in Resources */,
+				CD625C4814D7232100AAA0F9 /* ETPaymentDoneViewController.xib in Resources */,
+				CD5886E414D999C500A6D8B4 /* cat-tab-icon.png in Resources */,
+				CD5886E714D999C500A6D8B4 /* dog-tab-icon.png in Resources */,
+				CD5886FF14D9C49F00A6D8B4 /* ETLegalDisclaimerPage1ViewController.xib in Resources */,
+				CD58870814D9C4AB00A6D8B4 /* ETLegalDisclaimerPage2ViewController.xib in Resources */,
+				CD58871114D9C4B600A6D8B4 /* ETLegalDisclaimerPage3ViewController.xib in Resources */,
+				CDFD561314DCAC5A0099D6A1 /* ETStorePolicyPageController.xib in Resources */,
+				CD954F5A14E01D9500CF8A6D /* ETAlternativePaymentViewController.xib in Resources */,
+				CD41915514E2FF4800F54488 /* ETAnimalWellfareViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDF1CD881476B072004D4A3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDF1CD9B1476B072004D4A3B /* InfoPlist.strings in Resources */,
+				CDF1CDAD1476B072004D4A3B /* ETMasterViewController.xib in Resources */,
+				CDF1CDB01476B072004D4A3B /* ETDetailViewController.xib in Resources */,
+				CD5B2FB414783AE00021DDA8 /* GoldenRetriever.png in Resources */,
+				CD5B0C7F147896D10032656C /* bird-icon.png in Resources */,
+				CD5B0C80147896D10032656C /* cat-icon.png in Resources */,
+				CD5B0C81147896D10032656C /* dog-icon.png in Resources */,
+				CD5B0C82147896D10032656C /* fish-icon.png in Resources */,
+				CD5B0C83147896D10032656C /* snake-icon.png in Resources */,
+				CD38F64A1479828E00E1CA8B /* palm tree.png in Resources */,
+				CD38F65014798AE700E1CA8B /* shopping_trolley.png in Resources */,
+				CD38F65214798C1D00E1CA8B /* 9703544-cartoon-illustration-of-running-dog.jpg in Resources */,
+				CD9BCFF4147A915F006D1A6A /* European_Dobermann.jpg in Resources */,
+				CD9BCFF6147A919F006D1A6A /* American_Bobtail.jpg in Resources */,
+				CD9BCFF8147A91C2006D1A6A /* balinese-cat.jpg in Resources */,
+				CD9BCFFA147A91E3006D1A6A /* Chartreux.jpg in Resources */,
+				CD9BCFFC147A9454006D1A6A /* watermark-dog-icon.png in Resources */,
+				CD9BD001147A99A3006D1A6A /* ETPromoDetailViewController.xib in Resources */,
+				CD40B9C9147D66A900480296 /* betafish.jpg in Resources */,
+				CD40B9CB147D67C700480296 /* clownfish.jpg in Resources */,
+				CD40B9CD147D6C9B00480296 /* TokayGecko.jpg in Resources */,
+				CD40B9CF147D6CED00480296 /* snake.jpg in Resources */,
+				CD40B9D5147D6DEC00480296 /* crowned-pigeon.jpg in Resources */,
+				CD40B9D7147D6E7900480296 /* cockatoo.jpg in Resources */,
+				CD40B9D9147D718F00480296 /* PetCell.xib in Resources */,
+				CD40B9DB147D7CBD00480296 /* star.png in Resources */,
+				CDAD1A3B1498DB2600554D3E /* PromoCell.xib in Resources */,
+				CDFC02C314A1072500D1368A /* ETShoppingCartViewController.xib in Resources */,
+				CDB69A9714A12445007FE5EC /* CartCell.xib in Resources */,
+				CDFC04F214A20A1100A840A1 /* CartHeaderCell.xib in Resources */,
+				CDFC04F614A20F8A00A840A1 /* elapse.png in Resources */,
+				CDFC04F814A22BBD00A840A1 /* appLogo.png in Resources */,
+				CDFC04FE14A2492E00A840A1 /* delete.png in Resources */,
+				CDFC050014A2495600A840A1 /* currency_dollar.png in Resources */,
+				CD567E5614A4E2F100C44CF0 /* Dogo.jpg in Resources */,
+				CD883E5414B4A00200B34ED5 /* American_Bobtail_small.png in Resources */,
+				CD883E5514B4A00200B34ED5 /* balinese-cat_small.png in Resources */,
+				CD883E5614B4A00200B34ED5 /* betafish_small.png in Resources */,
+				CD883E5714B4A00200B34ED5 /* Chartreux_small.png in Resources */,
+				CD883E5814B4A00200B34ED5 /* clownfish_small.png in Resources */,
+				CD883E5914B4A00200B34ED5 /* cockatoo_small.png in Resources */,
+				CD883E5A14B4A00200B34ED5 /* crowned-pigeon_small.png in Resources */,
+				CD883E5B14B4A00200B34ED5 /* European_Dobermann_small.png in Resources */,
+				CD883E5C14B4A00200B34ED5 /* GoldenRetriever_small.png in Resources */,
+				CD883E5D14B4A00200B34ED5 /* snake_small.png in Resources */,
+				CD883E5E14B4A00200B34ED5 /* TokayGecko_small.png in Resources */,
+				CD883E6114B4A07D00B34ED5 /* Dogo_small.png in Resources */,
+				CDE106A014C4607E00A3F5DD /* ETCreditCardPaymentViewController.xib in Resources */,
+				CD05B5E814D7121000F6E3B1 /* cc.png in Resources */,
+				CD05B5EB14D7121000F6E3B1 /* pig.png in Resources */,
+				CDADF1D714D7178400F27531 /* ETDebitCardPaymentViewController.xib in Resources */,
+				CD625C4714D7232100AAA0F9 /* ETPaymentDoneViewController.xib in Resources */,
+				CD5886E314D999C500A6D8B4 /* cat-tab-icon.png in Resources */,
+				CD5886E614D999C500A6D8B4 /* dog-tab-icon.png in Resources */,
+				CD5886FE14D9C49F00A6D8B4 /* ETLegalDisclaimerPage1ViewController.xib in Resources */,
+				CD58870714D9C4AB00A6D8B4 /* ETLegalDisclaimerPage2ViewController.xib in Resources */,
+				CD58871014D9C4B600A6D8B4 /* ETLegalDisclaimerPage3ViewController.xib in Resources */,
+				CDFD561214DCAC5A0099D6A1 /* ETStorePolicyPageController.xib in Resources */,
+				CD954F5914E01D9500CF8A6D /* ETAlternativePaymentViewController.xib in Resources */,
+				CD41915414E2FF4800F54488 /* ETAnimalWellfareViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD0F4A0E14BB23E40094F5E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD0F4AAA14BB26580094F5E5 /* PetDAO.m in Sources */,
+				CD0F4AA814BB264C0094F5E5 /* ETAppDelegate.m in Sources */,
+				CD0F4A1F14BB23E40094F5E5 /* main.m in Sources */,
+				CD0F4AA914BB26560094F5E5 /* DataAccess.m in Sources */,
+				CD0F4AAB14BB265A0094F5E5 /* UIImageToDataTransformer.m in Sources */,
+				CD0F4AAD14BB26650094F5E5 /* ETMasterViewController.m in Sources */,
+				CD0F4AB214BB26970094F5E5 /* Pet.m in Sources */,
+				CD0F4AB314BB26980094F5E5 /* ShoppingCart.m in Sources */,
+				CD0F4AAF14BB266B0094F5E5 /* ETShoppingCartViewController.m in Sources */,
+				CD0F4AAC14BB26630094F5E5 /* ETDetailViewController.m in Sources */,
+				CD0F4AAE14BB26690094F5E5 /* ETPromoDetailViewController.m in Sources */,
+				CD0F4A4A14BB25240094F5E5 /* PetShop.xcdatamodeld in Sources */,
+				CD3647DC14BB64C2005911E4 /* PetShopFixture.m in Sources */,
+				CD3647E314BB66F4005911E4 /* MainNavigationViewBehaviors.m in Sources */,
+				CDBEBBBF14BC8E1B0064DB90 /* MenuViewFixture.m in Sources */,
+				CDBEBBC314BC8E6F0064DB90 /* MainViewFixture.m in Sources */,
+				CDCAA3C514BDBB5B00FD179A /* ShoppingCartFixture.m in Sources */,
+				CDE1069F14C4607E00A3F5DD /* ETCreditCardPaymentViewController.m in Sources */,
+				CDE106A514C46F1E00A3F5DD /* ShoppingCartViewBehaviors.m in Sources */,
+				CD78023814C72AC3008B91AF /* CreditCardPaymentFixture.m in Sources */,
+				CD78025614C747DC008B91AF /* CreditCardPaymentBehaviors.m in Sources */,
+				CDFA72A914CF34AA00119D48 /* PetListViewBehaviors.m in Sources */,
+				CDFA72AE14CF34E700119D48 /* PromotionsFixture.m in Sources */,
+				CD53094D14CF3F0500BD2639 /* PetListFixture.m in Sources */,
+				CD05B5D114D6D36900F6E3B1 /* ETPaymentViewController.m in Sources */,
+				CDADF1D514D7178400F27531 /* ETDebitCardPaymentViewController.m in Sources */,
+				CD625C4514D7232100AAA0F9 /* ETPaymentDoneViewController.m in Sources */,
+				CD7BB43614D8245200AF074B /* StoreMapAnnotation.m in Sources */,
+				CDD2779614D87CDA0030D31E /* Util.m in Sources */,
+				CDD2779B14D886170030D31E /* PaymentFixture.m in Sources */,
+				CD5886EB14D9B5D100A6D8B4 /* ThanksScreenFixture.m in Sources */,
+				CD5886FC14D9C49F00A6D8B4 /* ETLegalDisclaimerPage1ViewController.m in Sources */,
+				CD58870514D9C4AB00A6D8B4 /* ETLegalDisclaimerPage2ViewController.m in Sources */,
+				CD58870E14D9C4B600A6D8B4 /* ETLegalDisclaimerPage3ViewController.m in Sources */,
+				CD9D693D14DB1070006EF457 /* ETLegalDisclaimerPageController.m in Sources */,
+				CDF2D2E514DC274600655CCE /* DisclaimerBehaviors.m in Sources */,
+				CDE12D1114DC4F8A005FF035 /* DisclaimerFixture.m in Sources */,
+				CDFD560A14DCAAF00099D6A1 /* ETStorePolicyController.m in Sources */,
+				CDFD561014DCAC5A0099D6A1 /* ETStorePolicyPageController.m in Sources */,
+				CD3024C114DDC43A00519AC1 /* PolicyBehaviors.m in Sources */,
+				CD3024C614DDC51F00519AC1 /* PolicyFixture.m in Sources */,
+				CD954F5714E01D9500CF8A6D /* ETAlternativePaymentViewController.m in Sources */,
+				CD954F6014E0364300CF8A6D /* AlternativePaymentBehaviors.m in Sources */,
+				CD41915214E2FF4800F54488 /* ETAnimalWellfareViewController.m in Sources */,
+				CDC9810714E43CA500E369B0 /* AnimalWelfareFixture.m in Sources */,
+				CDC9810B14E43E7A00E369B0 /* AnimalWelfareBehaviors.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDF1CD861476B072004D4A3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDF1CD9D1476B072004D4A3B /* main.m in Sources */,
+				CDF1CDA11476B072004D4A3B /* ETAppDelegate.m in Sources */,
+				CDF1CDA71476B072004D4A3B /* ETMasterViewController.m in Sources */,
+				CDF1CDAA1476B072004D4A3B /* ETDetailViewController.m in Sources */,
+				CD9050EC1476D71D005C2567 /* DataAccess.m in Sources */,
+				CD9050F11476D7C5005C2567 /* PetDAO.m in Sources */,
+				CD9050F41476ECAF005C2567 /* PetShop.xcdatamodeld in Sources */,
+				CD9050F71476F022005C2567 /* UIImageToDataTransformer.m in Sources */,
+				CD9BD000147A99A3006D1A6A /* ETPromoDetailViewController.m in Sources */,
+				CDFC02C214A1072500D1368A /* ETShoppingCartViewController.m in Sources */,
+				CDFC02C614A10FE400D1368A /* ShoppingCart.m in Sources */,
+				CD975F3B14B38C06004EEB26 /* Pet.m in Sources */,
+				CDE1069E14C4607E00A3F5DD /* ETCreditCardPaymentViewController.m in Sources */,
+				CD05B5D014D6D36900F6E3B1 /* ETPaymentViewController.m in Sources */,
+				CDADF1D414D7178400F27531 /* ETDebitCardPaymentViewController.m in Sources */,
+				CD625C4414D7232100AAA0F9 /* ETPaymentDoneViewController.m in Sources */,
+				CD7BB43514D8245200AF074B /* StoreMapAnnotation.m in Sources */,
+				CDD2779514D87CDA0030D31E /* Util.m in Sources */,
+				CD5886FB14D9C49F00A6D8B4 /* ETLegalDisclaimerPage1ViewController.m in Sources */,
+				CD58870414D9C4AB00A6D8B4 /* ETLegalDisclaimerPage2ViewController.m in Sources */,
+				CD58870D14D9C4B600A6D8B4 /* ETLegalDisclaimerPage3ViewController.m in Sources */,
+				CD9D693C14DB1070006EF457 /* ETLegalDisclaimerPageController.m in Sources */,
+				CDFD560914DCAAF00099D6A1 /* ETStorePolicyController.m in Sources */,
+				CDFD560F14DCAC5A0099D6A1 /* ETStorePolicyPageController.m in Sources */,
+				CD954F5614E01D9500CF8A6D /* ETAlternativePaymentViewController.m in Sources */,
+				CD41915114E2FF4800F54488 /* ETAnimalWellfareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CD0F4A1B14BB23E40094F5E5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD0F4A1C14BB23E40094F5E5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CDF1CD991476B072004D4A3B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDF1CD9A1476B072004D4A3B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CDF1CDAB1476B072004D4A3B /* ETMasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDF1CDAC1476B072004D4A3B /* en */,
+			);
+			name = ETMasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		CDF1CDAE1476B072004D4A3B /* ETDetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDF1CDAF1476B072004D4A3B /* en */,
+			);
+			name = ETDetailViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD0F4A2814BB23E40094F5E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj  *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../iAccept/Products\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "atPetShop/atPetShop-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "atPetShop/atPetShop-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CD0F4A2914BB23E40094F5E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj  *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../iAccept/Products\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "atPetShop/atPetShop-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "atPetShop/atPetShop-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CDF1CDC71476B072004D4A3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALID_ARCHS = "armv6 armv7";
+			};
+			name = Debug;
+		};
+		CDF1CDC81476B072004D4A3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv6 armv7";
+			};
+			name = Release;
+		};
+		CDF1CDCA1476B072004D4A3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PetShop/PetShop-Prefix.pch";
+				INFOPLIST_FILE = "PetShop/PetShop-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Libraries/iAccept/current/debug\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CDF1CDCB1476B072004D4A3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PetShop/PetShop-Prefix.pch";
+				INFOPLIST_FILE = "PetShop/PetShop-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Libraries/iAccept/current/debug\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD0F4A2714BB23E40094F5E5 /* Build configuration list for PBXNativeTarget "atPetShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD0F4A2814BB23E40094F5E5 /* Debug */,
+				CD0F4A2914BB23E40094F5E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDF1CD841476B072004D4A3B /* Build configuration list for PBXProject "PetShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDF1CDC71476B072004D4A3B /* Debug */,
+				CDF1CDC81476B072004D4A3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDF1CDC91476B072004D4A3B /* Build configuration list for PBXNativeTarget "PetShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDF1CDCA1476B072004D4A3B /* Debug */,
+				CDF1CDCB1476B072004D4A3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CD9050F21476ECAF005C2567 /* PetShop.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CD9050F31476ECAF005C2567 /* PetShop.xcdatamodel */,
+			);
+			currentVersion = CD9050F31476ECAF005C2567 /* PetShop.xcdatamodel */;
+			path = PetShop.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CDF1CD811476B072004D4A3B /* Project object */;
+}
