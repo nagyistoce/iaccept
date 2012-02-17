@@ -93,9 +93,9 @@ So we write our first behavior definition with a method that begins with the wor
 
 With the first two lines, we define the prerequisites for our test.  The type IAGiven is used for this.
 
- We want to start with an empty shopping cart and we want to be in landscape. 
+We want to start with an empty shopping cart and we want to be in landscape. 
 
-IAccept will remove the spaces and camel-case the words of the sentence and then search for a method with that name.  So, our first Given must be implemented has a method named « iStartWithAnEmptyShoppingCart ».
+IAccept will remove the spaces and camel-case the words of the sentence and then search for a method with that name.  So, our first Given must be implemented has a method named "iStartWithAnEmptyShoppingCart".
 
 By default, iAccept will search for those methods our default fixture.  So let’s go code them.
 
@@ -121,11 +121,11 @@ By default, iAccept will search for those methods our default fixture.  So let�
 
 }}}
 
-Look at the method {{{-(void)iStartWithAnEmptyShoppingCart}}}. The first thig it does is getting a reference to the application under test (AUT) and then call a method that will clear the shopping cart.  You see that you get a lot of flexibility to play with the state of your application the way you want.
+Look at the method {{{-(void)iStartWithAnEmptyShoppingCart}}}. The first thing it does is getting a reference to the application under test (AUT) and then calls a method that will clear the shopping cart.  You see that you get a lot of flexibility to play with the state of your application.
 
 The method {{{-(void)iLaunchedThePetshopInLandscape}}} is using an operator that can interact with the device’s properties.  In this case, it’s forcing the display in landscape.
 
-The IAWhen type, is used to do an action.  In our example, the action is to touch the  button.
+The IAWhen type, is used to do an action.  In our example, the action is to touch the button.
 
 If you look closely  at the test sentence, you can see two sections.  The first one at the left of « on » and another one at it’s right.
 
@@ -137,7 +137,7 @@ The left part is the way to tell iAccept to use another fixture than the default
 
 It is important to segregate our fixtures to keep the code manageable and reusable.
 
-So, we need to create a fixture named « MenuViewFixture « to handle our « iTouchThePromoButton » action.
+So, we need to create a fixture named "MenuViewFixture" to handle our "iTouchThePromoButton" action.
 
 {{{
 #import <Framework-iAccept/IABaseFixture.h>
@@ -180,7 +180,7 @@ This line is creating a split view operator.  We need it to get the master and t
 {{{
 IAViewOperator* masterViewOperator = [splitOperator masterViewOperator];
 }}}
-We retrieve the  split view’s master view.  A generic view operator is returned because we do not have a specific operator for this kind of view.
+We retrieve the split view’s master view.  A generic view operator is returned because we do not have a specific operator for this kind of view.
 {{{
 IAButtonOperator* promoButton = [masterViewOperator searchForButtonWithImage:[UIImage imageNamed:@"star.png"]  forState:UIControlStateNormal];
 }}}
@@ -192,9 +192,9 @@ If the button was not found, we would have get a nil object.
 {{{
 [promoButton touch];
 }}}
-Now that we have our button operator, we can issue a touch action by using the operator touch method.
+Now that we have our button operator, we can issue a touch action by using the operator's touch method.
 
-The last step of our test is to validate that button’s touch really triggered the promotion screen to appear.
+The last step of our test is to validate that the button’s touch really triggered the promotion screen to appear.
 
 We can achieve that with the IAThen type.
 
@@ -204,7 +204,7 @@ Has you can see, the IAThen type has a structure too.
 
 In red, you have the name of the fixture that will handle the verification.
 
-In blue, it is the method name that will handle the verification.  Int the same way has in IAWhen,  the method name is a camel-case concatenation of the words.
+In blue, it is the method name that will handle the verification.  In the same way has in IAWhen,  the method name is a camel-case concatenation of the words.
 
 In green you have the « the »  keyword that will be stripped, it useful only for readability.
 
@@ -246,7 +246,7 @@ We can now implement our MainViewFixture
 @end
 }}}
 
-In the method  {{{-(IAThenResult*)displaysThePromotions}}} we have  the known split view operator that will give us the detail view operator.
+In the method  {{{-(IAThenResult*)displaysThePromotions}}} we have the known split view operator that will give us the detail view operator.
 
 {{{
 IASplitViewOperator* splitOperator = [IASplitViewOperator splitViewOperatorForAppDelegate:[self appDelegate]]; 
