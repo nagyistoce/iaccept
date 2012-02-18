@@ -127,7 +127,7 @@ The method {{{-(void)iLaunchedThePetshopInLandscape}}} is using an operator that
 
 The IAWhen type, is used to do an action.  In our example, the action is to touch the button.
 
-If you look closely  at the test sentence, you can see two sections.  The first one at the left of « on » and another one at it’s right.
+If you look closely  at the test sentence, you can see two sections.  The first one at the left of « on » and another one at its right.
 
 
 <font color="red">i touch the promo button</font> on <font color="red">menu view</font>
@@ -184,7 +184,7 @@ We retrieve the split view’s master view.  A generic view operator is returned
 {{{
 IAButtonOperator* promoButton = [masterViewOperator searchForButtonWithImage:[UIImage imageNamed:@"star.png"]  forState:UIControlStateNormal];
 }}}
-Here, we use the master view operator as our base search view.  Every view operators has search methods to find a specific subview. In this scenario, we search for a button that has the image star.png has it’s image when in normal state.
+Here, we use the master view operator as our base search view.  Every view operators has search methods to find a specific subview. In this scenario, we search for a button that has the image star.png has its image when in normal state.
 
 Because we have a specific operator for a button view, the right operator’s type is returned.
 If the button was not found, we would have get a nil object.
