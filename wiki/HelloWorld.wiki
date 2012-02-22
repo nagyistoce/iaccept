@@ -67,3 +67,11 @@ http://iaccept.googlecode.com/svn/wiki/images/helloworld13.png
 Your linked frameworks list should look like this:
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld14.png
+
+Open the atHelloWorld target in the tree in the left pane of Xcode and delete the files ETAppDelegate.h and ETAppDelegate.m.  Sinc atHelloWorld is the test target, we dont need those files.
+
+http://iaccept.googlecode.com/svn/wiki/images/helloworld16.png
+
+The time has come to write code.  Go in the main.m file of atHelloWorld target.
+
+http://iaccept.googlecode.com/svn/wiki/images/helloworld15.png
