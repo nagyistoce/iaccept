@@ -48,5 +48,14 @@ We now have our test taget.  To be able to use iAccept, we must link the iAccept
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld9.png
 
-Click the + sign and the bottom of the section and thne click the Add Other... button.  Navigate to the location of the iAccept framework you downloaded from the Downloads section of this site.
+Click the + sign and the bottom of the section and thne click the Add Other... button.  
 
+http://iaccept.googlecode.com/svn/wiki/images/helloworld10.png
+
+Navigate to the location of the iAccept framework you downloaded from the Downloads section of this site and select the unzipped framework.  Click Open.
+
+http://iaccept.googlecode.com/svn/wiki/images/helloworld11.png
+
+You can now see the iAccept framework in the list.
+
+http://iaccept.googlecode.com/svn/wiki/images/helloworld12.png
