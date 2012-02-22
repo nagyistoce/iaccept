@@ -1,0 +1,5 @@
+Hi,
+
+in this simple tutorial we will build a new application to show you how to get started from scratch.  If you have experience in objective-c and iOS development, you can skip directly to the First Test wiki page that will show you how to add acceptance tests to an existing project.
+
+Here we go!
