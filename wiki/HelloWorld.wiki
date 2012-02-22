@@ -26,3 +26,24 @@ We now have a new single view project.
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld5.png
 
+Because we want to do ATDD (Acceptance tests driven development) we begin our project by setting up iAccept.
+
+The first thing to do is to create a new target for our tests.  This way, our tests wont be embedded in our application and we will be able to ship it without any dependency to the test framework.
+
+At the bottom of the screen, click on the Add Target button.  You must be in the project settings.
+
+http://iaccept.googlecode.com/svn/wiki/images/helloworld6.png
+
+You will then see the template screen.  Choose Empty Application.
+
+http://iaccept.googlecode.com/svn/wiki/images/helloworld7.png
+
+Click next and enter the new target's details.  I like to use the name of my application prefixed with "at" standing for "acceptance tests".
+
+http://iaccept.googlecode.com/svn/wiki/images/helloworld8.png
+
+Click Finish.
+
+
+
+
