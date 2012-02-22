@@ -1,5 +1,9 @@
 Hi,
 
-in this simple tutorial we will build a new application to show you how to get started from scratch.  If you have experience in objective-c and iOS development, you can skip directly to the First Test wiki page that will show you how to add acceptance tests to an existing project.
+in this simple tutorial we will build a new application to show you how to get started from scratch.  If you have experience with Objective-C and iOS development, you can skip directly to the First Test wiki page that will show you how to add acceptance tests to an existing project.
 
 Here we go!
+
+First, you must have Xcode installed on your mac.  This tutorial is done with Xcode 4.3.
+
+Open xcode and click on "Create a new Xcode project"
