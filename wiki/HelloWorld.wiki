@@ -64,6 +64,6 @@ iAccept has a dependency on the MapKit framework from the iOS sdk.  You must add
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld13.png
 
-Your linked framework list should look like this:
+Your linked frameworks list should look like this:
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld14.png
