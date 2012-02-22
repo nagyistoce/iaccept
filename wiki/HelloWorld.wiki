@@ -44,6 +44,9 @@ http://iaccept.googlecode.com/svn/wiki/images/helloworld8.png
 
 Click Finish.
 
+We now have our test taget.  To be able to use iAccept, we must link the iAccept framework with our target.  Go in the atHelloWorld target settings, and click the summary tab.  Scroll down until you see the "Link Frameworks and Libraries" section.
 
+http://iaccept.googlecode.com/svn/wiki/images/helloworld9.png
 
+Click the + sign and the bottom of the section and thne click the Add Other... button.  Navigate to the location of the iAccept framework you downloaded from the Downloads section of this site.
 
