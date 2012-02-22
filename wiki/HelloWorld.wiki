@@ -6,10 +6,23 @@ Here we go!
 
 First, you must have Xcode installed on your mac.  This tutorial is done with Xcode 4.3.
 
-Open xcode and click on "Create a new Xcode project"
+Open xcode and click on "Create a new Xcode project".
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld1.png
 
 Select iOS Application -> Single View Application has template.
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld2.png
+
+Click next and enter your Application details.
+
+http://iaccept.googlecode.com/svn/wiki/images/helloworld3.png
+
+Choose the location of your project and click Create.
+
+http://iaccept.googlecode.com/svn/wiki/images/helloworld4.png
+
+We now have a new single view project.
+
+http://iaccept.googlecode.com/svn/wiki/images/helloworld5.png
+
