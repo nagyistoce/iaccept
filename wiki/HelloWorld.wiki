@@ -59,3 +59,11 @@ http://iaccept.googlecode.com/svn/wiki/images/helloworld11.png
 You can now see the iAccept framework in the list.
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld12.png
+
+iAccept has a dependency on the MapKit framework from the iOS sdk.  You must add this dependency by clicking the + button then add the MapKit framework under IOS 5.0.
+
+http://iaccept.googlecode.com/svn/wiki/images/helloworld13.png
+
+Your linked framework list should look like this:
+
+http://iaccept.googlecode.com/svn/wiki/images/helloworld14.png
