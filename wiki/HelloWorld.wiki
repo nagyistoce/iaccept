@@ -152,6 +152,16 @@ Right click on you behavior group and select <i>New File</i>.  Choose iOS -> Coc
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld19.png
 
+Click <i>Next</i> and give you new class the name <i>HelloWorldBehaviors</i>.
+
+http://iaccept.googlecode.com/svn/wiki/images/helloworld20.png
+
+Then, choose where you will save your new class, the default location is fine.  Be sure to use your <i>behavior</i> group and to select only your atHelloWorld target.
+
+http://iaccept.googlecode.com/svn/wiki/images/helloworld21.png
+
+Click <i>Create</i>.
+
 <h2> Writing the code for US2 : Say Goodbye </h2>
 
 <h2> Writing the code for US3 : Hide the app </h2>
