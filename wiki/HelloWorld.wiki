@@ -1,3 +1,5 @@
+IMPORTANT : THIS TUTORIAL IS CURRENTLY UNDER CONSTRUCTION
+
 In this simple tutorial, we will build a new application to show you how to get started from scratch.  If you have experience with Objective-C and iOS development, you can skip directly to the FirstTest wiki page that will show you how to add acceptance tests to an existing project.
 
 We"ll be building a very simple Hello World application.
@@ -6,19 +8,21 @@ Before we start, you must have Xcode installed on your mac.  This tutorial is do
 
 Here we go!
 
-Step 1 : Open Xcode and click on "Create a new Xcode project".
+Step 1 : We"ll first have to create our project
+
+Step 1.1 : Open Xcode and click on "Create a new Xcode project".
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld1.png
 
-Select iOS Application -> Single View Application.
+Step 1.2 : Select iOS Application -> Single View Application.
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld2.png
 
-Click next and enter your Application details.
+Step 1.3 : Click next and enter your Application details.
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld3.png
 
-Choose the location of your project and click Create.
+Step 1.4 : Choose the location of your project and click Create.
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld4.png
 
