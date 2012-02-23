@@ -4,7 +4,7 @@ Here we go!
 
 First, you must have Xcode installed on your mac.  This tutorial is done with Xcode 4.3.
 
-Open xcode and click on "Create a new Xcode project".
+Open Xcode and click on "Create a new Xcode project".
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld1.png
 
