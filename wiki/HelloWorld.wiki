@@ -101,8 +101,9 @@ Step 2.9: <i>Open the atHelloWorld target in the tree in the left pane of Xcode 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld16.png
 
 
-<h3>Step 3 : Writing the tests first !!! </h3>
-Now that we're all set with iAccept, let's write some tests
+<h2> Writing the acceptance tests first !!! </h2>
+Ok, we're all setup, and our team has come with the ideas for test scenarios . How do we turn that into an executable specification?
+
 Step 2.10: <i>The time has come to write code.  Go in the main.m file of atHelloWorld target.</i>
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld15.png
