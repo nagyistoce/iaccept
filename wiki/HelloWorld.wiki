@@ -162,6 +162,10 @@ http://iaccept.googlecode.com/svn/wiki/images/helloworld21.png
 
 Click <i>Create</i>.
 
+You can now see your new class files undre your <i>behavior</i> group.  The file HelloWorldBehaviors.h is the header file.  Since our class will not be used by another class directly, we wont be editing it.  All our behavior definition will be in the file HelloWorldBehaviors.h.
+
+http://iaccept.googlecode.com/svn/wiki/images/helloworld22.png
+
 <h2> Writing the code for US2 : Say Goodbye </h2>
 
 <h2> Writing the code for US3 : Hide the app </h2>
