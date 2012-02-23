@@ -3,7 +3,7 @@ IMPORTANT : THIS TUTORIAL IS CURRENTLY UNDER CONSTRUCTION - DO NOT USE YET!!!
 In this simple tutorial, we will build a new application to show you how to get started from scratch.  If you have experience with Objective-C and iOS development, you can skip directly to the FirstTest wiki page that will show you how to add acceptance tests to an existing project.
 
 <h2> Our requirements </h2> 
-We"ll be building a very simple Hello World application. 
+We'll be building a very simple Hello World application. 
 
 Let's say our application will have user stories :
  * US1: Say hello [just display Hello World! in a button at startup]
