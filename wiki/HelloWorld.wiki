@@ -96,6 +96,11 @@ Step 2.8: <i>Your linked frameworks list should look like this:</i>
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld14.png
 
+Step 2.9.1 : To test HelloWorld application, we need to add its files in atHelloWorld target.  
+Under "Compile Sources", you add the file ETAppDelegate.m and under "Copy Bundle Resources" you add ETViewController.xib by clicking on the + button at the end of each section.  After doing so, it should look like this:
+
+http://iaccept.googlecode.com/svn/wiki/images/helloworld17.png
+
 Step 2.9: <i>Open the atHelloWorld target in the tree in the left pane of Xcode and delete the files ETAppDelegate.h and ETAppDelegate.m.  Sinc atHelloWorld is the test target, we dont need those files.</i>
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld16.png
