@@ -24,7 +24,7 @@ SC2 :  Say goodbye
  * Then the Goodbye message is displayed
 
 SC3 :  Hide the app
- * Given the app is started and the goodbye message is displayed
+ * Given the app is started and the Goodbye message is displayed
  * When I touch the message
  * Then the app is no longer visible
 
