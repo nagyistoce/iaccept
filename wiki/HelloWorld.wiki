@@ -58,7 +58,7 @@ Step 1.5 : We now have a new single view project.
 http://iaccept.googlecode.com/svn/wiki/images/helloworld5.png
 
 <h3>Step 2 : Creating a target to hold our acceptance tests </h3>
-By putting the tests a different target, we make it easier to isolate them so they wont be embedded in our application. We will be able to ship it without any dependency to the test framework.
+By putting the tests in a different target, we make it easier to isolate them so they wont be embedded in our application. We will be able to ship it without any dependency to the test framework.
 
 Step 2.1 :<i> At the bottom of the screen, click on the Add Target button.  You must be in the project settings.</i>
 
@@ -139,4 +139,3 @@ Step 2.10: <i></i>
 <h2> Writing the code for US2 : Say Goodbye </h2>
 
 <h2> Writing the code for US3 : Hide the app </h2>
-
