@@ -10,7 +10,7 @@ Step 1 : Open Xcode and click on "Create a new Xcode project".
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld1.png
 
-Select iOS Application -> Single View Application has template.
+Select iOS Application -> Single View Application.
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld2.png
 
