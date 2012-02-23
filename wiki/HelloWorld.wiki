@@ -142,27 +142,27 @@ Step 3.1: <i></i>
 
 <h2> Writing the code for US1 : Say Hello </h2>
 
-With iAccept, you write the executable specification in a test class.  Each test class contains the behaviors for a view.   By organizing the tests this way, it is easy and fast to find tests and to know where to put them.
+With iAccept, you write the executable specification in a test class.  Each test class contains the scenarios for a view.   By organizing the tests this way, it is easy and fast to find tests and to know where to put them.
 
-We create a new class named <i>HelloWorldBehaviors</i>.  To stay organized, we will create it in a group named behaviors.
+We create a new class named <i>HelloWorldScenarios</i>.  To stay organized, we will create it in a group named scenarios.
 
-To create the group, right click on atHelloWorld tree item in the left panel of Xcode and select <i>New Group</i>.  You can then rename it to <i>behavior</i>.
+To create the group, right click on atHelloWorld tree item in the left panel of Xcode and select <i>New Group</i>.  You can then rename it to <i>scenario</i>.
 
-Right click on you behavior group and select <i>New File</i>.  Choose iOS -> Cocoa Touch -> Objective-C class
+Right click on you scenario group and select <i>New File</i>.  Choose iOS -> Cocoa Touch -> Objective-C class
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld19.png
 
-Click <i>Next</i> and give you new class the name <i>HelloWorldBehaviors</i>.
+Click <i>Next</i> and give you new class the name <i>HelloWorldScenarios</i>.
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld20.png
 
-Then, choose where you will save your new class, the default location is fine.  Be sure to use your <i>behavior</i> group and to select only your atHelloWorld target.
+Then, choose where you will save your new class, the default location is fine.  Be sure to use your <i>scenarios</i> group and to select only your atHelloWorld target.
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld21.png
 
 Click <i>Create</i>.
 
-You can now see your new class files undre your <i>behavior</i> group.  The file HelloWorldBehaviors.h is the header file.  Since our class will not be used by another class directly, we wont be editing it.  All our behavior definition will be in the file HelloWorldBehaviors.h.
+You can now see your new class files undre your <i>scenarios</i> group.  The file HelloWorldScenarios.h is the header file.  Since our class will not be used by another class directly, we wont be editing it.  All our scenarios are going to be in the file HelloWorldScenarios.h.
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld22.png
 
