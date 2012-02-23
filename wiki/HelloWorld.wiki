@@ -31,9 +31,11 @@ Step 1.5 : We now have a new single view project.
 http://iaccept.googlecode.com/svn/wiki/images/helloworld5.png
 
 Step 2 : The next step is to create a new target for your iAccept acceptance tests
-Why now since we don't even have code yet? In ATDD (Acceptance tests driven development), we want to to first define the acceptance criteria of any functionality we are going to be building. The goal is to provide an unambiguous definition of the requirements to the developers so they know exactly what they need to do in the form of executable acceptance tests. 
+By putting the tests a different target, we make it easier to isolate them so they wont be embedded in our application. We will be able to ship it without any dependency to the test framework.
 
-Step 2.1 : The first thing to do is to create a new target for our tests.  This way, our tests wont be embedded in our application and we will be able to ship it without any dependency to the test framework.
+Why do this step now now since we don't even have an application to test yet? In ATDD (Acceptance tests driven development), we want to first define the acceptance criteria of any functionality we are going to be building. The goal is to provide an unambiguous definition of the requirements to the developers so they know exactly what they need to do in the form of executable acceptance tests. 
+
+Step 2.1 : The first thing to do is to create a new target for our tests. 
 
 At the bottom of the screen, click on the Add Target button.  You must be in the project settings.
 
