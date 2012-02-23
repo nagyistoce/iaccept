@@ -86,22 +86,22 @@ Step 2.5: <i>Navigate to the location of the iAccept framework you downloaded fr
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld11.png
 
-You can now see the iAccept framework in the list.
+Step 2.6: <i>You can now see the iAccept framework in the list.</i>
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld12.png
 
-iAccept has a dependency on the MapKit framework from the iOS sdk.  You must add this dependency by clicking the + button then add the MapKit framework under IOS 5.0.
+Step 2.7: <i>iAccept has a dependency on the MapKit framework from the iOS sdk.  You must add this dependency by clicking the + button then add the MapKit framework under IOS 5.0.</i>
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld13.png
 
-Your linked frameworks list should look like this:
+Step 2.8: <i>Your linked frameworks list should look like this:</i>
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld14.png
 
-Open the atHelloWorld target in the tree in the left pane of Xcode and delete the files ETAppDelegate.h and ETAppDelegate.m.  Sinc atHelloWorld is the test target, we dont need those files.
+Step 2.9: Open the atHelloWorld target in the tree in the left pane of Xcode and delete the files ETAppDelegate.h and ETAppDelegate.m.  Sinc atHelloWorld is the test target, we dont need those files.</i>
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld16.png
 
-The time has come to write code.  Go in the main.m file of atHelloWorld target.
+Step 2.10: The time has come to write code.  Go in the main.m file of atHelloWorld target.</i>
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld15.png
