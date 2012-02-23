@@ -13,19 +13,20 @@ Let's say our application will have user stories :
 In ATDD (Acceptance tests driven development), we want to first define the acceptance criteria of any functionality we are going to be building. The goal is to provide an unambiguous definition of the requirements to the development team so they know exactly what they need to do in the form of executable acceptance tests.
 
 So let's define our iAccept acceptance test scenarios for these stories :
+
 SC1 :  Say hello
-Given I started the application
-Then the Hello World! message is displayed
+ * Given I started the application
+ * Then the Hello World! message is displayed
 
 SC2 :  Say goodbye
-Given I started the application
-When I touch the message button
-Then the Goodbye message is displayed
+ * Given I started the application
+ * When I touch the message button
+ * Then the Goodbye message is displayed
 
 SC3 :  Quit the app
-Given the app is started and the goodbye message is displayed
-When I touch the message button
-Then the app is terminated
+ * Given the app is started and the goodbye message is displayed
+ * When I touch the message button
+ * Then the app is terminated
 
 
 Before we start, you must have Xcode installed on your mac.  This tutorial is done with Xcode 4.3.
