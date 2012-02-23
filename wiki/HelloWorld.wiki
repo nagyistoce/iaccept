@@ -60,8 +60,6 @@ http://iaccept.googlecode.com/svn/wiki/images/helloworld5.png
 <h3>Step 2 : Creating a target to hold our acceptance tests </h3>
 By putting the tests a different target, we make it easier to isolate them so they wont be embedded in our application. We will be able to ship it without any dependency to the test framework.
 
-Why do this step now now since we don't even have an application to test yet?  
-
 Step 2.1 :<i> At the bottom of the screen, click on the Add Target button.  You must be in the project settings.</i>
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld6.png
