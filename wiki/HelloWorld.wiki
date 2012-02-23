@@ -29,7 +29,7 @@ SC3 :  Quit the app
  * Then the app is terminated
 
 
-<h2> Now let's build it... </h2> 
+<h2> Let's setup our project environment... </h2> 
 
 Before we start, you must have Xcode installed on your mac.  This tutorial is done with Xcode 4.3.
 
@@ -101,8 +101,8 @@ Step 2.9: <i>Open the atHelloWorld target in the tree in the left pane of Xcode 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld16.png
 
 
-<h3>Step 3 : Let's write some tests first !!! </h3>
-
+<h3>Step 3 : Writing the tests first !!! </h3>
+Now that we're all set with iAccept, let's write some tests
 Step 2.10: <i>The time has come to write code.  Go in the main.m file of atHelloWorld target.</i>
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld15.png
