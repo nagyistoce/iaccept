@@ -179,6 +179,18 @@ Now we will write our first scenario.  We need to import the iAccept parent clas
 
 In our implementation file we will add a method beginning with the keyword <i>scenario</i>.  This keyword tells iAccept that the method is a scenario and it needs to execute it.
 
+{{{
+#import "HelloWorldScenarios.h"
+
+@implementation HelloWorldScenarios
+
+-(void)scenarioSayHello {
+    IAGiven(i started the application);
+    IAThen(the Hello World! message is displayed);
+}
+
+@end
+}}}
 <h2> Writing the code for US2 : Say Goodbye </h2>
 
 <h2> Writing the code for US3 : Hide the app </h2>
