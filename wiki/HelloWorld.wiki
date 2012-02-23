@@ -23,7 +23,7 @@ SC2 :  Say goodbye
  * When I touch the message
  * Then the Goodbye message is displayed
 
-SC3 :  Hide the app
+SC3 :  Say i am back
  * Given the Goodbye message is displayed
  * When I touch the message
  * Then the I am back message is displayed
