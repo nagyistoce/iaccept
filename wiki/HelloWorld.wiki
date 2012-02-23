@@ -12,7 +12,7 @@ Let's say our application will have user stories :
 
 In ATDD (Acceptance tests driven development), we want to first define the acceptance criteria of any functionality we are going to be building. The goal is to provide an unambiguous definition of the requirements to the development team so they know exactly what they need to do in the form of executable acceptance tests.
 
-So let's define our iAccept acceptance test scenarios for these stories :
+As a team, we've defined our iAccept acceptance test scenarios for these stories :
 
 SC1 :  Say hello
  * Given I started the application
