@@ -162,9 +162,22 @@ http://iaccept.googlecode.com/svn/wiki/images/helloworld21.png
 
 Click <i>Create</i>.
 
-You can now see your new class files undre your <i>scenarios</i> group.  The file HelloWorldScenarios.h is the header file.  Since our class will not be used by another class directly, we wont be editing it.  All our scenarios are going to be in the file HelloWorldScenarios.h.
+You can now see your new class files undre your <i>scenarios</i> group.  The file HelloWorldScenarios.h is the header file.  Since our class will not be used by another class directly, we wont add a definition for our scenarios in this file.  The only thing needed is to add the parent class from iAccept. All our scenarios are going to be in the file HelloWorldScenarios.h.
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld22.png
+
+Now we will write our first scenario.  We need to import the iAccept parent class for all scenario suite <i>IABaseScenarioSuite</i>.  The header file should look like this:
+
+{{{
+#import <Foundation/Foundation.h>
+#import <Framework-iAccept/IABaseScenarioSuite.h>
+
+@interface HelloWorldScenarios : IABaseScenarioSuite
+
+@end
+}}}
+
+In our implementation file we will add a method beginning with the keyword <i>scenario</i>.  This keyword tells iAccept that the method is a scenario and it needs to execute it.
 
 <h2> Writing the code for US2 : Say Goodbye </h2>
 
