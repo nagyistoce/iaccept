@@ -142,6 +142,16 @@ Step 3.1: <i></i>
 
 <h2> Writing the code for US1 : Say Hello </h2>
 
+With iAccept, you write the executable specification in a test class.  Each test class contains the behaviors for a view.   By organizing the tests this way, it is easy and fast to find tests and to know where to put them.
+
+We create a new class named <i>HelloWorldBehaviors</i>.  To stay organized, we will create it in a group named behaviors.
+
+To create the group, right click on atHelloWorld tree item in the left panel of Xcode and select <i>New Group</i>.  You can then rename it to <i>behavior</i>.
+
+Right click on you behavior group and select <i>New File</i>.  Choose iOS -> Cocoa Touch -> Objective-C class
+
+http://iaccept.googlecode.com/svn/wiki/images/helloworld19.png
+
 <h2> Writing the code for US2 : Say Goodbye </h2>
 
 <h2> Writing the code for US3 : Hide the app </h2>
