@@ -5,24 +5,24 @@ In this simple tutorial, we will build a new application to show you how to get 
 <h3> Our requirements </h3> 
 We"ll be building a very simple Hello World application. 
 
-The application will have two user stories :
+Let's say our application will have user stories :
 US1: Say hello [just display Hello World! in a button at startup]
 US2: Say goodby [when the button is clicked, display the Goodbye message]
 US3: Quit the app [when is cliked while displaying Goodbye, quit the application]
 
-In ATDD (Acceptance tests driven development), we want to first define the acceptance criteria of any functionality we are going to be building. The goal is to provide an unambiguous definition of the requirements to the developers so they know exactly what they need to do in the form of executable acceptance tests.
+In ATDD (Acceptance tests driven development), we want to first define the acceptance criteria of any functionality we are going to be building. The goal is to provide an unambiguous definition of the requirements to the development team so they know exactly what they need to do in the form of executable acceptance tests.
 
-So let's write the acceptance test scenarios for theses 3 user stories :
-US1.SC1. Say hello
+So let's define our iAccept acceptance test scenarios for these stories :
+SC1 :  Say hello
 Given I started the application
-Then I can see the Hello World! message
+Then the Hello World! message is displayed
 
-US1.SC2. Say goodbye
+SC2 :  Say goodbye
 Given I started the application
 When I touch the message button
-Then I can see the Goodbye message
+Then the Goodbye message is displayed
 
-US1.SC3. Quit the app
+SC3 :  Quit the app
 Given the app is started and the goodbye message is displayed
 When I touch the message button
 Then the app is terminated
