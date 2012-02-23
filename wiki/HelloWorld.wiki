@@ -100,6 +100,6 @@ Step 2.9: <i>Open the atHelloWorld target in the tree in the left pane of Xcode 
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld16.png
 
-Step 2.10: The time has come to write code.  Go in the main.m file of atHelloWorld target.</i>
+Step 2.10: <i>The time has come to write code.  Go in the main.m file of atHelloWorld target.</i>
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld15.png
