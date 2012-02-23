@@ -8,7 +8,7 @@ Before we start, you must have Xcode installed on your mac.  This tutorial is do
 
 Here we go!
 
-Step 1 : We"ll first have to create our project
+Step 1 : Well first have to create our project
 
 Step 1.1 : Open Xcode and click on "Create a new Xcode project".
 
