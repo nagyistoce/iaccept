@@ -8,7 +8,7 @@ Before we start, you must have Xcode installed on your mac.  This tutorial is do
 
 Here we go!
 
-<h3>Step 1 : Well first have to create our project </h3>
+<h3>Step 1 : Creating the Helloworld project </h3>
 
 Step 1.1 : Open Xcode and click on "Create a new Xcode project".
 
