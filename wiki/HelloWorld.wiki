@@ -106,4 +106,12 @@ Ok, we're all setup, and our team has come with the ideas for test scenarios . H
 
 Step 2.10: <i>The time has come to write code.  Go in the main.m file of atHelloWorld target.</i>
 
+
+<h2> Writing the code for US1 : Say Hello </h2>
+
+<h2> Writing the code for US2 : Say Goodbye </h2>
+
+<h2> Writing the code for US3 : Quit application </h2>
+
+
 http://iaccept.googlecode.com/svn/wiki/images/helloworld15.png
