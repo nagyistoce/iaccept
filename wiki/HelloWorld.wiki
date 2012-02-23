@@ -2,7 +2,30 @@ IMPORTANT : THIS TUTORIAL IS CURRENTLY UNDER CONSTRUCTION
 
 In this simple tutorial, we will build a new application to show you how to get started from scratch.  If you have experience with Objective-C and iOS development, you can skip directly to the FirstTest wiki page that will show you how to add acceptance tests to an existing project.
 
-We"ll be building a very simple Hello World application.
+We"ll be building a very simple Hello World application. 
+
+The application will have two user stories :
+US1: Say hello [just display Hello World! in a button at startup]
+US2: Say goodby [when the button is clicked, display the Goodbye message]
+US3: Quit the app [when is cliked while displaying Goodbye, quit the application]
+
+In ATDD (Acceptance tests driven development), we want to first define the acceptance criteria of any functionality we are going to be building. The goal is to provide an unambiguous definition of the requirements to the developers so they know exactly what they need to do in the form of executable acceptance tests.
+
+So let's write the acceptance test scenarios for theses 3 user stories :
+US1.SC1. Say hello
+Given I started the application
+Then I can see the Hello World! message
+
+US1.SC2. Say goodbye
+Given I started the application
+When I touch the message button
+Then I can see the Goodbye message
+
+US1.SC3. Quit the app
+Given the app is started and the goodbye message is displayed
+When I touch the message button
+Then the app is terminated
+
 
 Before we start, you must have Xcode installed on your mac.  This tutorial is done with Xcode 4.3.
 
@@ -14,15 +37,15 @@ Step 1.1 : <i>Open Xcode and click on "Create a new Xcode project".</i>
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld1.png
 
-Step 1.2 : Select iOS Application -> Single View Application.
+Step 1.2 : <i>Select iOS Application -> Single View Application.</i>
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld2.png
 
-Step 1.3 : Click next and enter your Application details.
+Step 1.3 : <i>Click next and enter your Application details.</i>
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld3.png
 
-Step 1.4 : Choose the location of your project and click Create.
+Step 1.4 : <i>Choose the location of your project and click Create.</i>
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld4.png
 
@@ -33,7 +56,7 @@ http://iaccept.googlecode.com/svn/wiki/images/helloworld5.png
 <h3>Step 2 : Creating a target to hold our acceptance tests </h3>
 By putting the tests a different target, we make it easier to isolate them so they wont be embedded in our application. We will be able to ship it without any dependency to the test framework.
 
-Why do this step now now since we don't even have an application to test yet? In ATDD (Acceptance tests driven development), we want to first define the acceptance criteria of any functionality we are going to be building. The goal is to provide an unambiguous definition of the requirements to the developers so they know exactly what they need to do in the form of executable acceptance tests. 
+Why do this step now now since we don't even have an application to test yet?  
 
 Step 2.1 : At the bottom of the screen, click on the Add Target button.  You must be in the project settings.
 
