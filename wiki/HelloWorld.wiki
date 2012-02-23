@@ -24,9 +24,9 @@ SC2 :  Say goodbye
  * Then the Goodbye message is displayed
 
 SC3 :  Hide the app
- * Given the app is started and the Goodbye message is displayed
+ * Given the Goodbye message is displayed
  * When I touch the message
- * Then the app is no longer visible
+ * Then the I am back message is displayed
 
 
 <h2> Let's setup our project environment... </h2> 
