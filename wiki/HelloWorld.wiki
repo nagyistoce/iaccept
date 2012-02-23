@@ -35,9 +35,7 @@ By putting the tests a different target, we make it easier to isolate them so th
 
 Why do this step now now since we don't even have an application to test yet? In ATDD (Acceptance tests driven development), we want to first define the acceptance criteria of any functionality we are going to be building. The goal is to provide an unambiguous definition of the requirements to the developers so they know exactly what they need to do in the form of executable acceptance tests. 
 
-Step 2.1 : Let's create our new target. 
-
-At the bottom of the screen, click on the Add Target button.  You must be in the project settings.
+Step 2.1 : At the bottom of the screen, click on the Add Target button.  You must be in the project settings.
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld6.png
 
