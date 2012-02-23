@@ -1,4 +1,4 @@
-IMPORTANT : THIS TUTORIAL IS CURRENTLY UNDER CONSTRUCTION
+IMPORTANT : THIS TUTORIAL IS CURRENTLY UNDER CONSTRUCTION - DO NOT USE YET!!!
 
 In this simple tutorial, we will build a new application to show you how to get started from scratch.  If you have experience with Objective-C and iOS development, you can skip directly to the FirstTest wiki page that will show you how to add acceptance tests to an existing project.
 
@@ -62,7 +62,7 @@ By putting the tests a different target, we make it easier to isolate them so th
 
 Why do this step now now since we don't even have an application to test yet?  
 
-Step 2.1 : At the bottom of the screen, click on the Add Target button.  You must be in the project settings.
+Step 2.1 :<i> At the bottom of the screen, click on the Add Target button.  You must be in the project settings.</i>
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld6.png
 
@@ -70,21 +70,19 @@ You will then see the template screen.  Choose Empty Application.
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld7.png
 
-Click next and enter the new target's details.  I like to use the name of my application prefixed with "at" standing for "acceptance tests".
+Step 2.2 : <i>Click next and enter the new target's details.  I like to use the name of my application prefixed with "at" standing for "acceptance tests". </i>
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld8.png
 
-Click Finish.
-
-We now have our test taget.  To be able to use iAccept, we must link the iAccept framework with our target.  Go in the atHelloWorld target settings, and click the summary tab.  Scroll down until you see the "Link Frameworks and Libraries" section.
+Step 2.3: <i>Click Finish.</i> We now have our test taget.  To be able to use iAccept, we must link the iAccept framework with our target.  Go in the atHelloWorld target settings, and click the summary tab.  Scroll down until you see the "Link Frameworks and Libraries" section.
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld9.png
 
-Click the + sign and the bottom of the section and thne click the Add Other... button.  
+Step 2.4: <i>Click the + sign and the bottom of the section and thne click the Add Other... button.</i>  
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld10.png
 
-Navigate to the location of the iAccept framework you downloaded from the Downloads section of this site and select the unzipped framework.  Click Open.
+Step 2.5: <i>Navigate to the location of the iAccept framework you downloaded from the Downloads section of this site and select the unzipped framework.  Click Open.</i>
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld11.png
 
