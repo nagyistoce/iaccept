@@ -6,9 +6,9 @@ In this simple tutorial, we will build a new application to show you how to get 
 We'll be building a very simple Hello World application. 
 
 Let's say our application will have user stories :
- * US1: Say hello [just display Hello World! in a button at startup]
- * US2: Say goodby [when the button is clicked, display the Goodbye message]
- * US3: Say i am back [when the button while displaying Goodbye, say I am back]
+ * US1: Say hello "just display Hello World in a label at startup"
+ * US2: Say goodbye "when the talk button is touched, display the Goodbye message"
+ * US3: Say i am back "when the talk button is touched while displaying Goodbye, display the I am back message"
 
 In ATDD (Acceptance tests driven development), we want to first define the acceptance criteria of any functionality we are going to be building. The goal is to provide an unambiguous definition of the requirements to the development team so they know exactly what they need to do in the form of executable acceptance tests.
 
@@ -456,7 +456,18 @@ The first line of the method is the now classic root view operator.  From our ro
 
 Finally, we issue the touch action on the button.
 
+Now is the time to implement this scenario in our app.
 
+First, go in the file <i>ETViewController.xib</i> and add a button.  Then put "Talk" in the <i>Title</i> property.
 
+http://iaccept.googlecode.com/svn/wiki/images/helloworld27.png
+
+We now need to add an event handler for when the button is touched.  In the button's connections inspector, drag the <i>Touch Up Inside</i> event into the <i>ETViewController.h</i> file.
+
+http://iaccept.googlecode.com/svn/wiki/images/helloworld28.png
+
+Give a name for your event handler method.  I named it <i>talkButtonTouched</i>.
+
+http://iaccept.googlecode.com/svn/wiki/images/helloworld29.png
 
 <h2> Writing the code for US3 : Hide the app </h2>
