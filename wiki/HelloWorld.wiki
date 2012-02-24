@@ -333,6 +333,17 @@ then you give your outlet a name.
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld25.png
 
+Your<i>ETViewController.h</i> will look like this :
+
+{{{
+#import <UIKit/UIKit.h>
+
+@interface ETViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UILabel *messageLabel;
+@end
+}}}
+
 <h2> Writing the code for US2 : Say Goodbye </h2>
 
 <h2> Writing the code for US3 : Hide the app </h2>
