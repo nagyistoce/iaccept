@@ -344,6 +344,18 @@ Your<i>ETViewController.h</i> will look like this :
 @end
 }}}
 
+In the class <i>ETViewController.m</i> edit method <i>viewDidLoad</i> like this:
+
+{{{
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.
+    
+    [messageLabel setText:@"Hello World"];
+}
+}}}
+
 <h2> Writing the code for US2 : Say Goodbye </h2>
 
 <h2> Writing the code for US3 : Hide the app </h2>
