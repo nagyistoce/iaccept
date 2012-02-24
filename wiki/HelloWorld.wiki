@@ -8,7 +8,7 @@ We'll be building a very simple Hello World application.
 Let's say our application will have user stories :
  * US1: Say hello [just display Hello World! in a button at startup]
  * US2: Say goodby [when the button is clicked, display the Goodbye message]
- * US3: Hide the app [when is cliked while displaying Goodbye, quit the application]
+ * US3: Say i am back [when the button while displaying Goodbye, say I am back]
 
 In ATDD (Acceptance tests driven development), we want to first define the acceptance criteria of any functionality we are going to be building. The goal is to provide an unambiguous definition of the requirements to the development team so they know exactly what they need to do in the form of executable acceptance tests.
 
@@ -20,12 +20,12 @@ SC1 :  Say hello
 
 SC2 :  Say goodbye
  * Given I started the application
- * When I touch the message
+ * When I touch the talk button
  * Then a Goodbye message is displayed
 
 SC3 :  Say i am back
  * Given the Goodbye message is displayed
- * When I touch the message
+ * When I touch the talk button
  * Then an I am back message is displayed
 
 
@@ -368,6 +368,95 @@ Execute atHelloWorld again, your scenario is now a success!
 2012-02-24 13:22:13.223 atHelloWorld[439:11603] TESTS_PASSED [suites=1, tests=1, tests passed=1, tests failed=0, statements=2, time=1.060791sec]
 }}}
 
+Good job, our first scenario is a success and from now on we are sure this functionality will always work.
+
 <h2> Writing the code for US2 : Say Goodbye </h2>
+
+We continue with our use case 2 by adding a new method named <i>scenarioSayGoodBye</i> in our <i>HelloWorldScenarios</i> class that will specify this second scenario.
+
+{{{
+#import "HelloWorldScenarios.h"
+
+@implementation HelloWorldScenarios
+
+-(void)scenarioSayHello {
+    IAGiven(i started the application);
+    IAThen(a Hello World message is displayed);
+}
+
+-(void)scenarioSayGoodbye {
+    IAGiven(i started the application);
+    IAWhen(i touch the talk button);
+    IAThen(a Goodbye message is displayed);
+}
+
+@end
+}}}
+
+The new statement here is IAWhen.  IAWhen serves has an action statement.  This is the one used when we want to do an interaction with our app like touching a button or scrolling a list.
+
+Like the IAGiven and the IAThen statements, ITWhen will call a method who's name is derived from the sentence.  Her this method is <i>iTouchTheTalkButton</i>.
+
+In our <i>HelloWorldFixture</i> we add the method.  The implementation looks like this :
+
+{{{
+#import "HelloWorldFixture.h"
+#import <Framework-iAccept/IAViewOperator.h>
+#import <Framework-iAccept/IALabelOperator.h>
+#import <Framework-iAccept/IAThenResult.h>
+#import <Framework-iAccept/IAButtonOperator.h>
+
+
+NSString * const STARTUP_MESSAGE = @"Hello World";
+
+@implementation HelloWorldFixture
+
+- (void)resetMessage:(IALabelOperator *)messageLabel {
+    NSString* messageText = [messageLabel text];
+    
+    if (![messageText isEqualToString:STARTUP_MESSAGE]) {
+        [messageLabel setText:STARTUP_MESSAGE];
+    }
+}
+
+- (IALabelOperator *)findMessageLabel {
+    IAViewOperator* helloWorldViewOperator = [IAViewOperator viewOperatorForAppDelegateRootView:[self appDelegate]];
+    
+    IALabelOperator* messageLabel = (IALabelOperator*)[helloWorldViewOperator searchForViewWithTag:1 toDepth:0];
+    return messageLabel;
+}
+
+-(void)iStartedTheApplication {
+    IALabelOperator *messageLabel = [self findMessageLabel];
+    [self resetMessage:messageLabel];
+}
+
+-(IAThenResult*)aHelloWorldMessageIsDisplayed {
+    IALabelOperator *messageLabel = [self findMessageLabel];
+    
+    if (messageLabel && [[messageLabel text] isEqualToString:STARTUP_MESSAGE]) {
+        return [IAThenResult makeThenStatementConditionMetReturnValue];
+    } else {
+        return [IAThenResult makeThenStatementConditionNotMetValue:[NSString stringWithFormat:@"Expected message to be '%@', but was '%@'", STARTUP_MESSAGE, [messageLabel text]]];
+    }
+}
+
+-(void)iTouchTheTalkButton {
+    IAViewOperator* helloWorldViewOperator = [IAViewOperator viewOperatorForAppDelegateRootView:[self appDelegate]];
+    
+    IAButtonOperator* talkButton = [helloWorldViewOperator searchForButtonWithText:@"Talk" forState:UIControlStateNormal];
+    
+    [talkButton touch];
+}
+
+@end
+}}}
+
+The first line of the method is the now classic root view operator.  From our root view operator, we search for a button with the text "Talk" for the normal state of that button.
+
+Finally, we issue the touch action on the button.
+
+
+
 
 <h2> Writing the code for US3 : Hide the app </h2>
