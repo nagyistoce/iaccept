@@ -460,7 +460,59 @@ The last statement is the verification and we implement it with an IAThen.  Sinc
 
 Wouldn't it be nice to have a parameter for the label's text?  Ok then, lets do it.
 
-We can refactor our <i>HelloWorldFixture</i>
+We can refactor our <i>HelloWorldFixture</i> to introduce the parameter and iAccept will do the rest.
+
+{{{
+#import "HelloWorldFixture.h"
+#import <Framework-iAccept/IAViewOperator.h>
+#import <Framework-iAccept/IALabelOperator.h>
+#import <Framework-iAccept/IAThenResult.h>
+#import <Framework-iAccept/IAButtonOperator.h>
+
+NSString * const STARTUP_MESSAGE = @"Hello World";
+
+@implementation HelloWorldFixture
+
+- (void)resetMessage:(IALabelOperator *)messageLabel {
+    NSString* messageText = [messageLabel text];
+    
+    if (![messageText isEqualToString:STARTUP_MESSAGE]) {
+        [messageLabel setText:STARTUP_MESSAGE];
+    }
+}
+
+- (IALabelOperator *)findMessageLabel {
+    IAViewOperator* helloWorldViewOperator = [IAViewOperator viewOperatorForAppDelegateRootView:[self appDelegate]];
+    
+    IALabelOperator* messageLabel = (IALabelOperator*)[helloWorldViewOperator searchForViewWithTag:1 toDepth:0];
+    return messageLabel;
+}
+
+-(void)iStartedTheApplication {
+    IALabelOperator *messageLabel = [self findMessageLabel];
+    [self resetMessage:messageLabel];
+}
+
+-(IAThenResult*)displayedMessageIs:(NSString*)message {
+    IALabelOperator *messageLabel = [self findMessageLabel];
+    
+    if (messageLabel && [[messageLabel text] isEqualToString:message]) {
+        return [IAThenResult makeThenStatementConditionMetReturnValue];
+    } else {
+        return [IAThenResult makeThenStatementConditionNotMetValue:[NSString stringWithFormat:@"Expected message to be '%@', but was '%@'", message, [messageLabel text]]];
+    }
+}
+
+-(void)iTouchTheTalkButton {
+    IAViewOperator* helloWorldViewOperator = [IAViewOperator viewOperatorForAppDelegateRootView:[self appDelegate]];
+    
+    IAButtonOperator* talkButton = [helloWorldViewOperator searchForButtonWithText:@"Talk" forState:UIControlStateNormal];
+    
+    [talkButton touch];
+}
+
+@end
+}}}
 
 
 Now is the time to implement this scenario in our app.
