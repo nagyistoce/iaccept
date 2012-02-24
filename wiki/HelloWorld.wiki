@@ -16,17 +16,17 @@ As a team, we've defined our iAccept acceptance test scenarios for these stories
 
 SC1 :  Say hello
  * Given I started the application
- * Then the Hello World! message is displayed
+ * Then a Hello World! message is displayed
 
 SC2 :  Say goodbye
  * Given I started the application
  * When I touch the message
- * Then the Goodbye message is displayed
+ * Then a Goodbye message is displayed
 
 SC3 :  Say i am back
  * Given the Goodbye message is displayed
  * When I touch the message
- * Then the I am back message is displayed
+ * Then an I am back message is displayed
 
 
 <h2> Let's setup our project environment... </h2> 
@@ -186,7 +186,7 @@ In our implementation file we will add a method beginning with the keyword <i>sc
 
 -(void)scenarioSayHello {
     IAGiven(i started the application);
-    IAThen(the Hello World! message is displayed);
+    IAThen(a Hello World message is displayed);
 }
 
 @end
@@ -255,7 +255,7 @@ In our example's second line, we use the <i>helloWorldViewOperator</i> to search
 
 Now that we have an handle on our future message label, we can reset its value so we begin the scenario with a known state.  This is what the method <i>resetMessage</i> does.
 
-The second statement is verifying if the application starts with the message <i>Hello World!</i> in the message label.  Has with the IAGiven statement, we will create a method named <i>theHelloWorldMessageIsDisplayed<\i> derived from the sentence.
+The second statement is verifying if the application starts with the message <i>Hello World!</i> in the message label.  Has with the IAGiven statement, we will create a method named <i>aHelloWorldMessageIsDisplayed<\i> derived from the sentence.
 
 We will use the same operators has in the <i>iStartedTheApplication</i> method.  
 
@@ -291,7 +291,7 @@ NSString * const STARTUP_MESSAGE = @"Hello World!";
     [self resetMessage:messageLabel];
 }
 
--(IAThenResult*)theHelloWorldMessageIsDisplayed {
+-(IAThenResult*)aHelloWorldMessageIsDisplayed {
     IALabelOperator *messageLabel = [self findMessageLabel];
     
     if (messageLabel && [[messageLabel text] isEqualToString:STARTUP_MESSAGE]) {
