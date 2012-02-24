@@ -5,10 +5,10 @@ In this tutorial, we will build a new application to show you how to get started
 <h2> Our requirements </h2> 
 We'll be building a very simple Hello World application. 
 
-Let's say our application will have user stories :
- * US1: Say hello "just display Hello World in a label at startup"
- * US2: Say goodbye "when the talk button is touched, display the Goodbye message"
- * US3: Say i am back "when the talk button is touched while displaying Goodbye, display the I am back message"
+Let's say we would like to have the following features :
+ * Feature 1: Say Hello  : just display Hello World in a label at startup
+ * Feature 2: Say Goodbye : when the talk button is touched, display the Goodbye message
+ * Feature 3: Say I am back : when the talk button is touched while displaying Goodbye, display the I am back message
 
 In ATDD (Acceptance tests driven development), we want to first define the acceptance criteria of any functionality we are going to be building. The goal is to provide an unambiguous definition of the requirements to the development team so they know exactly what they need to do in the form of executable acceptance tests.
 
