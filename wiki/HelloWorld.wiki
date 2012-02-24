@@ -1,6 +1,6 @@
 IMPORTANT : THIS TUTORIAL IS CURRENTLY UNDER CONSTRUCTION - DO NOT USE YET!!!
 
-In this simple tutorial, we will build a new application to show you how to get started from scratch.  If you have experience with Objective-C and iOS development, you can skip directly to the FirstTest wiki page that will show you how to add acceptance tests to an existing project.
+In this tutorial, we will build a new application to show you how to get started from scratch.  If you have experience with Objective-C and iOS development, you can skip directly to the FirstTest wiki page that will show you how to add acceptance tests to an existing project.
 
 <h2> Our requirements </h2> 
 We'll be building a very simple Hello World application. 
@@ -31,7 +31,7 @@ SC3 :  Say i am back
 
 <h2> Let's setup our project environment... </h2> 
 
-Before we start, you must have Xcode installed on your mac.  This tutorial is done with Xcode 4.3.
+Before we start, you must have Xcode installed on your mac.  This tutorial is done with Xcode 4.3.  We assume that you use ARC (automatic reference counting) too.  
 
 Here we go!
 
