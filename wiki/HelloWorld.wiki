@@ -255,6 +255,16 @@ In our example's second line, we use the <i>helloWorldViewOperator</i> to search
 
 Now that we have an handle on our future message label, we can reset its value so we begin the scenario with a known state.  This is what the method <i>resetMessage</i> does.
 
+The second statement is verifying if the application starts with the message <i>Hello World!</i> in the message label.  Has with the IAGiven statement, we will create a method named <i>theHelloWorldMessageIsDisplayed<\i> derived from the sentence.
+
+We will use the same operators has in the <i>iStartedTheApplication</i> method.  
+
+Here is the new method :
+
+{{{
+
+}}}
+
 <h2> Writing the code for US2 : Say Goodbye </h2>
 
 <h2> Writing the code for US3 : Hide the app </h2>
