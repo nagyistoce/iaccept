@@ -325,6 +325,10 @@ Now go in the HelloWorld project's <i>ETViewController.xib</i> and add a label.
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld23.png
 
+In the label's properties, put 1 in the tag attribute. It is our search hook.
+
+http://iaccept.googlecode.com/svn/wiki/images/helloworld26.png
+
 You then need a reference of the label in your view controller, you do this by dragging the New Referencing Outlet link in your view controller header like this : 
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld24.png
@@ -355,6 +359,8 @@ In the class <i>ETViewController.m</i> edit method <i>viewDidLoad</i> like this:
     [messageLabel setText:@"Hello World"];
 }
 }}}
+
+Execute atHelloWorld again, your scenario is now a success!
 
 <h2> Writing the code for US2 : Say Goodbye </h2>
 
