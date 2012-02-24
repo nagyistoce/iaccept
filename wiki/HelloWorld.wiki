@@ -460,7 +460,7 @@ The last statement is the verification and we implement it with an IAThen.  Sinc
 
 Wouldn't it be nice to have a parameter for the label's text?  Ok then, lets do it.
 
-We can refactor our <i>HelloWorldFixture</i> to introduce the parameter and iAccept will do the rest.
+We can refactor our <i>HelloWorldFixture</i> to introduce the parameter on method <i>displayedMessageIsHelloWorld</i> and iAccept will do the rest.
 
 {{{
 #import "HelloWorldFixture.h"
