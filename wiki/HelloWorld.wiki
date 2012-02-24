@@ -362,6 +362,12 @@ In the class <i>ETViewController.m</i> edit method <i>viewDidLoad</i> like this:
 
 Execute atHelloWorld again, your scenario is now a success!
 
+{{{
+2012-02-24 13:22:13.221 atHelloWorld[439:11603] TEST_SUITE_PASSED [suite=HelloWorldScenarios, tests=1, passed=1, failed=0 time=1.060791sec]
+2012-02-24 13:22:13.222 atHelloWorld[439:11603]  
+2012-02-24 13:22:13.223 atHelloWorld[439:11603] TESTS_PASSED [suites=1, tests=1, tests passed=1, tests failed=0, statements=2, time=1.060791sec]
+}}}
+
 <h2> Writing the code for US2 : Say Goodbye </h2>
 
 <h2> Writing the code for US3 : Hide the app </h2>
