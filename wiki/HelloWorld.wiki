@@ -267,7 +267,7 @@ Here is the new code :
 #import <Framework-iAccept/IALabelOperator.h>
 #import <Framework-iAccept/IAThenResult.h>
 
-NSString * const STARTUP_MESSAGE = @"Hello World!";
+NSString * const STARTUP_MESSAGE = @"Hello World";
 
 @implementation HelloWorldFixture
 
@@ -302,6 +302,21 @@ NSString * const STARTUP_MESSAGE = @"Hello World!";
 }
 
 @end
+}}}
+
+Our new method {{{-(IAThenResult*)aHelloWorldMessageIsDisplayed}}} has a return value.  The <i>IAThenResult</i> class tells iAccept the state of the verification done.  If a {{{[IAThenResult makeThenStatementConditionMetReturnValue]}}} is returned, then iAccept will continue with the next scenario.  If {{{[IAThenResult makeThenStatementConditionNotMetValue...]}}} is returned, then iAccept will recall this method until the timeout is reached.
+
+In this example, we return a positive answer if the label operator is not nil (meaning it was found) and the label's text is "Hello World".
+
+If that is not the case, then we return a negative answer with a message describing the reason.
+
+If we execute our scenario by clicking Run on our atHelloWorld target in Xcode, we will see in the console a failure.
+
+{{{
+2012-02-24 10:35:49.326 atHelloWorld[604:11603] TEST_FAILED [test=scenarioSayHello, errorMessage=[HelloWorldFixture aHelloWorldMessageIsDisplayed] test timed out (30.000 seconds) [Expected message to be 'Hello World', but was '(null)']: at line 15, time=31.019733sec]
+2012-02-24 10:35:49.328 atHelloWorld[604:11603] TEST_SUITE_FAILED [suite=HelloWorldScenarios, tests=1, passed=0, failed=1 time=31.019733sec]
+2012-02-24 10:35:49.329 atHelloWorld[604:11603]  
+2012-02-24 10:35:49.331 atHelloWorld[604:11603] TESTS_FAILED [suites=1, tests=1, tests passed=0, tests failed=1, statements=2, time=31.019733sec]
 }}}
 
 <h2> Writing the code for US2 : Say Goodbye </h2>
