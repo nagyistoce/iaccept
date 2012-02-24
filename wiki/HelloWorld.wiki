@@ -255,7 +255,7 @@ In our example's second line, we use the <i>helloWorldViewOperator</i> to search
 
 Now that we have an handle on our future message label, we can reset its value so we begin the scenario with a known state.  This is what the method <i>resetMessage</i> does.
 
-The second statement is verifying if the application starts with the message <i>Hello World!</i> in the message label.  Has with the IAGiven statement, we will create a method named <i>aHelloWorldMessageIsDisplayed<\i> derived from the sentence.
+The second statement is verifying if the application starts with the message <i>Hello World!</i> in the message label.  Has with the IAGiven statement, we will create a method named <i>aHelloWorldMessageIsDisplayed</i> derived from the sentence.
 
 We will use the same operators has in the <i>iStartedTheApplication</i> method.  
 
@@ -304,7 +304,7 @@ NSString * const STARTUP_MESSAGE = @"Hello World";
 @end
 }}}
 
-Our new method {{{-(IAThenResult*)aHelloWorldMessageIsDisplayed}}} has a return value.  The <i>IAThenResult</i> class tells iAccept the state of the verification done.  If a {{{[IAThenResult makeThenStatementConditionMetReturnValue]}}} is returned, then iAccept will continue with the next scenario.  If {{{[IAThenResult makeThenStatementConditionNotMetValue...]}}} is returned, then iAccept will recall this method until the timeout is reached.
+Our new method {{{-(IAThenResult*)aHelloWorldMessageIsDisplayed}}} has a return value.  The <i>IAThenResult</i> class tells iAccept the state of the verification done.  If a {{{[IAThenResult makeThenStatementConditionMetReturnValue]}}} is returned, then iAccept will continue with the next scenario.  If {{{[IAThenResult makeThenStatementConditionNotMetValue...]}}} is returned, then iAccept will recall <i>aHelloWorldMessageIsDisplayed</i> until the timeout is reached.
 
 In this example, we return a positive answer if the label operator is not nil (meaning it was found) and the label's text is "Hello World".
 
