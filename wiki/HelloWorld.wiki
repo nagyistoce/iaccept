@@ -191,6 +191,37 @@ In our implementation file we will add a method beginning with the keyword <i>sc
 
 @end
 }}}
+
+The next thing needed is a fixture.  A fixture is where you write the code to do what the scenario step mandate.  For each iAccept project (target) you need a default fixture.  You identify a default fixture with a protocol named <i>IADefaultAppFixture</i>.
+
+To stay organized, we create a group named <i>fixtures</i>.
+
+In that group, we create a new Objective-C class named <i>HelloWorldFixture</i>. 
+
+In the header file, we extend the class <i>IABaseFixture</i> has this parent will give us services and we add the protocol <i>IADefaultAppFixture</i> to identify it has our default fixture.
+
+The code should look like this:
+
+{{{
+#import <Foundation/Foundation.h>
+#import <Framework-iAccept/IABaseFixture.h>
+#import <Framework-iAccept/IADefaultAppFixture.h>
+
+@interface HelloWorldFixture : IABaseFixture<IADefaultAppFixture>
+
+@end
+}}}
+
+Next step is to write the actual method that will implement our test.  Each scenario statement (IAGiven, IAWhen and IAThen) will call a method our fixture.  iAccept will concatenate the words of the statement with camel-casing, search of the method and then execute it.
+
+For example, the statement {{{IAGiven(i started the application);}}} will try to call a method called {{{-(void)iStartedTheApplication}}}.
+
+
+The final implementation of this method will look like this:
+
+{{{
+}}}
+
 <h2> Writing the code for US2 : Say Goodbye </h2>
 
 <h2> Writing the code for US3 : Hide the app </h2>
