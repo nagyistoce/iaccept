@@ -387,7 +387,7 @@ We continue with our use case 2 by adding a new method named <i>scenarioSayGoodB
 -(void)scenarioSayGoodbye {
     IAGiven(i started the application);
     IAWhen(i touch the talk button);
-    IAThen(a Goodbye message is displayed);
+    IAThen(displayed message is Goodbye);
 }
 
 @end
@@ -456,7 +456,7 @@ The first line of the method is the now classic root view operator.  From our ro
 
 Finally, we issue the touch action on the button.
 
-The last statement is the verification and we implement it with an IAThen.  Since we are good programmers, we can smell a duplication between the preceding {{{IAThen(displayed message is Hello World);}}} and our new {{{IAThen(a Goodbye message is displayed);}}}.
+The last statement is the verification and we implement it with an IAThen.  Since we are good programmers, we can smell a duplication between the preceding {{{IAThen(displayed message is Hello World);}}} and our new {{{IAThen(displayed message is Goodbye);}}}.
 
 Wouldn't it be nice to have a parameter for the label's text?  Ok then, lets do it.
 
