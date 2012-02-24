@@ -818,7 +818,6 @@ Ok I think we are pertty much done,  let's run atHelloWorld!
 2012-02-24 14:31:47.765 atHelloWorld[718:11603]  
 2012-02-24 14:31:47.773 atHelloWorld[718:11603] TESTS_PASSED [suites=1, tests=3, tests passed=3, tests failed=0, statements=8, time=3.898184sec]
 2012-02-24 14:31:47.782 atHelloWorld[718:11603]  
-
+}}}
 
 Great work you just finished your first ATDD journey.  Hope you enjoyed the ride!  
-}}}
