@@ -583,4 +583,47 @@ In the file <i>ETViewController.m</i>, we add the logic that handle the touch of
 
 The generated method {{{- (IBAction)talkButtonTouched:(id)sender}}} contains the event handling code.  Here, we change the label text for "Goodbye" if it was "Hello World".
 
+Run the atHelloWorld target again and voilà!
+
+{{{
+2012-02-24 14:19:40.070 atHelloWorld[668:11603] TESTS_STARTED
+2012-02-24 14:19:40.073 atHelloWorld[668:11603]  
+2012-02-24 14:19:41.074 atHelloWorld[668:11603] TEST_SUITE_STARTED [suite=HelloWorldScenarios]
+2012-02-24 14:19:41.076 atHelloWorld[668:11603] recordThenStatement displayed message is Hello World
+2012-02-24 14:19:41.178 atHelloWorld[668:11603] Running i started the application at line 14
+2012-02-24 14:19:41.215 atHelloWorld[668:11603] parseSelectorText: selectorSourceTextStartWordIndex =0, selectorSourceTextEndWordIndex=3
+2012-02-24 14:19:41.217 atHelloWorld[668:11603] parseSelectorText: selectorSourceText =i started the application, selectorParsedText=i started the application
+2012-02-24 14:19:41.219 atHelloWorld[668:11603] IASelectorMatcher selectorText = i started the application, methodName=iStartedTheApplication
+2012-02-24 14:19:41.219 atHelloWorld[668:11603] i started the application Done
+2012-02-24 14:19:41.621 atHelloWorld[668:11603] Running displayed message is Hello World at line 15
+2012-02-24 14:19:41.724 atHelloWorld[668:11603] parseSelectorText: selectorSourceTextStartWordIndex =0, selectorSourceTextEndWordIndex=4
+2012-02-24 14:19:41.727 atHelloWorld[668:11603] parseSelectorText: selectorSourceText =displayed message is Hello World, selectorParsedText=displayed message is Hello World
+2012-02-24 14:19:41.728 atHelloWorld[668:11603] ParsedStatement = IAParsedStatement[textToParse=displayed message is Hello World,fixtureSourceText=(null),fixtureParsedText=(null),selectorSourceText=displayed message is Hello World,selectorParsedText=displayed message is Hello World,selectorName=displayedMessageIsHelloWorld]
+2012-02-24 14:19:41.730 atHelloWorld[668:11603] IASelectorMatcher selectorText = displayed message is Hello World, methodName=displayedMessageIs:
+2012-02-24 14:19:41.732 atHelloWorld[668:11603] IASelectorMatcher found argument = Hello World
+2012-02-24 14:19:41.733 atHelloWorld[668:11603] displayed message is Hello World Done
+2012-02-24 14:19:42.135 atHelloWorld[668:11603] TEST_PASSED [test=scenarioSayHello, statements=2, time=1.057849sec]
+2012-02-24 14:19:42.137 atHelloWorld[668:11603] recordThenStatement displayed message is Goodbye
+2012-02-24 14:19:42.239 atHelloWorld[668:11603] Running i started the application at line 19
+2012-02-24 14:19:42.242 atHelloWorld[668:11603] parseSelectorText: selectorSourceTextStartWordIndex =0, selectorSourceTextEndWordIndex=3
+2012-02-24 14:19:42.243 atHelloWorld[668:11603] parseSelectorText: selectorSourceText =i started the application, selectorParsedText=i started the application
+2012-02-24 14:19:42.246 atHelloWorld[668:11603] IASelectorMatcher selectorText = i started the application, methodName=iStartedTheApplication
+2012-02-24 14:19:42.247 atHelloWorld[668:11603] i started the application Done
+2012-02-24 14:19:42.650 atHelloWorld[668:11603] Running i touch the talk button at line 20
+2012-02-24 14:19:42.654 atHelloWorld[668:11603] IASelectorMatcher selectorText = i touch the talk button, methodName=iTouchTheTalkButton
+2012-02-24 14:19:42.656 atHelloWorld[668:11603] i touch the talk button Done
+2012-02-24 14:19:43.058 atHelloWorld[668:11603] Running displayed message is Goodbye at line 21
+2012-02-24 14:19:43.161 atHelloWorld[668:11603] parseSelectorText: selectorSourceTextStartWordIndex =0, selectorSourceTextEndWordIndex=3
+2012-02-24 14:19:43.164 atHelloWorld[668:11603] parseSelectorText: selectorSourceText =displayed message is Goodbye, selectorParsedText=displayed message is Goodbye
+2012-02-24 14:19:43.165 atHelloWorld[668:11603] ParsedStatement = IAParsedStatement[textToParse=displayed message is Goodbye,fixtureSourceText=(null),fixtureParsedText=(null),selectorSourceText=displayed message is Goodbye,selectorParsedText=displayed message is Goodbye,selectorName=displayedMessageIsGoodbye]
+2012-02-24 14:19:43.167 atHelloWorld[668:11603] IASelectorMatcher selectorText = displayed message is Goodbye, methodName=displayedMessageIs:
+2012-02-24 14:19:43.169 atHelloWorld[668:11603] IASelectorMatcher found argument = Goodbye
+2012-02-24 14:19:43.170 atHelloWorld[668:11603] displayed message is Goodbye Done
+2012-02-24 14:19:43.571 atHelloWorld[668:11603] TEST_PASSED [test=scenarioSayGoodbye, statements=3, time=1.432797sec]
+2012-02-24 14:19:43.573 atHelloWorld[668:11603] TEST_SUITE_PASSED [suite=HelloWorldScenarios, tests=2, passed=2, failed=0 time=2.490646sec]
+2012-02-24 14:19:43.574 atHelloWorld[668:11603]  
+2012-02-24 14:19:43.576 atHelloWorld[668:11603] TESTS_PASSED [suites=1, tests=2, tests passed=2, tests failed=0, statements=5, time=2.490646sec]
+2012-02-24 14:19:43.576 atHelloWorld[668:11603]  
+}}}
+
 <h2> Writing the code for US3 : Hide the app </h2>
