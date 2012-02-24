@@ -626,4 +626,199 @@ Run the atHelloWorld target again and voilà!
 2012-02-24 14:19:43.576 atHelloWorld[668:11603]  
 }}}
 
-<h2> Writing the code for US3 : Hide the app </h2>
+<h2> Writing the code for US3 : Say i am back </h2>
+
+Let's go in our <i>HelloWorldScenarios</i> suite and add our last scenario.
+
+{{{
+#import "HelloWorldScenarios.h"
+
+@implementation HelloWorldScenarios
+
+-(void)scenarioSayHello {
+    IAGiven(i started the application);
+    IAThen(displayed message is Hello World);
+}
+
+-(void)scenarioSayGoodbye {
+    IAGiven(i started the application);
+    IAWhen(i touch the talk button);
+    IAThen(displayed message is Goodbye);
+}
+
+-(void)scenarioSayIAmBack {
+    IAGiven(the Goodbye message is displayed);
+    IAWhen(i touch the talk button);
+    IAThen(displayed message is I am back);
+}
+
+@end
+}}}
+
+IAGiven statement is used to set up the state of the application before a scenario execution.  Here we state that the message text is "Goodbye".  It will be the responsibility of the fixture's method <i>theGoodbyeMessageIsDisplayed</i> to set that state.
+
+So let's implement that in our fixture :
+
+{{{
+#import "HelloWorldFixture.h"
+#import <Framework-iAccept/IAViewOperator.h>
+#import <Framework-iAccept/IALabelOperator.h>
+#import <Framework-iAccept/IAThenResult.h>
+#import <Framework-iAccept/IAButtonOperator.h>
+
+NSString * const STARTUP_MESSAGE = @"Hello World";
+
+@implementation HelloWorldFixture
+
+- (void)resetMessage:(IALabelOperator *)messageLabel {
+    NSString* messageText = [messageLabel text];
+    
+    if (![messageText isEqualToString:STARTUP_MESSAGE]) {
+        [messageLabel setText:STARTUP_MESSAGE];
+    }
+}
+
+- (IALabelOperator *)findMessageLabel {
+    IAViewOperator* helloWorldViewOperator = [IAViewOperator viewOperatorForAppDelegateRootView:[self appDelegate]];
+    
+    IALabelOperator* messageLabel = (IALabelOperator*)[helloWorldViewOperator searchForViewWithTag:1 toDepth:0];
+    return messageLabel;
+}
+
+-(void)iStartedTheApplication {
+    IALabelOperator *messageLabel = [self findMessageLabel];
+    [self resetMessage:messageLabel];
+}
+
+-(IAThenResult*)displayedMessageIs:(NSString*)message {
+    IALabelOperator *messageLabel = [self findMessageLabel];
+    
+    if (messageLabel && [[messageLabel text] isEqualToString:message]) {
+        return [IAThenResult makeThenStatementConditionMetReturnValue];
+    } else {
+        return [IAThenResult makeThenStatementConditionNotMetValue:[NSString stringWithFormat:@"Expected message to be '%@', but was '%@'", message, [messageLabel text]]];
+    }
+}
+
+-(void)iTouchTheTalkButton {
+    IAViewOperator* helloWorldViewOperator = [IAViewOperator viewOperatorForAppDelegateRootView:[self appDelegate]];
+    
+    IAButtonOperator* talkButton = [helloWorldViewOperator searchForButtonWithText:@"Talk" forState:UIControlStateNormal];
+    
+    [talkButton touch];
+}
+
+-(void)theGoodbyeMessageIsDisplayed {
+    IALabelOperator *messageLabel = [self findMessageLabel];
+    messageLabel.text = @"Goodbye";
+}
+
+@end
+}}}
+
+Hum i think we are done with our scenario, we can go in our app to implement that scenario.
+
+In <i>ETViewController.m</i> we add the logic for the "I am back" in the button touch event handler.
+
+{{{
+#import "ETViewController.h"
+
+@interface ETViewController ()
+
+@end
+
+@implementation ETViewController
+@synthesize messageLabel;
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.
+    
+    [messageLabel setText:@"Hello World"];
+}
+
+- (void)viewDidUnload
+{
+    [self setMessageLabel:nil];
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return YES;
+}
+
+- (IBAction)talkButtonTouched:(id)sender {
+    if ([messageLabel.text isEqualToString:@"Hello World"]) {
+        messageLabel.text = @"Goodbye";
+    } else if ([messageLabel.text isEqualToString:@"Goodbye"]) {
+        messageLabel.text = @"I am back";
+    }
+}
+@end
+}}}
+
+Ok I think we are pertty much done,  let's run atHelloWorld!
+
+{{{
+2012-02-24 14:31:42.851 atHelloWorld[718:11603] TESTS_STARTED
+2012-02-24 14:31:42.854 atHelloWorld[718:11603]  
+2012-02-24 14:31:43.855 atHelloWorld[718:11603] TEST_SUITE_STARTED [suite=HelloWorldScenarios]
+2012-02-24 14:31:43.856 atHelloWorld[718:11603] recordThenStatement displayed message is Hello World
+2012-02-24 14:31:43.957 atHelloWorld[718:11603] Running i started the application at line 14
+2012-02-24 14:31:43.983 atHelloWorld[718:11603] parseSelectorText: selectorSourceTextStartWordIndex =0, selectorSourceTextEndWordIndex=3
+2012-02-24 14:31:43.984 atHelloWorld[718:11603] parseSelectorText: selectorSourceText =i started the application, selectorParsedText=i started the application
+2012-02-24 14:31:43.985 atHelloWorld[718:11603] IASelectorMatcher selectorText = i started the application, methodName=iStartedTheApplication
+2012-02-24 14:31:43.986 atHelloWorld[718:11603] i started the application Done
+2012-02-24 14:31:44.386 atHelloWorld[718:11603] Running displayed message is Hello World at line 15
+2012-02-24 14:31:44.489 atHelloWorld[718:11603] parseSelectorText: selectorSourceTextStartWordIndex =0, selectorSourceTextEndWordIndex=4
+2012-02-24 14:31:44.492 atHelloWorld[718:11603] parseSelectorText: selectorSourceText =displayed message is Hello World, selectorParsedText=displayed message is Hello World
+2012-02-24 14:31:44.493 atHelloWorld[718:11603] ParsedStatement = IAParsedStatement[textToParse=displayed message is Hello World,fixtureSourceText=(null),fixtureParsedText=(null),selectorSourceText=displayed message is Hello World,selectorParsedText=displayed message is Hello World,selectorName=displayedMessageIsHelloWorld]
+2012-02-24 14:31:44.495 atHelloWorld[718:11603] IASelectorMatcher selectorText = displayed message is Hello World, methodName=displayedMessageIs:
+2012-02-24 14:31:44.496 atHelloWorld[718:11603] IASelectorMatcher found argument = Hello World
+2012-02-24 14:31:44.498 atHelloWorld[718:11603] displayed message is Hello World Done
+2012-02-24 14:31:44.899 atHelloWorld[718:11603] TEST_PASSED [test=scenarioSayHello, statements=2, time=1.043193sec]
+2012-02-24 14:31:44.900 atHelloWorld[718:11603] recordThenStatement displayed message is Goodbye
+2012-02-24 14:31:45.001 atHelloWorld[718:11603] Running i started the application at line 19
+2012-02-24 14:31:45.003 atHelloWorld[718:11603] parseSelectorText: selectorSourceTextStartWordIndex =0, selectorSourceTextEndWordIndex=3
+2012-02-24 14:31:45.004 atHelloWorld[718:11603] parseSelectorText: selectorSourceText =i started the application, selectorParsedText=i started the application
+2012-02-24 14:31:45.006 atHelloWorld[718:11603] IASelectorMatcher selectorText = i started the application, methodName=iStartedTheApplication
+2012-02-24 14:31:45.008 atHelloWorld[718:11603] i started the application Done
+2012-02-24 14:31:45.410 atHelloWorld[718:11603] Running i touch the talk button at line 20
+2012-02-24 14:31:45.414 atHelloWorld[718:11603] IASelectorMatcher selectorText = i touch the talk button, methodName=iTouchTheTalkButton
+2012-02-24 14:31:45.416 atHelloWorld[718:11603] i touch the talk button Done
+2012-02-24 14:31:45.818 atHelloWorld[718:11603] Running displayed message is Goodbye at line 21
+2012-02-24 14:31:45.919 atHelloWorld[718:11603] parseSelectorText: selectorSourceTextStartWordIndex =0, selectorSourceTextEndWordIndex=3
+2012-02-24 14:31:45.920 atHelloWorld[718:11603] parseSelectorText: selectorSourceText =displayed message is Goodbye, selectorParsedText=displayed message is Goodbye
+2012-02-24 14:31:45.920 atHelloWorld[718:11603] ParsedStatement = IAParsedStatement[textToParse=displayed message is Goodbye,fixtureSourceText=(null),fixtureParsedText=(null),selectorSourceText=displayed message is Goodbye,selectorParsedText=displayed message is Goodbye,selectorName=displayedMessageIsGoodbye]
+2012-02-24 14:31:45.921 atHelloWorld[718:11603] IASelectorMatcher selectorText = displayed message is Goodbye, methodName=displayedMessageIs:
+2012-02-24 14:31:45.922 atHelloWorld[718:11603] IASelectorMatcher found argument = Goodbye
+2012-02-24 14:31:45.922 atHelloWorld[718:11603] displayed message is Goodbye Done
+2012-02-24 14:31:46.323 atHelloWorld[718:11603] TEST_PASSED [test=scenarioSayGoodbye, statements=3, time=1.422304sec]
+2012-02-24 14:31:46.325 atHelloWorld[718:11603] recordThenStatement displayed message is I am back
+2012-02-24 14:31:46.428 atHelloWorld[718:11603] Running the Goodbye message is displayed at line 25
+2012-02-24 14:31:46.430 atHelloWorld[718:11603] parseSelectorText: selectorSourceTextStartWordIndex =0, selectorSourceTextEndWordIndex=4
+2012-02-24 14:31:46.432 atHelloWorld[718:11603] parseSelectorText: selectorSourceText =the Goodbye message is displayed, selectorParsedText=the Goodbye message is displayed
+2012-02-24 14:31:46.435 atHelloWorld[718:11603] IASelectorMatcher selectorText = the Goodbye message is displayed, methodName=theGoodbyeMessageIsDisplayed
+2012-02-24 14:31:46.437 atHelloWorld[718:11603] the Goodbye message is displayed Done
+2012-02-24 14:31:46.838 atHelloWorld[718:11603] Running i touch the talk button at line 26
+2012-02-24 14:31:46.843 atHelloWorld[718:11603] IASelectorMatcher selectorText = i touch the talk button, methodName=iTouchTheTalkButton
+2012-02-24 14:31:46.845 atHelloWorld[718:11603] i touch the talk button Done
+2012-02-24 14:31:47.246 atHelloWorld[718:11603] Running displayed message is I am back at line 27
+2012-02-24 14:31:47.349 atHelloWorld[718:11603] parseSelectorText: selectorSourceTextStartWordIndex =0, selectorSourceTextEndWordIndex=5
+2012-02-24 14:31:47.351 atHelloWorld[718:11603] parseSelectorText: selectorSourceText =displayed message is I am back, selectorParsedText=displayed message is I am back
+2012-02-24 14:31:47.352 atHelloWorld[718:11603] ParsedStatement = IAParsedStatement[textToParse=displayed message is I am back,fixtureSourceText=(null),fixtureParsedText=(null),selectorSourceText=displayed message is I am back,selectorParsedText=displayed message is I am back,selectorName=displayedMessageIsIAmBack]
+2012-02-24 14:31:47.354 atHelloWorld[718:11603] IASelectorMatcher selectorText = displayed message is I am back, methodName=displayedMessageIs:
+2012-02-24 14:31:47.356 atHelloWorld[718:11603] IASelectorMatcher found argument = I am back
+2012-02-24 14:31:47.357 atHelloWorld[718:11603] displayed message is I am back Done
+2012-02-24 14:31:47.759 atHelloWorld[718:11603] TEST_PASSED [test=scenarioSayIAmBack, statements=3, time=1.432687sec]
+2012-02-24 14:31:47.762 atHelloWorld[718:11603] TEST_SUITE_PASSED [suite=HelloWorldScenarios, tests=3, passed=3, failed=0 time=3.898184sec]
+2012-02-24 14:31:47.765 atHelloWorld[718:11603]  
+2012-02-24 14:31:47.773 atHelloWorld[718:11603] TESTS_PASSED [suites=1, tests=3, tests passed=3, tests failed=0, statements=8, time=3.898184sec]
+2012-02-24 14:31:47.782 atHelloWorld[718:11603]  
+
+
+Great work you just finished your first ATDD journey.  Hope you enjoyed the ride!  
+}}}
