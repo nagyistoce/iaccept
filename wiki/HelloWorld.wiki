@@ -16,17 +16,17 @@ As a team, we've defined our iAccept acceptance test scenarios for these stories
 
 SC1 :  Say hello
  * Given I started the application
- * Then a Hello World! message is displayed
+ * Then displayed message is Hello World
 
 SC2 :  Say goodbye
  * Given I started the application
  * When I touch the talk button
- * Then a Goodbye message is displayed
+ * Then displayed message is Goodbye
 
 SC3 :  Say i am back
  * Given the Goodbye message is displayed
  * When I touch the talk button
- * Then an I am back message is displayed
+ * Then displayed message is I am back
 
 
 <h2> Let's setup our project environment... </h2> 
@@ -186,7 +186,7 @@ In our implementation file we will add a method beginning with the keyword <i>sc
 
 -(void)scenarioSayHello {
     IAGiven(i started the application);
-    IAThen(a Hello World message is displayed);
+    IAThen(displayed message is Hello World);
 }
 
 @end
@@ -255,7 +255,7 @@ In our example's second line, we use the <i>helloWorldViewOperator</i> to search
 
 Now that we have an handle on our future message label, we can reset its value so we begin the scenario with a known state.  This is what the method <i>resetMessage</i> does.
 
-The second statement is verifying if the application starts with the message <i>Hello World!</i> in the message label.  Has with the IAGiven statement, we will create a method named <i>aHelloWorldMessageIsDisplayed</i> derived from the sentence.
+The second statement is verifying if the application starts with the message <i>Hello World!</i> in the message label.  Has with the IAGiven statement, we will create a method named <i>displayedMessageIsHelloWorld</i> derived from the sentence.
 
 We will use the same operators has in the <i>iStartedTheApplication</i> method.  
 
@@ -291,7 +291,7 @@ NSString * const STARTUP_MESSAGE = @"Hello World";
     [self resetMessage:messageLabel];
 }
 
--(IAThenResult*)aHelloWorldMessageIsDisplayed {
+-(IAThenResult*)displayedMessageIsHelloWorld {
     IALabelOperator *messageLabel = [self findMessageLabel];
     
     if (messageLabel && [[messageLabel text] isEqualToString:STARTUP_MESSAGE]) {
@@ -304,7 +304,7 @@ NSString * const STARTUP_MESSAGE = @"Hello World";
 @end
 }}}
 
-Our new method {{{-(IAThenResult*)aHelloWorldMessageIsDisplayed}}} has a return value.  The <i>IAThenResult</i> class tells iAccept the state of the verification done.  If a {{{[IAThenResult makeThenStatementConditionMetReturnValue]}}} is returned, then iAccept will continue with the next scenario.  If {{{[IAThenResult makeThenStatementConditionNotMetValue...]}}} is returned, then iAccept will recall <i>aHelloWorldMessageIsDisplayed</i> until the timeout is reached.
+Our new method {{{-(IAThenResult*)displayedMessageIsHelloWorld}}} has a return value.  The <i>IAThenResult</i> class tells iAccept the state of the verification done.  If a {{{[IAThenResult makeThenStatementConditionMetReturnValue]}}} is returned, then iAccept will continue with the next scenario.  If {{{[IAThenResult makeThenStatementConditionNotMetValue...]}}} is returned, then iAccept will recall <i>displayedMessageIsHelloWorld</i> until the timeout is reached.
 
 In this example, we return a positive answer if the label operator is not nil (meaning it was found) and the label's text is "Hello World".
 
@@ -313,7 +313,7 @@ If that is not the case, then we return a negative answer with a message describ
 If we execute our scenario by clicking Run on our atHelloWorld target in Xcode, we will see in the console a failure.
 
 {{{
-2012-02-24 10:35:49.326 atHelloWorld[604:11603] TEST_FAILED [test=scenarioSayHello, errorMessage=[HelloWorldFixture aHelloWorldMessageIsDisplayed] test timed out (30.000 seconds) [Expected message to be 'Hello World', but was '(null)']: at line 15, time=31.019733sec]
+2012-02-24 10:35:49.326 atHelloWorld[604:11603] TEST_FAILED [test=scenarioSayHello, errorMessage=[HelloWorldFixture displayedMessageIsHelloWorld] test timed out (30.000 seconds) [Expected message to be 'Hello World', but was '(null)']: at line 15, time=31.019733sec]
 2012-02-24 10:35:49.328 atHelloWorld[604:11603] TEST_SUITE_FAILED [suite=HelloWorldScenarios, tests=1, passed=0, failed=1 time=31.019733sec]
 2012-02-24 10:35:49.329 atHelloWorld[604:11603]  
 2012-02-24 10:35:49.331 atHelloWorld[604:11603] TESTS_FAILED [suites=1, tests=1, tests passed=0, tests failed=1, statements=2, time=31.019733sec]
@@ -381,7 +381,7 @@ We continue with our use case 2 by adding a new method named <i>scenarioSayGoodB
 
 -(void)scenarioSayHello {
     IAGiven(i started the application);
-    IAThen(a Hello World message is displayed);
+    IAThen(displayed message is Hello World);
 }
 
 -(void)scenarioSayGoodbye {
@@ -431,7 +431,7 @@ NSString * const STARTUP_MESSAGE = @"Hello World";
     [self resetMessage:messageLabel];
 }
 
--(IAThenResult*)aHelloWorldMessageIsDisplayed {
+-(IAThenResult*)displayedMessageIsHelloWorld {
     IALabelOperator *messageLabel = [self findMessageLabel];
     
     if (messageLabel && [[messageLabel text] isEqualToString:STARTUP_MESSAGE]) {
@@ -456,6 +456,13 @@ The first line of the method is the now classic root view operator.  From our ro
 
 Finally, we issue the touch action on the button.
 
+The last statement is the verification and we implement it with an IAThen.  Since we are good programmers, we can smell a duplication between the preceding {{{IAThen(displayed message is Hello World);}}} and our new {{{IAThen(a Goodbye message is displayed);}}}.
+
+Wouldn't it be nice to have a parameter for the label's text?  Ok then, lets do it.
+
+We can refactor our <i>HelloWorldFixture</i>
+
+
 Now is the time to implement this scenario in our app.
 
 First, go in the file <i>ETViewController.xib</i> and add a button.  Then put "Talk" in the <i>Title</i> property.
@@ -469,5 +476,59 @@ http://iaccept.googlecode.com/svn/wiki/images/helloworld28.png
 Give a name for your event handler method.  I named it <i>talkButtonTouched</i>.
 
 http://iaccept.googlecode.com/svn/wiki/images/helloworld29.png
+
+The code for <i>ETViewController.h</i> is now :
+
+{{{
+#import <UIKit/UIKit.h>
+
+@interface ETViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UILabel *messageLabel;
+- (IBAction)talkButtonTouched:(id)sender;
+@end
+}}}
+
+In the file <i>ETViewController.m</i>, we add the logic that handle the touch of the Talk button.
+
+{{{
+#import "ETViewController.h"
+
+@interface ETViewController ()
+
+@end
+
+@implementation ETViewController
+@synthesize messageLabel;
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.
+    
+    [messageLabel setText:@"Hello World"];
+}
+
+- (void)viewDidUnload
+{
+    [self setMessageLabel:nil];
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return YES;
+}
+
+- (IBAction)talkButtonTouched:(id)sender {
+    if ([messageLabel.text isEqualToString:@"Hello World"]) {
+        messageLabel.text = @"Goodbye";
+    }
+}
+@end
+}}}
+
+The generated method {{{- (IBAction)talkButtonTouched:(id)sender}}} contains the event handling code.  Here, we change the label text for "Goodbye" if it was "Hello World".
 
 <h2> Writing the code for US3 : Hide the app </h2>
