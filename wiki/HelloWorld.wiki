@@ -716,9 +716,9 @@ NSString * const STARTUP_MESSAGE = @"Hello World";
 @end
 }}}
 
-Hum i think we are done with our scenario, we can go in our app to implement that scenario.
+We are done with our scenario, we can go in our app to implement it.
 
-In <i>ETViewController.m</i> we add the logic for the "I am back" in the button touch event handler.
+In <i>ETViewController.m</i> we add the logic for "I am back" in the button touch event handler.
 
 {{{
 #import "ETViewController.h"
@@ -760,7 +760,7 @@ In <i>ETViewController.m</i> we add the logic for the "I am back" in the button 
 @end
 }}}
 
-Ok I think we are pertty much done,  let's run atHelloWorld!
+Ok, I think we are pertty much done,  let's run atHelloWorld!
 
 {{{
 2012-02-24 14:31:42.851 atHelloWorld[718:11603] TESTS_STARTED
