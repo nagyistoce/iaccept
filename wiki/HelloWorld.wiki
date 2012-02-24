@@ -259,10 +259,49 @@ The second statement is verifying if the application starts with the message <i>
 
 We will use the same operators has in the <i>iStartedTheApplication</i> method.  
 
-Here is the new method :
+Here is the new code :
 
 {{{
+#import "HelloWorldFixture.h"
+#import <Framework-iAccept/IAViewOperator.h>
+#import <Framework-iAccept/IALabelOperator.h>
+#import <Framework-iAccept/IAThenResult.h>
 
+NSString * const STARTUP_MESSAGE = @"Hello World!";
+
+@implementation HelloWorldFixture
+
+- (void)resetMessage:(IALabelOperator *)messageLabel {
+    NSString* messageText = [messageLabel text];
+    
+    if (![messageText isEqualToString:STARTUP_MESSAGE]) {
+        [messageLabel setText:STARTUP_MESSAGE];
+    }
+}
+
+- (IALabelOperator *)findMessageLabel {
+    IAViewOperator* helloWorldViewOperator = [IAViewOperator viewOperatorForAppDelegateRootView:[self appDelegate]];
+    
+    IALabelOperator* messageLabel = (IALabelOperator*)[helloWorldViewOperator searchForViewWithTag:1 toDepth:0];
+    return messageLabel;
+}
+
+-(void)iStartedTheApplication {
+    IALabelOperator *messageLabel = [self findMessageLabel];
+    [self resetMessage:messageLabel];
+}
+
+-(IAThenResult*)theHelloWorldMessageIsDisplayed {
+    IALabelOperator *messageLabel = [self findMessageLabel];
+    
+    if (messageLabel && [[messageLabel text] isEqualToString:STARTUP_MESSAGE]) {
+        return [IAThenResult makeThenStatementConditionMetReturnValue];
+    } else {
+        return [IAThenResult makeThenStatementConditionNotMetValue:[NSString stringWithFormat:@"Expected message to be '%@', but was '%@'", STARTUP_MESSAGE, [messageLabel text]]];
+    }
+}
+
+@end
 }}}
 
 <h2> Writing the code for US2 : Say Goodbye </h2>
