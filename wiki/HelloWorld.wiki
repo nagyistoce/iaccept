@@ -319,6 +319,20 @@ If we execute our scenario by clicking Run on our atHelloWorld target in Xcode, 
 2012-02-24 10:35:49.331 atHelloWorld[604:11603] TESTS_FAILED [suites=1, tests=1, tests passed=0, tests failed=1, statements=2, time=31.019733sec]
 }}}
 
+This is good because we did not implement our application yet!  And when we'll do it, we will know it's working.
+
+Now go in the HelloWorld project's <i>ETViewController.xib</i> and add a label.
+
+http://iaccept.googlecode.com/svn/wiki/images/helloworld23.png
+
+You then need a reference of the label in your view controller, you do this by dragging the New Referencing Outlet link in your view controller header like this : 
+
+http://iaccept.googlecode.com/svn/wiki/images/helloworld24.png
+
+then you give your outlet a name.
+
+http://iaccept.googlecode.com/svn/wiki/images/helloworld25.png
+
 <h2> Writing the code for US2 : Say Goodbye </h2>
 
 <h2> Writing the code for US3 : Hide the app </h2>
