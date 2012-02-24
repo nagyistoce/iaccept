@@ -220,7 +220,40 @@ For example, the statement {{{IAGiven(i started the application);}}} will try to
 The final implementation of this method will look like this:
 
 {{{
+#import "HelloWorldFixture.h"
+#import <Framework-iAccept/IAViewOperator.h>
+#import <Framework-iAccept/IALabelOperator.h>
+
+NSString * const STARTUP_MESSAGE = @"Hello World!";
+
+@implementation HelloWorldFixture
+
+- (void)resetMessage:(IALabelOperator *)messageLabel {
+    NSString* messageText = [messageLabel text];
+    
+    if (![messageText isEqualToString:STARTUP_MESSAGE]) {
+        [messageLabel setText:STARTUP_MESSAGE];
+    }
+}
+
+-(void)iStartedTheApplication {
+    IAViewOperator* helloWorldViewOperator = [IAViewOperator viewOperatorForAppDelegateRootView:[self appDelegate]];
+
+    IALabelOperator* messageLabel = (IALabelOperator*)[helloWorldViewOperator searchForViewWithTag:1];
+    
+    [self resetMessage:messageLabel];
+}
+
+@end
 }}}
+
+The first line of method {{{-(void)iStartedTheApplication}}}, is creating a <i>IAViewOperator</i> with the root <i>UIView</i> of our application.
+
+Operators are used to do things on views (buttons, tables, labels...).  All view operators have a search capability to search for subviews.  
+
+In our example's second line, we use the <i>helloWorldViewOperator</i> to search for a subview identified by the tag 1.  In this scenario, we know that we have a one level hierarchy, so there is no possibility of conflict.  If we had a deeper hierarchy, we could have used the <i>toDepth:(int)depth</i> parameter. i.e. {{{[helloWorldViewOperator searchForViewWithTag:1 toDepth:1]}}}
+
+Now that we have an handle on our future message label, we can reset its value so we begin the scenario with a known state.  This is what the method <i>resetMessage</i> does.
 
 <h2> Writing the code for US2 : Say Goodbye </h2>
 
