@@ -41,7 +41,7 @@ As a team, we've defined our iAccept acceptance test scenarios for these feature
  * Then displayed message is I am back
 
 
-<h2> Let's setup our project environment... </h2> 
+<h2> First, let's setup our project environment... </h2> 
 
 Before we start, you must have Xcode installed on your mac.  This tutorial is done with Xcode 4.3.  We assume that you use ARC (automatic reference counting) too.  
 
