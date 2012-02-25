@@ -24,7 +24,7 @@ Let's say we would like to have the following features :
 
 In ATDD (Acceptance tests driven development), we want to first define the acceptance criteria of any functionality we are going to be building. The goal is to provide an unambiguous definition of the requirements to the development team so they know exactly what they need to do in the form of executable acceptance tests.
 
-As a team, we've defined our iAccept acceptance test scenarios for these stories :
+As a team, we've defined our iAccept acceptance test scenarios for these features :
 
 <b><i>Scenario 1 :  Say hello</i></b>
  * Given I started the application
