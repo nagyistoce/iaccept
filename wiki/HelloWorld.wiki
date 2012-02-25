@@ -35,7 +35,7 @@ As a team, we've defined our iAccept acceptance test scenarios for these feature
  * When I touch the talk button
  * Then displayed message is Goodbye
 
-<b><i>Scenario 3 :  Say i am back</i></b>
+<b><i>Scenario 3 :  Say I am back</i></b>
  * Given the Goodbye message is displayed
  * When I touch the talk button
  * Then displayed message is I am back
