@@ -8,10 +8,13 @@ We'll be building a very simple Hello World application.
 Let's say we would like to have the following features :
 
 <b>Feature 1: Say Hello</b>
-  * In order to be able to show you how to setup an iAccept project and setup a first test to validate the initial state of the application
+  * In order to be able to show you how to setup an iAccept project and test the initial state of the application in the tutorial
   * I want the application to display an Hello World! message at startup
 
- * Feature 2: Say Goodbye : when the talk button is touched, display the Goodbye message
+<b>Feature 2: Say Goodbye</b>
+  * In order to be able to show you how to test an action on the application and validate the results in the tutorial
+* I want the application to display Goodbye when the talk button is touched
+
  * Feature 3: Say I am back : when the talk button is touched while displaying Goodbye, display the I am back message
 
 In ATDD (Acceptance tests driven development), we want to first define the acceptance criteria of any functionality we are going to be building. The goal is to provide an unambiguous definition of the requirements to the development team so they know exactly what they need to do in the form of executable acceptance tests.
