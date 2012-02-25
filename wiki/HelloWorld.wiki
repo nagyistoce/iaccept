@@ -13,11 +13,14 @@ Let's say we would like to have the following features :
  * I want the application to display an Hello World! message at startup
 
 <b><i>Feature 2: Say Goodbye</i></b>
-  * In order to be able to show you how to test an action on the application and validate the results in the tutorial
+ * In order to be able to show you how to test an action on the application and validate the results in the tutorial
  * as your guide
  * I want the application to display Goodbye when the talk button is touched
 
- * Feature 3: Say I am back : when the talk button is touched while displaying Goodbye, display the I am back message
+<b><i>Feature 3: Say I am Back</i></b> 
+ * In order to be able to show you how to refactor test code and introduce how you can use a specific syntax to pass arguments to your fixtures in the tutorial
+ * as your guide
+ * I want the application to display I am back when the talk button is touched while displaying Goodbye
 
 In ATDD (Acceptance tests driven development), we want to first define the acceptance criteria of any functionality we are going to be building. The goal is to provide an unambiguous definition of the requirements to the development team so they know exactly what they need to do in the form of executable acceptance tests.
 
