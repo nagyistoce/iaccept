@@ -26,16 +26,16 @@ In ATDD (Acceptance tests driven development), we want to first define the accep
 
 As a team, we've defined our iAccept acceptance test scenarios for these stories :
 
-SC1 :  Say hello
+<b><i>Scenario 1 :  Say hello</i></b>
  * Given I started the application
  * Then displayed message is Hello World
 
-SC2 :  Say goodbye
+<b><i>Scenario 2 :  Say goodbye</i></b>
  * Given I started the application
  * When I touch the talk button
  * Then displayed message is Goodbye
 
-SC3 :  Say i am back
+<b><i>Scenario 3 :  Say i am back</i></b>
  * Given the Goodbye message is displayed
  * When I touch the talk button
  * Then displayed message is I am back
