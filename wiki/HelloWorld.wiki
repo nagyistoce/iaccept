@@ -7,7 +7,7 @@ We'll be building a very simple Hello World application.
 
 Let's say we would like to have the following features :
 
-Feature 1: Say Hello
+<b>Feature 1: Say Hello</b>
   * In order to show you how to setup an iAccept project and setup a first test to validate the initial state of the application
   * I want to the test to start an application that will display an Hello World! message
 
