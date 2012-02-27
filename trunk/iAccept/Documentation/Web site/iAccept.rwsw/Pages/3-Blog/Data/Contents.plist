@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SandwichFillings</key>
+	<array>
+		<dict>
+			<key>Dictionary</key>
+			<dict>
+				<key>ArchivePostsEnabled</key>
+				<true/>
+				<key>ArchivePostsPeriod</key>
+				<integer>1</integer>
+				<key>ArchivePostsShowGaps</key>
+				<true/>
+				<key>Categories</key>
+				<array>
+					<dict>
+						<key>ID</key>
+						<integer>2</integer>
+						<key>Name</key>
+						<string>Personal</string>
+					</dict>
+					<dict>
+						<key>ID</key>
+						<integer>3</integer>
+						<key>Name</key>
+						<string>Work</string>
+					</dict>
+					<dict>
+						<key>ID</key>
+						<integer>4</integer>
+						<key>Name</key>
+						<string>Humor</string>
+					</dict>
+					<dict>
+						<key>ID</key>
+						<integer>5</integer>
+						<key>Name</key>
+						<string>Apple</string>
+					</dict>
+					<dict>
+						<key>ID</key>
+						<integer>6</integer>
+						<key>Name</key>
+						<string>Release</string>
+					</dict>
+					<dict>
+						<key>ID</key>
+						<integer>7</integer>
+						<key>Name</key>
+						<string>Releases</string>
+					</dict>
+				</array>
+				<key>CategoriesEnabled</key>
+				<true/>
+				<key>CategoriesSeparatorText</key>
+				<string> | </string>
+				<key>CategoriesTitleText</key>
+				<string>Rangé dans: </string>
+				<key>CommentSeparatorText</key>
+				<string> | </string>
+				<key>CommentsRSSFeedText</key>
+				<string>Flux de commentaires</string>
+				<key>CommentsSelectedProviderTag</key>
+				<integer>0</integer>
+				<key>CommentsUserIdentifiers</key>
+				<dict/>
+				<key>DateModifier1</key>
+				<string>%Y</string>
+				<key>DateModifier2</key>
+				<string>%m</string>
+				<key>DateModifier3</key>
+				<string>%d</string>
+				<key>DateModifier4</key>
+				<string>%H:%M</string>
+				<key>DateSeparatorText1</key>
+				<string>/</string>
+				<key>DateSeparatorText2</key>
+				<string>/</string>
+				<key>DateSeparatorText3</key>
+				<string> </string>
+				<key>DateSeparatorText4</key>
+				<string> </string>
+				<key>EnableComments</key>
+				<false/>
+				<key>EnableCommentsInline</key>
+				<false/>
+				<key>EnableCustomiTunesTags</key>
+				<false/>
+				<key>EnablePing</key>
+				<false/>
+				<key>EnablePodcasting</key>
+				<false/>
+				<key>EnableRSS</key>
+				<true/>
+				<key>EnableSmileys</key>
+				<false/>
+				<key>Entries</key>
+				<array>
+					<dict>
+						<key>CategoryIDs</key>
+						<array>
+							<integer>7</integer>
+						</array>
+						<key>GUID</key>
+						<string>31476cd5e655441533d0b19ed4cffb59</string>
+						<key>ID</key>
+						<integer>0</integer>
+						<key>Posted</key>
+						<date>2011-11-21T16:35:26Z</date>
+						<key>PublishStatus</key>
+						<integer>1</integer>
+						<key>Title</key>
+						<string>First alpha release now available</string>
+					</dict>
+				</array>
+				<key>GeneratePermalinkPages</key>
+				<true/>
+				<key>GenerateRSSEntriesForMainPageOnly</key>
+				<false/>
+				<key>LastBuildDate</key>
+				<date>2011-11-21T17:55:25Z</date>
+				<key>LastID</key>
+				<integer>3</integer>
+				<key>LastSavedBuildDate</key>
+				<date>2011-11-21T16:25:26Z</date>
+				<key>LocaliseDate</key>
+				<true/>
+				<key>NumberOfFrontPagePosts</key>
+				<integer>5</integer>
+				<key>PermalinkText</key>
+				<string>Lien permanent</string>
+				<key>PingSites</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>technorati.com</string>
+						<key>rpc</key>
+						<integer>1</integer>
+						<key>url</key>
+						<string>http://rpc.technorati.com/rpc/ping</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>pingomatic.com</string>
+						<key>rpc</key>
+						<integer>1</integer>
+						<key>url</key>
+						<string>http://rpc.pingomatic.com/</string>
+					</dict>
+				</array>
+				<key>PrependSummaryToPost</key>
+				<false/>
+				<key>RSSCustomFeedFilename</key>
+				<string>feed.xml</string>
+				<key>RSSDescription</key>
+				<string>Scoop!</string>
+				<key>RSSFeedLinkText</key>
+				<string>Flux RSS</string>
+				<key>RSSLanguage</key>
+				<string>Français</string>
+				<key>RSSTitleText</key>
+				<string>Mon Flux RSS</string>
+				<key>ReadMoreText</key>
+				<string> Lire Plus…</string>
+				<key>ShowCategoryPostCounts</key>
+				<true/>
+				<key>ShowTagPostCounts</key>
+				<false/>
+				<key>SortedCategoryExport</key>
+				<true/>
+				<key>TagCloudEnabled</key>
+				<true/>
+				<key>TagsEnabled</key>
+				<true/>
+				<key>TagsSeparatorText</key>
+				<string>, </string>
+				<key>TagsTitleText</key>
+				<string>Tags: </string>
+				<key>UsePHPForSidebarContent</key>
+				<false/>
+			</dict>
+			<key>Files</key>
+			<array>
+				<string>1-Body.as</string>
+				<string>1-Summary.as</string>
+			</array>
+			<key>Subsandwiches</key>
+			<array/>
+		</dict>
+	</array>
+	<key>Type</key>
+	<string>RapidWeaver Blog Page Data</string>
+</dict>
+</plist>

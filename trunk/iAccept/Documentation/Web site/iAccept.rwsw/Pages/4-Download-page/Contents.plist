@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SandwichFillings</key>
+	<array>
+		<dict>
+			<key>Dictionary</key>
+			<dict>
+				<key>ID</key>
+				<string>page1</string>
+				<key>MostRecentlySelectedStyleName</key>
+				<string>Alpha - Elapse</string>
+				<key>PageTitle</key>
+				<string>Download page</string>
+				<key>PluginClassName</key>
+				<string>RWFileSharingPlugin</string>
+				<key>PluginMetadata</key>
+				<dict>
+					<key>Author</key>
+					<string>Realmac Software</string>
+					<key>Name</key>
+					<string>Partage de fichiers</string>
+				</dict>
+				<key>PublishingManifest</key>
+				<dict>
+					<key>CreationDate</key>
+					<date>2011-11-21T17:49:47Z</date>
+					<key>DigestAlgorithm</key>
+					<string>MD5</string>
+					<key>DocumentGUID</key>
+					<string>EF2C3C99-8795-45E4-96B2-E8478C76F557</string>
+					<key>PageDigests</key>
+					<dict>
+						<key>index.html</key>
+						<dict>
+							<key>Digest</key>
+							<data>
+							zSN+KbZJe25gsTYfaGEE
+							2Q==
+							</data>
+							<key>Size</key>
+							<integer>4265</integer>
+						</dict>
+					</dict>
+					<key>PageID</key>
+					<string>page1</string>
+					<key>SiteRoot</key>
+					<string>downloads</string>
+					<key>Version</key>
+					<integer>3</integer>
+				</dict>
+			</dict>
+			<key>Files</key>
+			<array/>
+			<key>Subsandwiches</key>
+			<array>
+				<string>Data</string>
+				<string>PageAttributes</string>
+			</array>
+		</dict>
+	</array>
+	<key>Type</key>
+	<string>Page</string>
+</dict>
+</plist>

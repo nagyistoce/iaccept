@@ -1,0 +1,67 @@
+What is iAccept?
+
+<p>iAccept is an automated acceptance testing framework for the IOS development platform. It is written in Objective-c.</p>
+
+<H1>Who is it for?</H1>
+<p>For any IOS development team who is building software incrementally or iteratively, agile or not.</p>
+  
+
+<H1>Why would we need that?</H1>
+<p>If you do any kind of iterative development, you need to know that you haven't broken previous functionality every time you make even simple modifications to your software.
+As it gets larger, it often becomes impossible to retest everything manually whenever a change is made because it simply requires too much time. Furthermore, manual
+testing is often the first thing to go under schedule pressure and product quality suffers, with potentially catastrophic consequences to the customers and the
+development organisation if dangerous bugs get out in the open. In agile development, the automated acceptance tests defines the contract that tells developers
+what they should be building. Since the tests are automated and binary in nature (pass or not), they also act as an objective measune of progress.
+</p>
+
+<H1>Why iAccept and not other IOS automated accceptance testing frameworks?</H1>
+<p>Before we decided on developping our own framework, we tried a number other automated acceptance test frameworks. It was all very frustratung because we just could not get anything to work in a reasonable amout of time. 
+<br><br>Problems included :
+<ul>
+<li>No easy way to get up and running and see tests in action using exemples.</li>
+<li>Extremely poor documentation.</li>
+<li>Code that simply does not run in the latest version of xcode.</li>
+<li>Code and/or examples that straight out did not work.</li>
+<li>Too many different technologies involved to get up and running.</li>
+<li>Dependency on static libraries that just don't work anymore.</li>
+</ul>
+
+<br>In short, we wanted to see if we could adress these issues and really help out the IOS development community.
+ </p>
+
+<H1>How does iAccept work?</H1>
+<ol>
+<li>You create an acceptance test project in your project and install the iAccept library.</li>
+<li>You define your acceptance tests.</li>
+<ul>
+	<li>A test simply manipulates the application through the UI directly (via the UI API) or using fixtures (provided by the developers)</li>
+	<ul>
+		<li>Testing the UI directly allows you to test applications that have not been designed to be tested.</li>
+		<li>If your are lucky enough to be starting from scratch, fixtures give you extreme flexibility as they provide direct hooks into your application. </li>
+		<li>Fixtures often abstract the functionality of single windows, and makes tests well organized and much easier to write. </li>
+	</ul>
+	<li>A test consits in a number of statements.</li>
+	<ul>
+		<li>Statements can be actions you take on the UI (push a button).</li>
+		<li>or valide the state of the the UI (is the checkbox checked).</li>
+		<li>or even valide the state of the application if you use dixtures (is there really another Employee in the database after I press the save button?).</li>
+		<li>Statements can also wait for conditions to become true (wait till some asynchronous message has been received from a socket).</li>
+	</ul>
+</ul>
+<li>You then run the tests by simply running the acceptance test project.</li>
+<ul>
+	<li>iAccept starts the application (in the simulator or on the device).</li>
+	<li>It then runs each test, one statement at a time against the application asynchronously.</li>
+	<li>As it does, it outputs the test results on the console or in a file.</li>
+</ul>
+<li>It can easily be integrated in a continuous integration environment since the test application returns 0 if the tests passed and -1 otherwise. You can see the test results by outputing to a file instead of simply outputing to the console.</li>
+<li>That's it, simple isn't it?</li>
+</ol>
+
+<H1>What it's not!</H1>
+<ul>
+<li>It is not an IDE for acceptance testing that can be used by non programmers.</li>
+<li>There is no recorder that allows you to manipulate the application and somehow create your test definitions from that.</li>
+<li>As of now, there is no higher level language to allow non programmers to write tests. Although, you could create fixtures that would suppport that... </li>
+<li>Tests need to be written by developers although they can be specified by the product owner independently.</li>
+</ul>
