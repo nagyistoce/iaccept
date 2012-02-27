@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'iAccept' target in the 'iAccept' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
