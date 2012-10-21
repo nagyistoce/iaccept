@@ -15,7 +15,7 @@ This page presents the basic concepts used in iAccept.
 
 *Statement* : a scenario is composed of a number of Given/When/Then statements. Gherkin calls them steps. We just think "statement" is more explicit and user friendly...
 
-*Fixture* : a fixture 
+*Fixture* : fixtures allow the test framework to control and query the state of the application under test. It is the glue that allows the Domain Specific Language to be executable.
 
 Add your content here.  Format your content with:
   * Text in *bold* or _italic_
