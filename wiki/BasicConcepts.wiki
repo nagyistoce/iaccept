@@ -8,7 +8,7 @@ This page presents the basic concepts used in iAccept.
 
 = Details =
 
-*BDD*: Initially presented as another way of doing Test Driven Development. Dan North and others developed the BDD framework over a period of years, finally framing it as a communication and collaboration framework for developers, QA and non-technical or business participants in a software project. Dan North gave the following description of BDD: "BDD is a second-generation, outside–in, pull-based, multiple-stakeholder, multiple-scale, high-automation, agile methodology. It describes a cycle of interactions with well-defined outputs, resulting in the delivery of working, tested software that matters".
+*BDD*: Initially presented as another way of doing Test Driven Development. Dan North and others developed the BDD framework over a period of years, finally framing it as a communication and collaboration framework for developers, QA and non-technical or business participants in a software project. Dan North gave the following description of BDD during the "Agile specifications, BDD and Testing eXchange" in November 2009 in London : "BDD is a second-generation, outside–in, pull-based, multiple-stakeholder, multiple-scale, high-automation, agile methodology. It describes a cycle of interactions with well-defined outputs, resulting in the delivery of working, tested software that matters".
 
 *Feature* : a feature corresponds to a unit of functionality of the software under construction. It is a use case or a user story. An excellent format suggested by Mike Cohn is the following : As a (role) I want (something) so that (benefit).
 
