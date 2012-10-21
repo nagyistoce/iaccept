@@ -21,18 +21,18 @@ This page presents the basic concepts used in iAccept.
 
 Here's a sample of a sample feature with its associated scenarios (taken from Wikipedia) :
 
-`[Feature`] Returns go to stock
+`[Feature`] Returns go to stock<BR>
 In order to keep track of stock<BR>
-As a store owner
-I want to add items back to stock when they're returned
+As a store owner<BR>
+I want to add items back to stock when they're returned<BR>
 
-[Scenario 1] Refunded items should be returned to stock
+`[Scenario 1`] Refunded items should be returned to stock
 Given a customer previously bought a black sweater from me
 And I currently have three black sweaters left in stock
 When he returns the sweater for a refund
 Then I should have four black sweaters in stock
 
-[Scenario 2] Replaced items should be returned to stock
+[`Scenario 2`] Replaced items should be returned to stock
 Given that a customer buys a blue garment
 And I have two blue garments in stock
 And three black garments in stock.
