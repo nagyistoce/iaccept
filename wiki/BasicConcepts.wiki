@@ -22,7 +22,7 @@ This page presents the basic concepts used in iAccept.
 Here's a sample of a sample feature with its associated scenarios (taken from Wikipedia) :
 
 `[Feature`] Returns go to stock
-In order to keep track of stock
+In order to keep track of stock<BR>
 As a store owner
 I want to add items back to stock when they're returned
 
