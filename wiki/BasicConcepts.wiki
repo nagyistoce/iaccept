@@ -26,17 +26,17 @@ In order to keep track of stock<BR>
 As a store owner<BR>
 I want to add items back to stock when they're returned<BR>
 
-`[Scenario 1`] Refunded items should be returned to stock
-Given a customer previously bought a black sweater from me
-And I currently have three black sweaters left in stock
-When he returns the sweater for a refund
-Then I should have four black sweaters in stock
+`[Scenario 1`] Refunded items should be returned to stock<BR>
+Given a customer previously bought a black sweater from me<BR>
+And I currently have three black sweaters left in stock<BR>
+When he returns the sweater for a refund<BR>
+Then I should have four black sweaters in stock<BR>
 
-[`Scenario 2`] Replaced items should be returned to stock
-Given that a customer buys a blue garment
-And I have two blue garments in stock
-And three black garments in stock.
-When he returns the garment for a replacement in black,
-Then I should have three blue garments in stock
-And two black garments in stock
+[`Scenario 2`] Replaced items should be returned to stock<BR>
+Given that a customer buys a blue garment<BR>
+And I have two blue garments in stock<BR>
+And three black garments in stock.<BR>
+When he returns the garment for a replacement in black,<BR>
+Then I should have three blue garments in stock<BR>
+And two black garments in stock<BR>
  
