@@ -1,7 +1,5 @@
 #summary One-sentence summary of this page.
 
-NOTE : THIS PAGE IS UNDER CONSTRUCTION
-
 = Introduction =
 
 This page presents the basic concepts used in iAccept.
