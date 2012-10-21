@@ -19,7 +19,7 @@ This page presents the basic concepts used in iAccept.
 *Fixture* : fixtures allow the test framework to control and query the state of the application under test. It is the glue that allows the Domain Specific Language to be executable.
 
 
-Here's a sample of a sample feature with its associated scenarios (taken from Wikipedia) :
+Here's a sample of a feature with its associated scenarios (taken from Wikipedia) :
 
 `[Feature`] Returns go to stock<BR>
 In order to keep track of stock<BR>
